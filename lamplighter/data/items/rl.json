@@ -1,0 +1,42 @@
+{
+ "rl_heronplume_coat": {
+  "name": "Heronplume Coat",
+  "kind": "armor",
+  "value": 135,
+  "stats": {"def": 7, "agi": 2, "dodge": 5},
+  "desc": "A coat of heron plumes sewn over oilskin. Water sheds off it, and so do blows.",
+  "rarity": "rare"
+ },
+ "rl_keepers_pole": {
+  "name": "Keeper's Snuffing Pole",
+  "kind": "weapon",
+  "value": 140,
+  "stats": {"atk": 11, "agi": 2},
+  "mult": {"phys": 1.1},
+  "desc": "The keeper's long snuffing-pole, brass-tipped, balanced for climbing.",
+  "rarity": "rare"
+ },
+ "rl_lens_shard": {
+  "name": "Shard of the Great Lens",
+  "kind": "trinket",
+  "value": 150,
+  "stats": {"wil": 3, "hp": 8},
+  "mult": {"light": 1.12},
+  "desc": "A shard of the great lens. Held to the light it shows a lamp, lit, far away.",
+  "rarity": "rare"
+ },
+ "rl_tower_key": {
+  "name": "Tower Key",
+  "kind": "key",
+  "value": 0,
+  "desc": "A brass key on a loop of tarred twine.",
+  "rarity": "common"
+ },
+ "rl_receipt": {
+  "name": "Receipt: the Reedlight",
+  "kind": "key",
+  "value": 0,
+  "desc": "Received of the Reedlight, the great lens, to see the Well from far off. Ansel says the boats will find their own way for a winter. Held in trust. To be returned lit by spring. The kettle was on. -A.",
+  "rarity": "common"
+ }
+}

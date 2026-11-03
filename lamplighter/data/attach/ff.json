@@ -1,0 +1,24 @@
+{
+  "gate": {
+    "exits": {
+      "w": "ff_frost_road"
+    },
+    "locks": {
+      "w": {
+        "flag": "beacon_Ember Court",
+        "msg": "A road of white frost runs west from the gate and ends at a wall of hard-packed snow that Hesk says has grown a hand's breadth a day for a week. It will not be dug. It is waiting for an answer: relight the Ember Court's beacon in its throne room, and something out there will answer."
+      }
+    }
+  },
+  "hearth_stall": {
+    "exits": {
+      "e": "ff_stall"
+    },
+    "locks": {
+      "e": {
+        "building": "ff_fair_stall",
+        "msg": "A vacant plot beyond the Hearth Stall, strung with paper lanterns nobody has lit. Joss can build a stall here once the Fairwarden, Marit Ostrand, has agreed to move in."
+      }
+    }
+  }
+}

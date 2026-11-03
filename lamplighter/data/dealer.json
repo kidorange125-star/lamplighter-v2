@@ -1,0 +1,64 @@
+{
+ "notes": "Gem income over a whole game is about 169: the base game's 93 (the NEW code 30, the launch code 40, 3 for each of the 7 first boss kills (21), and 1 to 2 for a strong Queen; only ~73 of them before the first boss) plus M6's 76 (15 from five new first boss kills, 7 from four hooks, up to 4 from the two rolled bosses' band bonus, once each, and 50 from the four codes LENDING 10, THAW 15, VIGIL 15 and QUENCH 10). Gems are finite and also buy speed-ups, forge hurries and spell books, so a Dealer ware is a decision. Gear: Rare 3, Epic 5 (a handful, one boss kill and a bit), Ultra 10 (double), Legendary 28 (nearly three Ultras, a sixth of the whole game's gems). Loose relics: Rare 2, Epic 3, Ultra 6, Legendary 16. A relic already socketed costs exactly what it costs loose (socket_share 1.0), because Brann's forge hands any socketed relic back for nothing: a fair Epic with an Epic relic is 8 and a fair Legendary with a Legendary relic is 44. A bargain is one tier above the ring's odds but never above the ring's bargain_cap (Epic, Ultra, Ultra, Legendary for rings 1 to 4, and Legendary for ring 5), carries a visible curse and up to two relics, and takes 30 percent off the gear only, never off the relics: a ring 4 Legendary with two Legendary relics is 20 + 32 = 52, against 44 for the fair one with a single relic. The curses are small, so the discount is small too, and a Legendary is only on sale in rings 4 and 5. Restocks cost 3, 6, then 12 (21 in all) for at most 3 a day, so reshuffling is a real spend next to a 5 gem Epic. Godlike is never sold: not as a ware, a bargain, or a socketed relic. Ring 5 is the first ring where Legendary is more likely than not (50%); the 28-gem price is the brake (a sixth of the whole game's gems). Bargains cap at Legendary because gems never buy Godlike. The ring-5 Dealer sits in the Frostfair once the Court's beacon is lit, moves to the Vigil once the Fair is lit, and is gone when the Vigil is lit.",
+ "restock": {
+  "prices": [3, 6, 12],
+  "max": 3
+ },
+ "price": {
+  "rare": 3,
+  "epic": 5,
+  "ultra": 10,
+  "legendary": 28
+ },
+ "relic_price": {
+  "rare": 2,
+  "epic": 3,
+  "ultra": 6,
+  "legendary": 16
+ },
+ "socket_share": 1.0,
+ "bargain": {
+  "discount": 0.3,
+  "uplift": 1,
+  "relics": 2
+ },
+ "fair_relics": 1,
+ "rings": {
+  "1": {
+   "gear_odds": {"rare": 55, "epic": 45},
+   "relic_odds": {"rare": 70, "epic": 30},
+   "socket_cap": "epic",
+   "bargain_cap": "epic"
+  },
+  "2": {
+   "gear_odds": {"epic": 80, "ultra": 20},
+   "relic_odds": {"rare": 30, "epic": 60, "ultra": 10},
+   "socket_cap": "epic",
+   "bargain_cap": "ultra"
+  },
+  "3": {
+   "gear_odds": {"epic": 55, "ultra": 45},
+   "relic_odds": {"epic": 60, "ultra": 40},
+   "socket_cap": "ultra",
+   "bargain_cap": "ultra"
+  },
+  "4": {
+   "gear_odds": {"epic": 45, "ultra": 35, "legendary": 20},
+   "relic_odds": {"epic": 40, "ultra": 40, "legendary": 20},
+   "socket_cap": "legendary",
+   "bargain_cap": "legendary"
+  },
+  "5": {
+   "gear_odds": {"epic": 10, "ultra": 40, "legendary": 50},
+   "relic_odds": {"epic": 15, "ultra": 40, "legendary": 45},
+   "socket_cap": "legendary",
+   "bargain_cap": "legendary"
+  }
+ },
+ "gear": {
+  "weapon": ["saltsteel_saber", "censer_flail", "starsteel_blade", "hunting_spear", "ashwood_rod", "gutting_knife", "ff_lamp_pole", "vg_astrolabe_rod"],
+  "armor": ["hauberk", "wardenplate", "drowned_mail", "vg_nightcloak"],
+  "trinket": ["saints_tooth", "orrins_ring", "ember_locket", "moth_charm"]
+ },
+ "relics": ["relic_ember", "relic_lamp", "relic_edge", "relic_heart", "relic_pulse"]
+}

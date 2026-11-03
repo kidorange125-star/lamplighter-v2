@@ -1,0 +1,19 @@
+[
+  {
+    "id": "The Frostfair",
+    "ring": 5,
+    "levels": "10-11",
+    "gear": "Ultra - Legendary",
+    "blurb": "A midwinter fair on the road west of the North Gate, held in a breath that never let go.",
+    "dealer": true,
+    "dealer_after": "beacon_Ember Court"
+  },
+  {
+    "id": "The Fair Below",
+    "ring": 5,
+    "levels": "11-12",
+    "gear": "Legendary",
+    "blurb": "The Fair's undercroft, where the unsold stock was laid for the winter. Nothing ever lights it.",
+    "dealer": false
+  }
+]

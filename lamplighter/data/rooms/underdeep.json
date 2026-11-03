@@ -1,0 +1,316 @@
+{
+ "crypt_stair": {
+  "name": "Crypt Stair",
+  "region": "Underdeep",
+  "pos": [
+   0,
+   0
+  ],
+  "dark": true,
+  "desc": "The stair below the chapel goes down much further than any crypt should. The salt gives way to old stone, then to tunnels, timbered and propped. You are in the old tallow mines under the hill.",
+  "exits": {
+   "u": "chapel_nave",
+   "e": "mine_hall"
+  },
+  "features": {
+   "timbers": "Miners' marks: arrows, tally scratches, and here and there a little flame symbol."
+  }
+ },
+ "mine_hall": {
+  "name": "The Long Gallery",
+  "region": "Underdeep",
+  "pos": [
+   1,
+   0
+  ],
+  "dark": true,
+  "desc": "A long mine gallery with rails running down the middle and carts tipped over. The walls are streaked with grey fat that drips in the warmth of your lantern. East, a faint starry glitter. South, candlelight, warm and steady.",
+  "exits": {
+   "w": "crypt_stair",
+   "e": "ore_vein",
+   "s": "tallow_camp"
+  },
+  "enc": {
+   "chance": 0.35,
+   "groups": [
+    [
+     [
+      "tallow_ghoul"
+     ],
+     2
+    ],
+    [
+     [
+      "crawler"
+     ],
+     2
+    ],
+    [
+     [
+      "tallow_ghoul",
+      "crawler"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "carts|rails": "The carts are full of tallow, rendered from something you'd rather not think about."
+  }
+ },
+ "ore_vein": {
+  "name": "The Starsteel Seam",
+  "region": "Underdeep",
+  "pos": [
+   2,
+   0
+  ],
+  "dark": true,
+  "desc": "The tunnel opens into a cavern whose walls glitter with points of light, like a night sky from before the dark. A seam of black, starry metal runs through the rock.",
+  "exits": {
+   "w": "mine_hall"
+  },
+  "fixed": {
+   "flag": "golem_dead",
+   "enemies": [
+    "starsteel_golem"
+   ],
+   "intro": "Part of the wall turns its head. Stone grinds on stone. The Ore-Warden steps out of the rock."
+  },
+  "event": "ore_vein",
+  "features": {
+   "seam|ore|metal": "Starsteel. Brann would give his right arm for a lump of it."
+  },
+  "boss": "golem_dead",
+  "npcs": [
+   "dagna"
+  ],
+  "boss_name": "The Ore-Warden"
+ },
+ "tallow_camp": {
+  "name": "Tallow's Camp",
+  "region": "Underdeep",
+  "pos": [
+   1,
+   1
+  ],
+  "dark": false,
+  "rest": true,
+  "desc": "A cave crowded with candles: on ledges, in niches, on the floor, stuck to the walls, hundreds of them, all lit. In the middle sits a merchant's cart, and beside it a figure made entirely of candle-wax, with a wick for hair that burns a little blue flame.",
+  "exits": {
+   "n": "mine_hall",
+   "w": "hollow_nest",
+   "e": "choir_gallery",
+   "s": "deep_lake"
+  },
+  "npcs": [
+   "tallow"
+  ],
+  "features": {
+   "candles": "Every one is a different colour. Some of them smell of flowers. Some smell of people.",
+   "cart": "Tallow's wares. Ask to trade."
+  }
+ },
+ "hollow_nest": {
+  "name": "The Brood Pit",
+  "region": "Underdeep",
+  "pos": [
+   0,
+   1
+  ],
+  "dark": true,
+  "desc": "A round pit lined with grey, papery egg cases. The smell is unbearable. Something pale and huge shifts at the bottom.",
+  "exits": {
+   "e": "tallow_camp"
+  },
+  "items": [
+   "page5",
+   "strong_draught",
+   "firepot"
+  ],
+  "fixed": {
+   "flag": "brood_dead",
+   "enemies": [
+    "brood_queen",
+    "crawler"
+   ],
+   "intro": "The Brood Queen lifts her swollen body out of the egg cases, and her children come with her."
+  },
+  "features": {
+   "eggs|cases": "Some of them are moving."
+  },
+  "boss": "brood_dead",
+  "boss_name": "The Brood Queen"
+ },
+ "choir_gallery": {
+  "name": "The Whispering Gallery",
+  "region": "Underdeep",
+  "pos": [
+   2,
+   1
+  ],
+  "dark": true,
+  "desc": "A curved tunnel where every sound comes back to you a moment late, and changed. Your footsteps return as singing. Ash falls softly from the ceiling like grey snow.",
+  "exits": {
+   "w": "tallow_camp",
+   "e": "ash_choir"
+  },
+  "items": [
+   "oil"
+  ],
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [
+     [
+      "tallow_ghoul"
+     ],
+     1
+    ],
+    [
+     [
+      "crawler",
+      "crawler"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "ash": "Warm. It came from something that burned for a very long time."
+  }
+ },
+ "ash_choir": {
+  "name": "The Ash Choir",
+  "region": "Underdeep",
+  "pos": [
+   3,
+   1
+  ],
+  "dark": true,
+  "desc": "A vast cavern shaped like the inside of a bell. Three figures of glowing cinder stand on a ledge of rock, singing a chord that never resolves. Between them hangs a light like a coal.",
+  "exits": {
+   "w": "choir_gallery"
+  },
+  "event": "ash_choir",
+  "features": {
+   "ledge|singers": "Their song is beautiful and it makes your teeth hurt."
+  },
+  "boss": "choir_dead",
+  "boss_name": "The Ash Choir"
+ },
+ "deep_lake": {
+  "name": "The Underlake",
+  "region": "Underdeep",
+  "pos": [
+   1,
+   2
+  ],
+  "dark": true,
+  "desc": "A black lake under the hill, flat as slate. A narrow shore runs east around it. On the shore lies a skeleton in a lamplighter's coat, its lantern smashed beside it.",
+  "exits": {
+   "n": "tallow_camp",
+   "e": "well_bottom"
+  },
+  "items": [
+   "page6",
+   "strong_draught"
+  ],
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [
+     [
+      "crawler"
+     ],
+     2
+    ],
+    [
+     [
+      "tallow_ghoul",
+      "tallow_ghoul"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "skeleton|coat|lamplighter": "One of the apprentices who left. He didn't leave. He came down here. He was carrying a page of Orrin's journal.",
+   "lake": "Nothing reflects in it. Not even your lantern."
+  }
+ },
+ "well_bottom": {
+  "name": "Bottom of the Old Well",
+  "region": "Underdeep",
+  "pos": [
+   2,
+   2
+  ],
+  "dark": true,
+  "desc": "A round chamber at the bottom of the town well. Far above, a tiny grey circle of sky. A rope hangs down the shaft. East stands a door of black glass with three flame-shaped sockets, and warmth breathes from beneath it.",
+  "exits": {
+   "w": "deep_lake",
+   "u": "square",
+   "e": "lightwell_gate"
+  },
+  "locks": {
+   "u": {
+    "shards": 3,
+    "msg": "The grate at the top of the shaft is sealed. The rope is no use until it opens."
+   },
+   "e": {
+    "shards": 3,
+    "msg": "The black glass door won't move. Three flame-shaped sockets wait for embers."
+   }
+  },
+  "features": {
+   "door|glass|sockets": "Three sockets, shaped like flames. The door to the Lightwell.",
+   "rope|shaft": "The well rope. With the grate open, you could climb straight up to the square."
+  }
+ },
+ "lightwell_gate": {
+  "name": "The Usher's Hall",
+  "region": "Underdeep",
+  "pos": [
+   3,
+   2
+  ],
+  "dark": true,
+  "desc": "A long hall of black glass. Your lantern makes a hundred lanterns in the walls. At the far end, steps lead down into a light the colour of a dying ember.",
+  "exits": {
+   "w": "well_bottom",
+   "e": "lightwell"
+  },
+  "fixed": {
+   "flag": "usher_dead",
+   "enemies": [
+    "pale_usher"
+   ],
+   "intro": "A tall, thin shape unfolds from the reflections. It carries an iron snuffer as long as a scythe, and it is looking at your flame."
+  },
+  "features": {
+   "walls|reflections": "In the reflections, your lantern is lit. In some of them, it isn't."
+  },
+  "boss": "usher_dead",
+  "boss_name": "The Pale Usher"
+ },
+ "lightwell": {
+  "name": "The Lightwell",
+  "region": "Underdeep",
+  "pos": [
+   4,
+   2
+  ],
+  "dark": true,
+  "desc": "A great round cistern of stone, and at its heart a well of fire, almost gone out, glowing like the last coal in a grate. Steps spiral down to it. Before it, on a throne of black glass, sits a man in a lamplighter's coat.",
+  "exits": {
+   "w": "lightwell_gate"
+  },
+  "event": "lightwell",
+  "features": {
+   "well|fire": "The fire that feeds the sun. It is very nearly out."
+  },
+  "boss": "ending",
+  "boss_name": "The Hollow King"
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "diff_name": "Normal",
+ "difficulty": 1.0,
+ "flags": {
+  "met_orrin": true,
+  "visited_regions": [
+   "Hollowmere"
+  ]
+ },
+ "last_rest": "hall",
+ "moves": 87,
+ "player": {
+  "agi": 7,
+  "base_hp": 44,
+  "bonus_hp": 0,
+  "cls": "wayfarer",
+  "equipment": {
+   "armor": "oilskin",
+   "trinket": null,
+   "weapon": "hook"
+  },
+  "gold": 245,
+  "hp": 49,
+  "inventory": {
+   "draught": 3,
+   "oil": 1
+  },
+  "lantern": {
+   "lens": false,
+   "shroud": false
+  },
+  "level": 4,
+  "name": "Fixture",
+  "oil": 100,
+  "points": 2,
+  "str": 5,
+  "vit": 1,
+  "wil": 3,
+  "xp": 31
+ },
+ "quests": {
+  "main": 1
+ },
+ "room": "tavern",
+ "stats": {
+  "battles": 9,
+  "deaths": 1,
+  "kills": 14
+ },
+ "visited": [
+  "hall",
+  "square",
+  "tavern"
+ ]
+}

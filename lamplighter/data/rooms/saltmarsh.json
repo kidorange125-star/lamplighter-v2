@@ -1,0 +1,279 @@
+{
+ "marsh_edge": {
+  "name": "Ferry Landing",
+  "region": "Saltmarsh",
+  "pos": [
+   2,
+   2
+  ],
+  "dark": true,
+  "desc": "A rotten jetty at the edge of the Saltmarsh. Oskar's ferry bobs behind you. Ahead, reeds taller than a man, hissing in a wind you can't feel. The air tastes of salt and rot.",
+  "exits": {
+   "w": "docks",
+   "e": "reedways"
+  },
+  "features": {
+   "ferry": "Oskar will wait. 'Shout if you need me,' he said. 'I'll pretend I didn't hear.'"
+  }
+ },
+ "reedways": {
+  "name": "The Reedways",
+  "region": "Saltmarsh",
+  "pos": [
+   3,
+   2
+  ],
+  "dark": true,
+  "desc": "Paths of half-sunk planks wind through the reeds. Every step squelches. Pale flowers glow faintly in the black water, and you hear something large moving just out of sight.",
+  "exits": {
+   "w": "marsh_edge",
+   "s": "bog_lights",
+   "e": "sunken_village"
+  },
+  "items": [
+   "moonpetal"
+  ],
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [
+     [
+      "bog_lurker"
+     ],
+     2
+    ],
+    [
+     [
+      "wisp"
+     ],
+     2
+    ],
+    [
+     [
+      "wisp",
+      "wisp"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "flowers|petals": "Moonpetals. Sister Ilse wants these."
+  }
+ },
+ "bog_lights": {
+  "name": "The Bog Lights",
+  "region": "Saltmarsh",
+  "pos": [
+   3,
+   3
+  ],
+  "dark": true,
+  "desc": "Open bog, dotted with cold blue lights that drift and bob just above the water. Travellers used to follow them and drown. One of the lights is a moonpetal. The rest are not.",
+  "exits": {
+   "n": "reedways"
+  },
+  "items": [
+   "moonpetal",
+   "page3",
+   "oil"
+  ],
+  "enc": {
+   "chance": 0.4,
+   "groups": [
+    [
+     [
+      "wisp"
+     ],
+     2
+    ],
+    [
+     [
+      "wisp",
+      "wisp"
+     ],
+     2
+    ],
+    [
+     [
+      "bog_lurker",
+      "wisp"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "lights|wisps": "They drift toward your lantern, curious and hateful."
+  }
+ },
+ "sunken_village": {
+  "name": "Sunken Village",
+  "region": "Saltmarsh",
+  "pos": [
+   4,
+   2
+  ],
+  "dark": true,
+  "desc": "The roofs of a drowned village stick up out of the marsh like the backs of whales. A walkway of doors laid flat runs between them. Shapes stand in the water, up to their waists, quite still, facing the chapel spire to the east. A larger house sits on stilts to the south.",
+  "exits": {
+   "w": "reedways",
+   "e": "chapel_steps",
+   "s": "reeve_house"
+  },
+  "items": [
+   "moonpetal"
+  ],
+  "enc": {
+   "chance": 0.35,
+   "groups": [
+    [
+     [
+      "drowned_villager"
+     ],
+     2
+    ],
+    [
+     [
+      "drowned_villager",
+      "drowned_villager"
+     ],
+     2
+    ],
+    [
+     [
+      "drowned_villager",
+      "wisp"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "shapes|villagers": "Drowned villagers, waiting for a service that never ends.",
+   "house|stilts": "The reeve's house. A light burns in the window, green as old copper."
+  }
+ },
+ "reeve_house": {
+  "name": "The Reeve's House",
+  "region": "Saltmarsh",
+  "pos": [
+   4,
+   3
+  ],
+  "dark": true,
+  "desc": "A council room on stilts, ankle-deep in seawater. Ledgers float. A chair at the head of the long table faces the door.",
+  "exits": {
+   "n": "sunken_village"
+  },
+  "items": [
+   "pearl",
+   "silver_icon"
+  ],
+  "event": "reeve_house",
+  "features": {
+   "ledgers": "Tithe records. The village paid the chapel in fish, then in silver, then in children."
+  },
+  "boss": "reeve_dead",
+  "npcs": [
+   "odo"
+  ],
+  "boss_name": "Reeve Haskel"
+ },
+ "chapel_steps": {
+  "name": "Chapel Steps",
+  "region": "Saltmarsh",
+  "pos": [
+   5,
+   2
+  ],
+  "dark": true,
+  "desc": "Broad stone steps rise out of the water to the doors of the Chapel of the Tide. The doors are green bronze, carved with waves, and sealed by a lock shaped like a breaking wave.",
+  "exits": {
+   "w": "sunken_village",
+   "n": "chapel_nave"
+  },
+  "locks": {
+   "n": {
+    "item": "tide_key",
+    "msg": "The bronze doors are locked. The keyhole is shaped like a wave."
+   }
+  },
+  "enc": {
+   "chance": 0.25,
+   "groups": [
+    [
+     [
+      "drowned_villager",
+      "drowned_villager"
+     ],
+     1
+    ],
+    [
+     [
+      "salt_knight"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "doors|lock": "The lock is shaped like a breaking wave. The Reeve would have the key."
+  }
+ },
+ "chapel_nave": {
+  "name": "Nave of the Tide",
+  "region": "Saltmarsh",
+  "pos": [
+   5,
+   1
+  ],
+  "dark": true,
+  "desc": "The chapel nave, flooded to the knee. Pews float in rows. Salt has grown over everything in white crusts like frost. Steps lead up to the altar to the north. In the floor, a slab of stone covers a stair going down.",
+  "exits": {
+   "s": "chapel_steps",
+   "n": "bishop_altar",
+   "d": "crypt_stair"
+  },
+  "locks": {
+   "d": {
+    "flag": "bishop_dead",
+    "msg": "The slab over the crypt stair won't move. Salt has fused it to the floor, and the salt is coming from the altar."
+   }
+  },
+  "items": [
+   "page4"
+  ],
+  "fixed": {
+   "flag": "nave_guard",
+   "enemies": [
+    "salt_knight",
+    "drowned_acolyte"
+   ],
+   "intro": "A Salt Knight rises from the water between the pews, and an acolyte begins to chant."
+  },
+  "features": {
+   "pews": "Each pew has a drowned brass nameplate. Generations of Hollowmere families.",
+   "slab|stair": "Salt crusts the slab. It seals the way down."
+  }
+ },
+ "bishop_altar": {
+  "name": "The Drowned Altar",
+  "region": "Saltmarsh",
+  "pos": [
+   5,
+   0
+  ],
+  "dark": true,
+  "desc": "The altar stands on a dais above the floodwater. Behind it, a great window of green glass shows a picture of the sun rising from the sea. Someone has scratched out the sun.",
+  "exits": {
+   "s": "chapel_nave"
+  },
+  "event": "bishop_altar",
+  "features": {
+   "window|glass": "The scratches are deep. They were made with fingernails."
+  },
+  "boss": "bishop_dead",
+  "boss_name": "The Drowned Bishop"
+ }
+}

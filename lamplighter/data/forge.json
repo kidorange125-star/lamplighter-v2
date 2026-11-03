@@ -1,0 +1,119 @@
+{
+ "tiers": {
+  "rare": {
+   "to": "epic",
+   "chance": 0.35,
+   "pity": 6,
+   "gold": 250,
+   "items": {
+    "slag": 4,
+    "saltstone": 2
+   },
+   "minutes": 20,
+   "steps": 40
+  },
+  "epic": {
+   "to": "ultra",
+   "chance": 0.2,
+   "pity": 9,
+   "gold": 600,
+   "items": {
+    "slag": 8,
+    "saltstone": 4,
+    "hollow_core": 1
+   },
+   "minutes": 60,
+   "steps": 80
+  },
+  "ultra": {
+   "to": "legendary",
+   "chance": 0.1,
+   "pity": 14,
+   "gold": 1500,
+   "items": {
+    "slag": 12,
+    "saltstone": 6,
+    "hollow_core": 2
+   },
+   "minutes": 240,
+   "steps": 200
+  },
+  "legendary": {
+   "to": "godlike",
+   "chance": 0.02,
+   "pity": 30,
+   "gold": 3000,
+   "items": {
+    "slag": 20,
+    "saltstone": 10,
+    "hollow_core": 4,
+    "ff_rime": 4,
+    "vg_starglass": 4
+   },
+   "minutes": 1440,
+   "steps": 800,
+   "needs_flag": "godlike_recipe",
+   "slots": 2
+  }
+ },
+ "relic_tiers": {
+  "common": {
+   "to": "uncommon",
+   "chance": 0.6,
+   "pity": 3,
+   "gold": 40,
+   "items": {
+    "hollow_core": 1
+   },
+   "minutes": 10,
+   "steps": 20
+  },
+  "uncommon": {
+   "to": "rare",
+   "chance": 0.5,
+   "pity": 4,
+   "gold": 120,
+   "items": {
+    "hollow_core": 1
+   },
+   "minutes": 20,
+   "steps": 40
+  },
+  "rare": {
+   "to": "epic",
+   "chance": 0.35,
+   "pity": 6,
+   "gold": 400,
+   "items": {
+    "hollow_core": 2
+   },
+   "minutes": 45,
+   "steps": 80
+  },
+  "epic": {
+   "to": "ultra",
+   "chance": 0.2,
+   "pity": 9,
+   "gold": 1200,
+   "items": {
+    "hollow_core": 3
+   },
+   "minutes": 120,
+   "steps": 120
+  },
+  "ultra": {
+   "to": "legendary",
+   "chance": 0.1,
+   "pity": 14,
+   "gold": 4000,
+   "items": {
+    "hollow_core": 4
+   },
+   "minutes": 300,
+   "steps": 250
+  }
+ },
+ "heat_bonus": 0.04,
+ "refund": 0.5,
+ "loaner_penalty": 0.8
+}

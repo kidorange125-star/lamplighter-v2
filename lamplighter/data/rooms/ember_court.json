@@ -1,0 +1,497 @@
+{
+ "cinder_road": {
+  "name": "Cinder Road",
+  "region": "Ember Court",
+  "pos": [
+   0,
+   0
+  ],
+  "dark": true,
+  "desc": "The road east of the North Gate is black glass. Something burned here so hot that the gravel ran like water and set again in ripples. Ahead, above a tall iron gate, a banner hangs without a breath of wind to move it.",
+  "exits": {
+   "w": "gate",
+   "e": "court_gate"
+  },
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [
+     [
+      "ember_hound"
+     ],
+     3
+    ],
+    [
+     [
+      "ember_hound",
+      "ember_hound"
+     ],
+     2
+    ],
+    [
+     [
+      "cinder_knight"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "banner": "Crimson on gold, scorched. A crest of a hand holding a flame. It is warm to the touch.",
+   "glass": "Footprints are fused into it, hundreds of them, all walking the same way."
+  }
+ },
+ "court_gate": {
+  "name": "The Court Gate",
+  "region": "Ember Court",
+  "pos": [
+   1,
+   0
+  ],
+  "dark": true,
+  "desc": "A gatehouse of blackened stone. The portcullis is melted open. Inside the gate arch a small room with a hearth, a table and a ledger has been kept tidy by someone, long after anyone could have wanted it.",
+  "exits": {
+   "w": "cinder_road",
+   "e": "grand_hall",
+   "n": "watchtower",
+   "s": "burnt_garden"
+  },
+  "npcs": [
+   "pell"
+  ],
+  "features": {
+   "hearth": "A cold hearth. Once the Court is lit again it will be warm.",
+   "ledger": "Names of guests who arrived and never left. The last entry was made in a steady hand."
+  },
+  "rest": true,
+  "outpost": true
+ },
+ "watchtower": {
+  "name": "The Watchtower",
+  "region": "Ember Court",
+  "pos": [
+   1,
+   -1
+  ],
+  "dark": true,
+  "desc": "A spiral stair climbs a tower with its roof burned away. From the top you can see the whole Court: a burned house the size of a village, its windows full of slow orange light. Music, very faint, is playing.",
+  "exits": {
+   "s": "court_gate",
+   "e": "ruined_chapel"
+  },
+  "enc": {
+   "chance": 0.25,
+   "groups": [
+    [
+     [
+      "ash_courtier",
+      "cinder_knight"
+     ],
+     2
+    ],
+    [
+     [
+      "court_jester",
+      "ember_hound"
+     ],
+     2
+    ],
+    [
+     [
+      "ash_courtier"
+     ],
+     1
+    ]
+   ]
+  },
+  "items": [
+   "oil",
+   "strong_draught"
+  ],
+  "features": {
+   "music": "A waltz. It does not repeat. It never resolves."
+  }
+ },
+ "ruined_chapel": {
+  "name": "The Ruined Chapel",
+  "region": "Ember Court",
+  "pos": [
+   2,
+   -1
+  ],
+  "dark": true,
+  "desc": "A small chapel with no roof and no saint. The altar is a slab of cooled glass.",
+  "exits": {
+   "w": "watchtower",
+   "s": "grand_hall"
+  },
+  "features": {
+   "altar": "Names are scratched into it, and under each name a number. The numbers are prices."
+  }
+ },
+ "grand_hall": {
+  "name": "The Grand Hall",
+  "region": "Ember Court",
+  "pos": [
+   2,
+   0
+  ],
+  "dark": true,
+  "desc": "A hall long enough for three hundred dancers. A chandelier of black glass hangs from the ruined ceiling, still turning. The floor is a chessboard of ash and cinder, and in places the tiles glow.",
+  "exits": {
+   "w": "court_gate",
+   "n": "ruined_chapel",
+   "e": "stewards_hall",
+   "s": "ballroom"
+  },
+  "enc": {
+   "chance": 0.35,
+   "groups": [
+    [
+     [
+      "ash_courtier",
+      "cinder_knight"
+     ],
+     2
+    ],
+    [
+     [
+      "court_jester",
+      "ember_hound"
+     ],
+     2
+    ],
+    [
+     [
+      "ash_courtier"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "chandelier": "It turns although nothing turns it. The light it throws moves in the rhythm of a waltz.",
+   "tiles": "The glowing ones are hot enough to blister boots."
+  }
+ },
+ "burnt_garden": {
+  "name": "The Burnt Garden",
+  "region": "Ember Court",
+  "pos": [
+   1,
+   1
+  ],
+  "dark": true,
+  "desc": "Rose bushes charred to black wire, and statues of dancers with their stone faces melted smooth. A fountain in the centre has run dry and filled with ash.",
+  "exits": {
+   "n": "court_gate",
+   "e": "ballroom"
+  },
+  "enc": {
+   "chance": 0.35,
+   "groups": [
+    [
+     [
+      "ember_hound"
+     ],
+     3
+    ],
+    [
+     [
+      "ember_hound",
+      "ember_hound"
+     ],
+     2
+    ],
+    [
+     [
+      "cinder_knight"
+     ],
+     1
+    ]
+   ]
+  },
+  "items": [
+   "honeycake",
+   "firepot"
+  ],
+  "features": {
+   "statues": "Each holds a stone hand out to a partner who is no longer there.",
+   "fountain": "Ash to the brim. A single coin lies on top, unburned."
+  }
+ },
+ "ballroom": {
+  "name": "The Ballroom",
+  "region": "Ember Court",
+  "pos": [
+   2,
+   1
+  ],
+  "dark": true,
+  "desc": "The floor is polished and cracked in the same breath. Mirrors line every wall, all showing the room full of dancers. Only the mirrors are dancing.",
+  "exits": {
+   "w": "burnt_garden",
+   "n": "grand_hall",
+   "e": "gallery",
+   "s": "kitchens"
+  },
+  "enc": {
+   "chance": 0.4,
+   "groups": [
+    [
+     [
+      "molten_gargoyle"
+     ],
+     2
+    ],
+    [
+     [
+      "cinder_knight",
+      "court_jester"
+     ],
+     1
+    ],
+    [
+     [
+      "ash_courtier",
+      "court_jester"
+     ],
+     2
+    ]
+   ]
+  },
+  "features": {
+   "mirrors": "In them the dancers turn to look at you, together, and smile."
+  }
+ },
+ "gallery": {
+  "name": "The Portrait Gallery",
+  "region": "Ember Court",
+  "pos": [
+   3,
+   1
+  ],
+  "dark": true,
+  "desc": "A long gallery of portraits burned to frames. In each frame the same figure is drawn in cinders, a little older every time, a little closer to the front.",
+  "exits": {
+   "w": "ballroom",
+   "n": "stewards_hall",
+   "s": "court_forge"
+  },
+  "enc": {
+   "chance": 0.35,
+   "groups": [
+    [
+     [
+      "molten_gargoyle"
+     ],
+     2
+    ],
+    [
+     [
+      "cinder_knight",
+      "court_jester"
+     ],
+     1
+    ],
+    [
+     [
+      "ash_courtier",
+      "court_jester"
+     ],
+     2
+    ]
+   ]
+  },
+  "items": [
+   "cinder",
+   "cinder"
+  ],
+  "features": {
+   "portraits": "The last frame holds a crown and nothing else."
+  }
+ },
+ "stewards_hall": {
+  "name": "The Steward's Hall",
+  "region": "Ember Court",
+  "pos": [
+   3,
+   0
+  ],
+  "dark": true,
+  "desc": "A tall room panelled with keys on hooks, every hook empty but one. At a lectern stands the Court's steward, still counting guests who left a hundred years ago.",
+  "exits": {
+   "w": "grand_hall",
+   "s": "gallery",
+   "e": "throne_room"
+  },
+  "locks": {
+   "e": {
+    "item": "court_key",
+    "msg": "Tall doors of black oak, carved with a flame. The keyhole is the shape of a crown. The Steward would have the key."
+   }
+  },
+  "fixed": {
+   "flag": "steward_dead",
+   "enemies": [
+    "cinder_steward"
+   ],
+   "intro": "The steward closes his ledger. 'Guests are not permitted beyond this room.'"
+  },
+  "boss": "steward_dead",
+  "boss_name": "The Cinder Steward",
+  "features": {
+   "keys": "Hundreds of hooks, a name under each. One is still hanging, a heavy iron one, marked THE CROWN."
+  }
+ },
+ "throne_room": {
+  "name": "The Throne Room",
+  "region": "Ember Court",
+  "pos": [
+   4,
+   0
+  ],
+  "dark": true,
+  "desc": "The heart of the Court. A throne of black glass rises from a floor of live coals, and on it, with her head bowed, sits a queen whose gown is a slow fire. Around her the dancers wait, perfectly still, for the music to resume. A brazier-bowl, cold, stands at the foot of the dais.",
+  "exits": {
+   "w": "stewards_hall"
+  },
+  "boss": "queen_dead",
+  "boss_name": "The Cinder Queen",
+  "beacon": true,
+  "features": {
+   "brazier|bowl|beacon": "The Court's beacon, a great iron bowl, cold. When the Queen is gone, light it (type 'light') and the Court will be lit again.",
+   "dancers": "They are not statues. They are waiting."
+  }
+ },
+ "kitchens": {
+  "name": "The Great Kitchens",
+  "region": "Ember Court",
+  "pos": [
+   2,
+   2
+  ],
+  "dark": true,
+  "desc": "Copper pots the size of bathtubs and a hearth you could stable a horse in. Everything in the room is still cooking. A stairway down is blocked by a door of molten iron, running like syrup.",
+  "exits": {
+   "n": "ballroom",
+   "e": "court_forge",
+   "s": "cellars"
+  },
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [
+     [
+      "molten_gargoyle"
+     ],
+     2
+    ],
+    [
+     [
+      "cinder_knight",
+      "court_jester"
+     ],
+     1
+    ],
+    [
+     [
+      "ash_courtier",
+      "court_jester"
+     ],
+     2
+    ]
+   ]
+  },
+  "items": [
+   "stew",
+   "stew"
+  ],
+  "locks": {
+   "s": {
+    "element": [
+     "water",
+     "ice"
+    ],
+    "msg": "The cellar door is molten iron, too hot to touch, too bright to look at. Something cold would set it. Equip a Water or Ice spell book (type 'spells') and try again.",
+    "remember": "cellar_door_open"
+   }
+  },
+  "features": {
+   "door": "It drips slowly and glows. The cellar stair is behind it.",
+   "pots": "All simmering. Nothing in them is food."
+  }
+ },
+ "court_forge": {
+  "name": "The Court Forge",
+  "region": "Ember Court",
+  "pos": [
+   3,
+   2
+  ],
+  "dark": true,
+  "desc": "A forge behind the kitchens where the household's blades and hinges were made. The fire is out, the anvil cold, but the tools hang in perfect order. Someone has been living here very quietly.",
+  "exits": {
+   "w": "kitchens",
+   "n": "gallery"
+  },
+  "enc": {
+   "chance": 0.25,
+   "groups": [
+    [
+     [
+      "molten_gargoyle"
+     ],
+     2
+    ],
+    [
+     [
+      "cinder_knight",
+      "court_jester"
+     ],
+     1
+    ],
+    [
+     [
+      "ash_courtier",
+      "court_jester"
+     ],
+     2
+    ]
+   ]
+  },
+  "npcs": [
+   "tamsin"
+  ],
+  "features": {
+   "anvil": "Warm. Someone put the last hammer down only a moment ago."
+  }
+ },
+ "cellars": {
+  "name": "The Cellars",
+  "region": "Ember Court",
+  "pos": [
+   2,
+   3
+  ],
+  "dark": true,
+  "desc": "A cool, stone cellar the fire never reached. Racks of bottles and a vault door standing open. The Court's household stored what it valued here, and left it.",
+  "exits": {
+   "n": "kitchens"
+  },
+  "items": [
+   "hollow_core",
+   "hollow_core",
+   "cinder",
+   "cinder",
+   "cinder",
+   "strong_draught",
+   "strong_draught",
+   "relic_pulse"
+  ],
+  "features": {
+   "bottles": "Wine so old it has turned to something else. Do not drink it.",
+   "vault": "Open. Whoever hid down here was hoping to be found."
+  }
+ }
+}

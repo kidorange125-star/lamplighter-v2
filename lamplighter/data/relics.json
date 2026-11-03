@@ -1,0 +1,38 @@
+{
+ "types": {
+  "ember": {
+   "name": "Ember Relic",
+   "key": "fire",
+   "blurb": "Fire burns hotter."
+  },
+  "lamp": {
+   "name": "Lamp Relic",
+   "key": "light",
+   "blurb": "Flares sear harder."
+  },
+  "edge": {
+   "name": "Edge Relic",
+   "key": "phys",
+   "blurb": "Blows land heavier."
+  },
+  "heart": {
+   "name": "Heart Relic",
+   "key": "heal",
+   "blurb": "Healing goes further."
+  },
+  "pulse": {
+   "name": "Pulse Relic",
+   "key": "dmg",
+   "blurb": "Everything you do hits harder."
+  }
+ },
+ "scale": {
+  "common": 0.04,
+  "uncommon": 0.06,
+  "rare": 0.09,
+  "epic": 0.13,
+  "ultra": 0.18,
+  "legendary": 0.25,
+  "godlike": 0.35
+ }
+}

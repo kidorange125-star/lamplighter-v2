@@ -1,0 +1,26 @@
+{
+ "3b87d30d72d5b9685eccbe99a5dff63c5c22d7de258f998cab2515191f10032a": {
+  "gems": 30,
+  "label": "Welcome gift for new players"
+ },
+ "f53dfb9a8fc12d211c8f4f8401d66903c16dc15379a2fb28f9d02813814fe567": {
+  "gems": 40,
+  "label": "Launch of the base game"
+ },
+ "c9c4cd99007c896b6e8cf9e78d2d2407f1c4abfda56b337060e87b195eca7e4e": {
+  "gems": 10,
+  "label": "Three old doors: the Hospice, the Reedlight and the Lampwrights' Deep"
+ },
+ "c53d07360b76a22f3993c0e9ed084760f3dff9f04ed2c0a12cd48b074dc8b933": {
+  "gems": 15,
+  "label": "The Frostfair thaws"
+ },
+ "6ae44a9ad6728a4dd74a6ccb47fb9c29b7fc84d73b3429ebedc31e7aecf3d009": {
+  "gems": 15,
+  "label": "The Vigil is released"
+ },
+ "823ee997313c2e96beb042f71d759801e9a88c7a7b1d1d3022a4e7c5a6eaa439": {
+  "gems": 10,
+  "label": "The Third Quench and the Long Quench"
+ }
+}

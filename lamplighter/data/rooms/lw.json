@@ -1,0 +1,101 @@
+{
+ "lw_door": {
+  "name": "The Lamp-Lock",
+  "region": "The Lampwrights' Deep",
+  "pos": [0, 0],
+  "dark": true,
+  "desc": "A vaulted lock-room, dry as a held breath, hung from wall to wall with the first lamps ever made: crooked, hopeful, patched with solder. Somebody polished them once, a long time ago, so that anyone coming in from the mines would find a welcome.",
+  "exits": {"n": "crypt_stair", "e": "lw_mess", "s": "lw_gallery"},
+  "enc": {"chance": 0.25, "groups": [[["lw_glass_ghoul"], 1], [["lw_lampling"], 2]]},
+  "features": {
+   "welcome|tags|brass": "Brass tags, one under each lamp: GOOD LUCK. GOOD LIGHT. GO HOME TO YOUR SUPPER.",
+   "lamps|first": "The earliest are barely lamps at all, tin cans with a wick. The newest, by the door, are beautiful. You can see the makers getting better as you walk in."
+  }
+ },
+ "lw_mess": {
+  "name": "The Mess",
+  "region": "The Lampwrights' Deep",
+  "pos": [1, 0],
+  "dark": true,
+  "waypost": true,
+  "desc": "Tin cups hang in a row above a long bench, a kettle sits on a cold ring, and a child's drawing is pinned to a roof-beam with a brass tack. Someone has put a guild waypost in the corner where the coat-hooks are, as if the room expected to be needed.",
+  "waypost_text": "{amber}You open the waypost's little door and trim the wick, and the flame takes. The mess comes up out of the dark by degrees: the cups, the kettle, the bench worn smooth by fifty years of elbows. It feels, for a moment, like the end of a shift.{/}",
+  "wake": "You wake on a long bench under a coat that smells of lamp-oil and pipe smoke. Your purse is lighter by %d gold. Somebody has tucked a tin cup of cold tea beside your hand.",
+  "exits": {"w": "lw_door", "e": "lw_workshop", "s": "lw_glassworks"},
+  "features": {
+   "drawing|child|beam": "A smith with a very large hammer. Under it, in a child's hand: DADA CORM'S BOY. It is Brann's father, aged six.",
+   "kettle|cups|tea": "The kettle is cold and full. The tea in it is fresh. You decide not to ask.",
+   "bench": "Worn smooth along the edge by the elbows of forty years of lunches.",
+   "waypost|coat-hooks|hooks": "A guild waypost, bracketed where the coat-hooks are. Light it (type 'light') and the mess will be safe to rest in."
+  }
+ },
+ "lw_workshop": {
+  "name": "Corm's Workshop",
+  "region": "The Lampwrights' Deep",
+  "pos": [2, 0],
+  "dark": true,
+  "desc": "A bench with a half-built rack of glass on it, tongs and files laid out in order of size, an empty nail on the wall where an apron should hang, and a stool pushed back from the bench as though somebody had only just stood. The air shimmers over the crucible. Nothing in the room is cold.",
+  "exits": {"w": "lw_mess", "s": "lw_rack_room"},
+  "locks": {
+   "s": {
+    "flag": "lw_foreman_dead",
+    "remember": "lw_rack_open",
+    "msg": "The rack-room door is shut with Corm's own bolts, and the Foreman wears the key on his apron. Defeat the Last Foreman in the workshop."
+   }
+  },
+  "fixed": {
+   "flag": "lw_foreman_dead",
+   "enemies": ["lw_foreman"],
+   "intro": "The Foreman straightens from the bench. 'Mind the edge, lad,' he says, in a voice that is not his."
+  },
+  "features": {
+   "apron": "Scorched at the hem. A man wiped his hands on it every working day for forty years.",
+   "rack|glass|crucible": "Half a rack of glass vials, set in brass, the brass kept bright and the glass kept clean. The last vial is only half blown. Nobody has ever been so careful with an unfinished thing.",
+   "bench|stool|ledger|spectacles|mug|sums": "A stool pushed back, a mug with a ring of tea in it, a pair of spectacles folded on a ledger. The ledger is open to a page of sums. The last line is a half-finished sum, with the pen laid across it."
+  },
+  "boss": "lw_foreman_dead",
+  "boss_name": "The Last Foreman"
+ },
+ "lw_gallery": {
+  "name": "The Lampwrights' Gallery",
+  "region": "The Lampwrights' Deep",
+  "pos": [0, 1],
+  "dark": true,
+  "desc": "Finished lamps by the hundred, on shelves from floor to roof, each with a paper tag tied to its handle. None is lit. They face the door, all together, the way a crowd faces a stage, and they watch you pass.",
+  "exits": {"n": "lw_door", "e": "lw_glassworks"},
+  "enc": {"chance": 0.35, "groups": [[["lw_lampling"], 2], [["lw_lampling", "lw_glass_ghoul"], 1], [["tallow_ghoul"], 2]]},
+  "items": ["oil", "lw_lamp_blank", "lw_lamp_blank"],
+  "features": {
+   "lamps|shelves": "Each has a maker's mark and a name tag. Not one has been collected.",
+   "tags|names": "Names of miners and carters and a baker, and under them a street or a row: ORDERED, PAID, AWAITING COLLECTION. The oldest tag has a date on it, fifty years back, and a child's thumbprint in the corner."
+  }
+ },
+ "lw_glassworks": {
+  "name": "The Glassworks",
+  "region": "The Lampwrights' Deep",
+  "pos": [1, 1],
+  "dark": true,
+  "desc": "A long hall of benches, blowpipes racked like pikes, and a brick furnace as big as a cottage. The fire is out. The glass in the troughs has not hardened, and a bead of it sags slowly from a pipe left on its rest, as it has been sagging for fifty years.",
+  "exits": {"n": "lw_mess", "w": "lw_gallery"},
+  "enc": {"chance": 0.35, "groups": [[["lw_glass_ghoul"], 2], [["lw_glass_ghoul", "lw_lampling"], 1], [["crawler"], 1]]},
+  "items": ["slag", "slag", "firepot"],
+  "features": {
+   "furnace|fire": "Warm to the palm. Fifty years cold and still warm.",
+   "glass|trough|pipes": "Soft as toffee, and it keeps your thumbprint. Somebody left a row of fingerprints along the rim, small ones, a few inches apart, like a child counting."
+  }
+ },
+ "lw_rack_room": {
+  "name": "The Rack Room",
+  "region": "The Lampwrights' Deep",
+  "pos": [2, 1],
+  "dark": true,
+  "desc": "A small, bare room, whitewashed, with a lamp-hook by the door and one thing in it that matters: a rack of glass on the far wall, six vials set in brass, labelled in two hands. Five are dark. The shelf below the rack is crowded with the things a master leaves behind for a student.",
+  "exits": {"n": "lw_workshop"},
+  "items": ["lw_receipt", "lw_quench_notes", "lw_lampwright_hammer", "lw_apron", "lw_pit_lamp", "hollow_core",
+            "strong_draught", "strong_draught"],
+  "features": {
+   "rack|vials": "Six vials, labelled in two hands: five say FROM THE LENDERS. The sixth says, in Aldric's script: this one is for you to give, not me to take.",
+   "hands|script|labels": "Aldric's script slants forward as if it were in a hurry. Corm's capitals stand up straight and wait for it to finish."
+  }
+ }
+}

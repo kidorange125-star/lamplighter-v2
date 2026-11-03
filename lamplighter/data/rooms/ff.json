@@ -1,0 +1,731 @@
+{
+  "ff_frost_road": {
+    "name": "The Frost Road",
+    "region": "The Frostfair",
+    "pos": [
+      0,
+      0
+    ],
+    "dark": true,
+    "desc": "Cart tracks frozen in rime, and on every post a hand-lantern, each tagged with a family's name. Not one is lit. The road runs west between low banks of snow, and ahead the white air is full of the shapes of tents and poles, all of them perfectly still, as if the whole place were holding its breath.",
+    "exits": {
+      "e": "gate",
+      "w": "ff_fair_gate"
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [
+          [
+            "ff_hawker"
+          ],
+          3
+        ],
+        [
+          [
+            "ff_hawker",
+            "ff_hawker"
+          ],
+          1
+        ],
+        [
+          [
+            "ff_skater"
+          ],
+          2
+        ]
+      ]
+    },
+    "features": {
+      "tracks": "A hundred carts, all arriving.",
+      "lanterns|lantern": "Each is tagged with a family's name, in a child's careful hand."
+    }
+  },
+  "ff_fair_gate": {
+    "name": "The Fair Gate",
+    "region": "The Frostfair",
+    "pos": [
+      -1,
+      0
+    ],
+    "dark": true,
+    "rest": true,
+    "outpost": true,
+    "desc": "A toll-booth with a stove fed on the booth's own furniture: the only warm place for miles. Past it the street of the Fair runs west under striped awnings, and a long tent stands open to the south. Someone has pinned a hand-lettered sign to the booth: ADMIT ONE.",
+    "exits": {
+      "e": "ff_frost_road",
+      "w": "ff_midway",
+      "s": "ff_lending_tent"
+    },
+    "npcs": [
+      "ff_dunmore"
+    ],
+    "wake": "You wake on a cot by the toll-booth stove. Dunmore is warming his hands over it. 'Third night of the Fair,' he says kindly. 'You fell over. It happens.' Your purse is lighter by %d gold.",
+    "features": {
+      "stove": "Fed with a chair, a table, and a bookcase. The bookcase is nearly gone.",
+      "book|ledger": "ADMIT ONE, ADMIT ONE, ADMIT ONE, in the same cheerful hand, for fifty years.",
+      "sign": "Hand-lettered. The paint is fresh. Somebody touches it up."
+    }
+  },
+  "ff_lending_tent": {
+    "name": "The Lending Tent",
+    "region": "The Frostfair",
+    "pos": [
+      -1,
+      1
+    ],
+    "dark": true,
+    "desc": "A long trestle where families signed in their lamps, under a ceiling of canvas gone stiff with frost. There are chairs pulled up to it, and a pen on a string, and a tray of honeycakes nobody ever came back for.",
+    "exits": {
+      "n": "ff_fair_gate",
+      "w": "ff_skate_pond"
+    },
+    "enc": {
+      "chance": 0.2,
+      "groups": [
+        [
+          [
+            "ff_hawker"
+          ],
+          3
+        ],
+        [
+          [
+            "ff_lamp",
+            "ff_hawker"
+          ],
+          1
+        ]
+      ]
+    },
+    "items": [
+      "ff_receipt",
+      "honeycake",
+      "oil"
+    ],
+    "features": {
+      "book|trestle": "The book of lenders. The last name in it is a Keeper's, in a nervous hand. Under it, in a steady one: Marit Ostrand, witness.",
+      "pen": "On a string, so that nobody could walk off with it. The ink in the well has frozen in the shape of the well."
+    }
+  },
+  "ff_midway": {
+    "name": "The Midway",
+    "region": "The Frostfair",
+    "pos": [
+      -2,
+      0
+    ],
+    "dark": true,
+    "waypost": true,
+    "desc": "Stalls frozen mid-sale, a coconut-shy of ice. Every hawker has their mouth open on a word, and the awnings sag under a fur of rime. At the crossing of the street stands a lamp-post with a little brass door set in its foot.",
+    "exits": {
+      "e": "ff_fair_gate",
+      "w": "ff_lamp_row",
+      "s": "ff_skate_pond"
+    },
+    "enc": {
+      "chance": 0.35,
+      "groups": [
+        [
+          [
+            "ff_hawker",
+            "ff_skater"
+          ],
+          3
+        ],
+        [
+          [
+            "ff_hawker"
+          ],
+          3
+        ],
+        [
+          [
+            "ff_lamp"
+          ],
+          2
+        ]
+      ]
+    },
+    "items": [
+      "ff_fair_token",
+      "strong_draught"
+    ],
+    "waypost_text": "You open the little brass door and touch your flame to a wick that has waited fifty years. It catches. Nearby, a frozen mouth finishes its word, very quietly, and the word is: warm.",
+    "features": {
+      "hawkers": "One is holding out a candied apple. The apple is real.",
+      "post": "The Cider Post: a lamp-post with a little brass door.",
+      "shy|coconut": "Ten ice coconuts on ten ice cups. A child's mitten lies at the throwing line."
+    }
+  },
+  "ff_skate_pond": {
+    "name": "The Skating Pond",
+    "region": "The Frostfair",
+    "pos": [
+      -2,
+      1
+    ],
+    "dark": true,
+    "desc": "A round pond of black ice, ringed with benches where the families sat to lace their skates. Skaters turn under the surface, still in step. In the bank on the south side, half hidden by a drift, is a trapdoor.",
+    "exits": {
+      "n": "ff_midway",
+      "e": "ff_lending_tent",
+      "w": "ff_carousel",
+      "s": "ff_ice_cellars"
+    },
+    "locks": {
+      "s": {
+        "all": [
+          {
+            "item": "ff_cellar_key"
+          },
+          {
+            "dread": {
+              "max": 24
+            }
+          }
+        ],
+        "msg": "A trapdoor of black ice, locked, set in the bank of the pond. It wants two things: the Fair's cellar-key, which hangs round the neck of the Fairwarden in the Warden's Booth north of Lantern Row, and a steady heart. The sleepers below stir if yours is racing: come with Dread under 25 (Steady). Rest at the toll-booth, or drink cider, a Fairlight or a honeycake first."
+      }
+    },
+    "enc": {
+      "chance": 0.35,
+      "groups": [
+        [
+          [
+            "ff_skater"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_skater",
+            "ff_skater"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_ice_figure"
+          ],
+          1
+        ]
+      ]
+    },
+    "items": [
+      "ff_fair_token"
+    ],
+    "field": {
+      "name": "Black Ice",
+      "fire": 0.75,
+      "earth": 1.25,
+      "msg": "The ice drinks heat and cracks under stone: fire is weaker here, earth stronger."
+    },
+    "features": {
+      "skaters": "Beneath the surface they are waltzing. They look up at you and smile; their breath doesn't fog.",
+      "benches": "A pair of skates sits on the end of one, the lace still tied.",
+      "trapdoor|hatch": "Black ice, hinged and padlocked. Frost has sealed the seams, but the lock is sound, and it is clearly waiting for a key."
+    }
+  },
+  "ff_ice_cellars": {
+    "name": "The Ice Cellars",
+    "region": "The Frostfair",
+    "pos": [
+      -2,
+      2
+    ],
+    "dark": true,
+    "no_dealer": true,
+    "desc": "Where the Fair stored its oil for the Lending. Casks to the ceiling, frost on every hoop, and between them narrow aisles swept clean by someone, a long time ago. At the back, under the biggest casks, an iron hatch is set in the floor.",
+    "exits": {
+      "n": "ff_skate_pond",
+      "d": "ff_below_stair"
+    },
+    "locks": {
+      "d": {
+        "flag": "beacon_The Frostfair",
+        "msg": "The hatch beneath the oil casks is frozen shut. It will give when the Fair thaws: light the Great Lantern in the Wintering Square and come back."
+      }
+    },
+    "enc": {
+      "chance": 0.25,
+      "groups": [
+        [
+          [
+            "ff_ice_figure"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_ice_figure",
+            "ff_hawker"
+          ],
+          1
+        ],
+        [
+          [
+            "ff_lamp",
+            "ff_lamp"
+          ],
+          1
+        ]
+      ]
+    },
+    "items": [
+      "ff_greatcoat",
+      "hollow_core",
+      "hollow_core",
+      "ff_rime",
+      "ff_rime",
+      "ff_rime",
+      "ff_rime",
+      "strong_draught",
+      "strong_draught",
+      "ff_fair_token",
+      "ff_fair_token",
+      "ff_fair_token",
+      "relic_pulse",
+      "core_heart_ice",
+      "core_heart_earth"
+    ],
+    "features": {
+      "casks": "Stamped with the Lamp-Master's mark. The oil inside is sweet as the day it was pressed.",
+      "hatch": "Iron, rimed over, with a ring for a hand. Something is stored below. It is cold in a different way from up here.",
+      "coat|greatcoat": "On a hook by the aisle, a greatcoat lined with wool. It has been brushed, recently."
+    }
+  },
+  "ff_lamp_row": {
+    "name": "Lantern Row",
+    "region": "The Frostfair",
+    "pos": [
+      -3,
+      0
+    ],
+    "dark": true,
+    "waypost": true,
+    "desc": "Six hundred empty lamps hung on poles, each tagged with a family's name. They flicker when you pass. A little cabin with a padlocked door stands north of the street, with a thread of smoke going up from its chimney that the frost has not been able to put out.",
+    "exits": {
+      "e": "ff_midway",
+      "w": "ff_great_gate",
+      "s": "ff_carousel",
+      "n": "ff_wardens_booth"
+    },
+    "locks": {
+      "n": {
+        "item": "ff_wardens_key",
+        "msg": "The Warden's Booth door is padlocked from outside with a brass padlock stamped FAIRWARDEN. The Ringmaster of Rime wears the key on his watch-chain. Defeat him in the carousel."
+      }
+    },
+    "enc": {
+      "chance": 0.4,
+      "groups": [
+        [
+          [
+            "ff_lamp"
+          ],
+          3
+        ],
+        [
+          [
+            "ff_lamp",
+            "ff_lamp"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_lamp",
+            "ff_ice_figure"
+          ],
+          1
+        ],
+        [
+          [
+            "ff_lamp",
+            "ff_skater"
+          ],
+          1
+        ]
+      ]
+    },
+    "waypost_text": "You open the little brass door and touch your flame to a wick that has waited fifty years. It catches. Nearby, a frozen mouth finishes its word, very quietly, and the word is: warm.",
+    "features": {
+      "lamps": "The one nearest you is tagged with your own surname. That's impossible. You check anyway.",
+      "post": "The Row Post.",
+      "smoke|chimney": "A thin line of grey, rising straight up in the dead air. Somebody is keeping a stove lit."
+    }
+  },
+  "ff_wardens_booth": {
+    "name": "The Warden's Booth",
+    "region": "The Frostfair",
+    "pos": [
+      -3,
+      -1
+    ],
+    "dark": true,
+    "desc": "A stove, a cot, a kettle, a shelf with two cups, and fifty years of tally-marks on the wall. It is small, and tidy, and warm, and everything in it has been mended more than once.",
+    "exits": {
+      "s": "ff_lamp_row"
+    },
+    "npcs": [
+      "ff_marit"
+    ],
+    "features": {
+      "tally": "Five bars and a slash, five bars and a slash, to the ceiling. The last has today's date.",
+      "lamp|thimble|hand-lamp": "No bigger than a thimble. Burning.",
+      "stove": "Small and black and tended. The wood beside it is stacked square.",
+      "cot": "Narrow, made, and slept in on one side only.",
+      "kettle": "Dented, blackened, and on. There are two cups on the shelf, and only one has ever been used."
+    }
+  },
+  "ff_carousel": {
+    "name": "The Carousel",
+    "region": "The Frostfair",
+    "pos": [
+      -3,
+      1
+    ],
+    "dark": true,
+    "desc": "The carousel still turns, slowly, to a music box playing one verse. The horses are not wood. A man in a ringmaster's coat leans on the rail with a patient smile, as if you were late but forgiven.",
+    "exits": {
+      "n": "ff_lamp_row",
+      "e": "ff_skate_pond",
+      "w": "ff_sculptors_row"
+    },
+    "fixed": {
+      "flag": "ff_ringmaster_dead",
+      "enemies": [
+        "ff_ringmaster"
+      ],
+      "intro": "The music box under the carousel starts to play. A man in a ringmaster's coat tips his hat. 'Admission,' he says, 'is one story or one coin.'"
+    },
+    "boss": "ff_ringmaster_dead",
+    "boss_name": "The Ringmaster of Rime",
+    "features": {
+      "music|box": "One verse, over and over. The last note is a kind one that never arrives.",
+      "horses": "Each has a name painted on its saddle-cloth, and a ribbon that some child tied on."
+    }
+  },
+  "ff_sculptors_row": {
+    "name": "Sculptors' Row",
+    "region": "The Frostfair",
+    "pos": [
+      -4,
+      1
+    ],
+    "dark": true,
+    "waypost": true,
+    "desc": "Ice figures of every family, carved for the Fair: the best likenesses the Fair ever had. They stand in ranks along the street with their hands half raised, and at the end of the row a lamp-post waits with its brass door ajar.",
+    "exits": {
+      "e": "ff_carousel",
+      "n": "ff_great_gate"
+    },
+    "enc": {
+      "chance": 0.4,
+      "groups": [
+        [
+          [
+            "ff_ice_figure"
+          ],
+          3
+        ],
+        [
+          [
+            "ff_ice_figure",
+            "ff_ice_figure"
+          ],
+          1
+        ],
+        [
+          [
+            "ff_ice_figure",
+            "ff_horse"
+          ],
+          1
+        ],
+        [
+          [
+            "ff_ice_figure",
+            "ff_lamp"
+          ],
+          1
+        ]
+      ]
+    },
+    "waypost_text": "You open the little brass door and touch your flame to a wick that has waited fifty years. It catches. Nearby, a frozen mouth finishes its word, very quietly, and the word is: warm.",
+    "features": {
+      "figures": "Each is posed as if about to say something. You recognise none, and all of them.",
+      "post": "The Sculptors' Post."
+    }
+  },
+  "ff_great_gate": {
+    "name": "The Lych-Gate of Lamps",
+    "region": "The Frostfair",
+    "pos": [
+      -4,
+      0
+    ],
+    "dark": true,
+    "desc": "A lych-gate hung with lamps, where the families lined up to lend. West of it the street opens onto a great square, and a cold white light comes out of the opening that has no source.",
+    "exits": {
+      "e": "ff_lamp_row",
+      "s": "ff_sculptors_row",
+      "w": "ff_wintering"
+    },
+    "locks": {
+      "w": {
+        "flags": [
+          "lit_ff_midway",
+          "lit_ff_lamp_row",
+          "lit_ff_sculptors_row"
+        ],
+        "msg": "The Great Lantern's gate is a lych-gate hung with lamps, and every one is dark. It opens when the Fair has been lent light again: relight all three Lending Posts, the Cider Post on the Midway, the Row Post on Lantern Row and the Sculptors' Post (type 'light' at each; 10 oil apiece)."
+      }
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [
+          [
+            "ff_horse"
+          ],
+          3
+        ],
+        [
+          [
+            "ff_ice_figure",
+            "ff_lamp"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_horse",
+            "ff_skater"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "gate|lamps": "Every lamp is dark. They lean a little toward your lantern.",
+      "roof|lych": "A lych-gate, the old kind, where a coffin rests before the last walk. The Fair never meant it so. It was only the best shelter on the road."
+    }
+  },
+  "ff_wintering": {
+    "name": "The Wintering Square",
+    "region": "The Frostfair",
+    "pos": [
+      -5,
+      0
+    ],
+    "dark": true,
+    "beacon": true,
+    "beacon_oil": 30,
+    "desc": "The square opens like an indrawn breath. In its centre a lamp-post as tall as a church, and a lantern the size of a cottage, dead. Frost lies on the cobbles in a single unbroken sheet, and there are tracks in it of a man walking round and round the post.",
+    "exits": {
+      "e": "ff_great_gate",
+      "w": "ff_signal_stair"
+    },
+    "boss": "ff_lampmaster_dead",
+    "boss_name": "Lamp-Master Hobb",
+    "beacon_text": "You pour your oil into the base of the Great Lantern and touch your flame to it. For a moment nothing happens.",
+    "wake": "You wake at the foot of the Great Lantern, in a warmth that has no fire in it. Nobody carried you; you were simply put down, gently, where it was kind. Your purse is lighter by %d gold.",
+    "field": {
+      "name": "Midwinter",
+      "fire": 0.8,
+      "light": 0.85,
+      "msg": "The dead Lantern drinks flame: fire and flares burn lower in this square."
+    },
+    "features": {
+      "great lantern|cottage|lamp-post|post": "The Great Lantern. Its base is a bowl, empty and cold.",
+      "bowl|beacon": "The beacon is the Lantern's base-bowl. When Hobb is gone, light it (type 'light').",
+      "tracks": "A man's boots, going round and round the post. They are fifty years deep."
+    }
+  },
+  "ff_signal_stair": {
+    "name": "The Signal Stair",
+    "region": "The Frostfair",
+    "pos": [
+      -6,
+      0
+    ],
+    "dark": true,
+    "no_dealer": true,
+    "desc": "A stair cut into the ridge. At its foot a half-size signal brazier waits for the Fair's answer, and above it the steps go up into cloud, glazed with ice, each worn in the middle by feet that stopped coming a long time ago.",
+    "exits": {
+      "e": "ff_wintering"
+    },
+    "enc": {
+      "chance": 0.25,
+      "groups": [
+        [
+          [
+            "ff_horse"
+          ],
+          1
+        ],
+        [
+          [
+            "ff_skater",
+            "ff_lamp"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "brazier": "A little brother of the Great Lantern's bowl. Cold.",
+      "stair|steps": "Cut into the ridge, and kept clear once, daily, by someone with a broom. The broom is still propped at the bottom."
+    }
+  },
+  "ff_stall": {
+    "name": "The Fairwarden's Stall",
+    "region": "Hollowmere",
+    "pos": [
+      5,
+      0
+    ],
+    "dark": false,
+    "desc": "A trestle stall under a canvas awning painted with a lantern, paper lanterns strung along it in the colours of a festival. Somebody has set a stool behind the counter, and a cup beside it, and a small brass bell for you to ring.",
+    "exits": {
+      "w": "hearth_stall"
+    },
+    "features": {
+      "awning": "Painted by someone with a steady hand.",
+      "lanterns": "Paper, one for each family at the Fair. They are not lit. Yet."
+    }
+  },
+  "ff_below_stair": {
+    "name": "The Cellar Stair",
+    "region": "The Fair Below",
+    "pos": [
+      0,
+      0
+    ],
+    "dark": true,
+    "waypost": true,
+    "desc": "Steps down into a long cold room, the Fair's undercroft. A waypost stands at the foot of the stair, where whoever stocked it must have put one so that the porters could find their way back up.",
+    "exits": {
+      "u": "ff_ice_cellars",
+      "w": "ff_below_hall"
+    },
+    "enc": {
+      "chance": 0.4,
+      "groups": [
+        [
+          [
+            "ff_hawker"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_skater"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_ice_figure"
+          ],
+          1
+        ]
+      ]
+    },
+    "waypost_text": "You open the waypost's little door and touch your flame to a wick that was never lit, because nobody ever came this far down to see by it. It catches. The undercroft gets, for the first time, a ceiling.",
+    "features": {
+      "casks": "Smaller casks than upstairs. These were kept for the dead of winter.",
+      "post|waypost": "A porters' waypost, brass, polished once and then left. Light it (type 'light') and the stair is safe to rest at."
+    }
+  },
+  "ff_below_hall": {
+    "name": "The Unsold Stock",
+    "region": "The Fair Below",
+    "pos": [
+      -1,
+      0
+    ],
+    "dark": true,
+    "desc": "Rows of unsold stock under dust-sheets: lanterns, ribbons, carved horses. The shelving runs back into the dark, each shelf labelled in the same careful hand as the lanterns on the road.",
+    "exits": {
+      "e": "ff_below_stair",
+      "s": "ff_below_pool"
+    },
+    "enc": {
+      "chance": 0.45,
+      "groups": [
+        [
+          [
+            "ff_hawker",
+            "ff_skater"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_below_sleeper"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_ice_figure"
+          ],
+          1
+        ]
+      ]
+    },
+    "items": [
+      "ff_fair_token",
+      "ff_fair_token",
+      "strong_draught"
+    ],
+    "features": {
+      "stock": "Never opened. Every ribbon still smells of the shop.",
+      "labels": "NEXT YEAR, they say, on every shelf. NEXT YEAR. NEXT YEAR."
+    }
+  },
+  "ff_below_pool": {
+    "name": "The Cold Pool",
+    "region": "The Fair Below",
+    "pos": [
+      -1,
+      1
+    ],
+    "dark": true,
+    "desc": "A pool of still black water, frozen only on top. The cellar wall behind it is whitewashed, and in the whitewash someone has painted a small gold sun, and under it the word SPRING.",
+    "exits": {
+      "n": "ff_below_hall"
+    },
+    "enc": {
+      "chance": 0.45,
+      "groups": [
+        [
+          [
+            "ff_below_sleeper"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_ice_figure",
+            "ff_lamp"
+          ],
+          2
+        ],
+        [
+          [
+            "ff_horse"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "pool": "Things lie under the ice, laid out neatly, as if put away for the winter.",
+      "sun|spring": "Gold paint, a child's brush. It is the only warm colour in the room."
+    }
+  }
+}

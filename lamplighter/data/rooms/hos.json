@@ -1,0 +1,147 @@
+{
+  "hos_path": {
+    "name": "The Saint's Road",
+    "region": "The Moth-Saint's Hospice",
+    "pos": [0, 0],
+    "dark": true,
+    "desc": "A road the wood has almost taken back, running east from the Shrine of the Moth. Milestones eaten by moths line it, each carved with a lamp. Someone has swept a strip down the middle, though not lately.",
+    "exits": {"w": "moth_shrine", "e": "hos_gate", "s": "hos_orchard"},
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [["hos_waymoth"], 3],
+        [["hos_waymoth", "hos_waymoth"], 1],
+        [["hos_pilgrim"], 1]
+      ]
+    },
+    "features": {
+      "milestones|milestone|stones": "Every one says HOSPICE, and a number counting down. The last says 0.",
+      "broom|swept|strip": "The sweeping is old, but the edges are straight. Whoever did it was careful, and did not stop because the work was done."
+    }
+  },
+  "hos_gate": {
+    "name": "The Lych-Gate",
+    "region": "The Moth-Saint's Hospice",
+    "pos": [1, 0],
+    "dark": true,
+    "waypost": true,
+    "desc": "A lych-gate of grey timber. Over the arch hangs an empty brass hook, and beneath it, the old Hospice waypost set into the gatepost. East, a narrow door leads to the belfry. South, the arches of a cloister.",
+    "waypost_text": "{amber}You open the little door in the gatepost, trim the wick someone left ready, and touch your flame to it. It catches, and the grey moths on the arch lift all at once and settle again, lower, as if a thing long expected had finally begun to happen.{/}",
+    "wake": "You wake under the Hospice gate, beside the polished hook, with someone's old cloak over you. Your purse is lighter by %d gold. The cloak is gone when you look again.",
+    "exits": {"w": "hos_path", "e": "hos_belfry", "s": "hos_cloister"},
+    "locks": {
+      "e": {
+        "item": "hos_belfry_key",
+        "msg": "The belfry door is barred from inside, and the bar has a keyhole of its own. The Almoner keeps the belfry key. He keeps it in the refectory, where he is still laying places for guests who will never come."
+      }
+    },
+    "features": {
+      "hook": "Polished by hand. Not a speck of rust. Somebody still comes here to wipe it.",
+      "gate|lych-gate|arch": "Grey timber, silvered. Pilgrims once rested their coffins under it. Now it is the moths that rest here, hundreds, all facing the hook.",
+      "waypost|post|gatepost": "A guild waypost, set into the gatepost long before the guild thought to count them. Light it (type 'light') and this will be a safe place to rest."
+    }
+  },
+  "hos_belfry": {
+    "name": "The Belfry",
+    "region": "The Moth-Saint's Hospice",
+    "pos": [2, 0],
+    "dark": true,
+    "desc": "A small bell-tower, the bell wrapped in felt so it cannot be rung. The floor is deep in grey scales, and the air is thick with them.",
+    "exits": {"w": "hos_gate"},
+    "fixed": {
+      "flag": "hos_vesper_dead",
+      "enemies": ["hos_vesper"],
+      "intro": "Something very large unfolds in the rafters. The felt on the bell stirs in its wind. 'Light,' says a voice like a hundred wings, though it is not a voice. 'Is it the light?'"
+    },
+    "boss": "hos_vesper_dead",
+    "boss_name": "The Vesper Moth",
+    "features": {
+      "bell|felt": "Felt, tied with a hundred careful knots. Someone did not want it rung.",
+      "rafters|scales": "The scales come off on your fingers like pollen. In the right light each one is printed with a minute brass lamp.",
+      "stair|ladder": "A ladder to the bell-chamber, its rungs polished smooth by one pair of hands. It leans a little to the west, toward the gate."
+    }
+  },
+  "hos_orchard": {
+    "name": "The Pilgrims' Orchard",
+    "region": "The Moth-Saint's Hospice",
+    "pos": [0, 1],
+    "dark": true,
+    "desc": "Pears and apples hang ripe on trees nobody tends. The grass between them is worn into paths that go in circles, and the paths are fresh.",
+    "exits": {"n": "hos_path", "e": "hos_cloister"},
+    "enc": {
+      "chance": 0.35,
+      "groups": [
+        [["hos_pilgrim"], 3],
+        [["hos_pilgrim", "hos_waymoth"], 2]
+      ]
+    },
+    "items": ["hos_windfall", "hos_windfall", "honeycake"],
+    "features": {
+      "pears|pear|apples|fruit": "They taste of nothing. They settle the stomach all the same.",
+      "paths|circles|grass": "Pilgrim-wide, and walked flat. They go round and round the same tree, and never reach the wall."
+    }
+  },
+  "hos_cloister": {
+    "name": "The Cloister",
+    "region": "The Moth-Saint's Hospice",
+    "pos": [1, 1],
+    "dark": true,
+    "desc": "A square of arches round a fountain full of moth wings. Pilgrims walk the square in circles, carrying lamps with no flame. A refectory door stands open to the east; a scriptorium door to the south.",
+    "exits": {"n": "hos_gate", "w": "hos_orchard", "e": "hos_refectory", "s": "hos_scriptorium"},
+    "locks": {
+      "s": {
+        "flag": "hos_almoner_dead",
+        "remember": "hos_scriptorium_open",
+        "msg": "The scriptorium is bolted from within. The bolt is the Almoner's, and the Almoner is in the refectory, east of the cloister. Defeat him and the door will open."
+      }
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [["hos_pilgrim"], 2],
+        [["hos_pilgrim", "hos_pilgrim"], 1],
+        [["hos_waymoth", "hos_pilgrim"], 1]
+      ]
+    },
+    "items": ["oil"],
+    "features": {
+      "fountain|wings": "Full of grey wings. The water underneath is still clear.",
+      "arches|columns": "Each arch has a bracket for a lamp. Every bracket is empty, and every bracket has been polished.",
+      "pilgrims|lamps": "They do not look at you. They hold their dead lamps out before them like people who have been told the road is lit just ahead."
+    }
+  },
+  "hos_refectory": {
+    "name": "The Refectory",
+    "region": "The Moth-Saint's Hospice",
+    "pos": [2, 1],
+    "dark": true,
+    "desc": "Long tables laid for fifty guests, a bowl at each place, a spoon beside each bowl. At the head of the room is a smaller table and a ledger.",
+    "exits": {"w": "hos_cloister"},
+    "fixed": {
+      "flag": "hos_almoner_dead",
+      "enemies": ["hos_almoner"],
+      "intro": "The Almoner looks up from the long table. 'Are you expected?' he asks, and does not wait for the answer."
+    },
+    "boss": "hos_almoner_dead",
+    "boss_name": "Brother Odran the Almoner",
+    "features": {
+      "tables|table|places": "Fifty places set. Fifty bowls of the same grey soup.",
+      "ledger|book": "A list of guests, one name to a line, in the Almoner's neat hand. For fifty years every line reads the same: Expected.",
+      "soup|bowls|bowl": "Grey, and it smells of nothing at all. A bowl has been set for you, too, at the end."
+    }
+  },
+  "hos_scriptorium": {
+    "name": "The Scriptorium",
+    "region": "The Moth-Saint's Hospice",
+    "pos": [1, 2],
+    "dark": true,
+    "desc": "Shelves of guest-books and a lockbox with its lid up. It is the quietest room in the Hospice, and the only one where nothing walks in circles.",
+    "exits": {"n": "hos_cloister"},
+    "items": ["hos_receipt", "hos_pilgrims_staff", "hos_moth_mantle", "strong_draught"],
+    "features": {
+      "guestbook|guest-books|books|shelves": "The last entry, in a steady hand: The Keeper thanks the house for its lamp. Will return it lit. -A.",
+      "lockbox|box": "The lid is up, and the lock was never forced. Whoever kept it expected somebody to come back for what was left in it.",
+      "desk|lectern": "A lay-brother's stool is pushed under the desk. The seat is worn in the shape of someone who sat very straight, and listened for a bell."
+    }
+  }
+}

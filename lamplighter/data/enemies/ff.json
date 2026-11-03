@@ -1,0 +1,809 @@
+{
+  "ff_hawker": {
+    "name": "Frostbound Hawker",
+    "hp": 300,
+    "atk": 47,
+    "def": 6,
+    "dodge": 0,
+    "xp": 125,
+    "gold": [
+      44,
+      68
+    ],
+    "tags": [
+      "hollow",
+      "undead"
+    ],
+    "weak": [
+      "fire",
+      "earth"
+    ],
+    "resist": [
+      "ice",
+      "water"
+    ],
+    "desc": "A stall-keeper frozen mid-patter, mouth open on a word. Frost has glazed the apron stiff as tin. It will sell you anything, and the price is always your attention.",
+    "moves": [
+      {
+        "name": "Sales Pitch",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "leans in, selling something nobody wants"
+      },
+      {
+        "name": "Haggle",
+        "kind": "debuff",
+        "status": [
+          "exposed",
+          2,
+          0
+        ],
+        "weight": 1,
+        "tell": "names a price"
+      },
+      {
+        "name": "Last Bargain",
+        "kind": "heavy",
+        "power": 2.0,
+        "weight": 2,
+        "tell": "slams the counter"
+      }
+    ],
+    "drops": [
+      [
+        "ff_rime",
+        0.45
+      ],
+      [
+        "ff_fair_token",
+        0.35
+      ],
+      [
+        "essence_ice",
+        0.25
+      ],
+      [
+        "core_heart_ice",
+        0.04
+      ]
+    ]
+  },
+  "ff_skater": {
+    "name": "Phantom Skater",
+    "hp": 235,
+    "atk": 47,
+    "def": 5,
+    "dodge": 28,
+    "xp": 135,
+    "gold": [
+      48,
+      75
+    ],
+    "tags": [
+      "hollow"
+    ],
+    "weak": [
+      "shadow",
+      "earth"
+    ],
+    "resist": [
+      "ice",
+      "water"
+    ],
+    "desc": "A skater in a long coat, turning on the ice with no sound at all. The blades leave no mark. Its breath does not fog, and it never once looks down.",
+    "moves": [
+      {
+        "name": "Blade Pass",
+        "kind": "attack",
+        "power": 0.6,
+        "hits": 2,
+        "weight": 3,
+        "tell": "cuts a quick arc across the ice"
+      },
+      {
+        "name": "Figure Eight",
+        "kind": "attack",
+        "power": 0.9,
+        "status": [
+          "bleed",
+          3,
+          6
+        ],
+        "weight": 2,
+        "tell": "carves a slow loop around you"
+      },
+      {
+        "name": "Double Axel",
+        "kind": "heavy",
+        "power": 2.0,
+        "weight": 1,
+        "tell": "pushes off hard"
+      }
+    ],
+    "drops": [
+      [
+        "ff_rime",
+        0.4
+      ],
+      [
+        "essence_water",
+        0.3
+      ],
+      [
+        "ff_fair_token",
+        0.3
+      ],
+      [
+        "core_heart_water",
+        0.04
+      ]
+    ]
+  },
+  "ff_horse": {
+    "name": "Carousel Horse",
+    "hp": 500,
+    "atk": 52,
+    "def": 13,
+    "dodge": 0,
+    "xp": 160,
+    "gold": [
+      51,
+      85
+    ],
+    "tags": [
+      "construct"
+    ],
+    "weak": [
+      "fire",
+      "shadow"
+    ],
+    "resist": [
+      "ice",
+      "earth"
+    ],
+    "desc": "A carousel horse come down off its pole, painted eyes rolling, the brass pole still through its back. Under the frost the paint is very bright, and one ear still wears a child's ribbon.",
+    "moves": [
+      {
+        "name": "Gallop",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "rears and strikes sparks of frost from the ice"
+      },
+      {
+        "name": "Round and Round",
+        "kind": "attack",
+        "power": 0.5,
+        "hits": 3,
+        "weight": 2,
+        "tell": "begins to spin on its pole"
+      },
+      {
+        "name": "Brass Pole",
+        "kind": "heavy",
+        "power": 2.0,
+        "weight": 1,
+        "tell": "lowers its brass pole"
+      },
+      {
+        "name": "Music Box Gutter",
+        "kind": "defend",
+        "weight": 1,
+        "tell": "falters as the music inside it stutters and slows"
+      }
+    ],
+    "drops": [
+      [
+        "ff_rime",
+        0.5
+      ],
+      [
+        "essence_shadow",
+        0.3
+      ],
+      [
+        "ff_fair_token",
+        0.3
+      ],
+      [
+        "core_heart_earth",
+        0.05
+      ]
+    ]
+  },
+  "ff_ice_figure": {
+    "name": "Ice Figure",
+    "hp": 390,
+    "atk": 47,
+    "def": 17,
+    "dodge": 0,
+    "xp": 145,
+    "gold": [
+      48,
+      71
+    ],
+    "tags": [
+      "hollow"
+    ],
+    "weak": [
+      "fire",
+      "shadow"
+    ],
+    "resist": [
+      "ice",
+      "water"
+    ],
+    "desc": "A sculpture of a townsperson, carved for the Fair and posed to speak. The likeness is the best the Fair ever had. It is about to say something. It has been about to for fifty years.",
+    "moves": [
+      {
+        "name": "Brittle Embrace",
+        "kind": "attack",
+        "power": 1.0,
+        "status": [
+          "weak",
+          2,
+          0
+        ],
+        "weight": 3,
+        "tell": "opens its arms, smiling"
+      },
+      {
+        "name": "Hold the Pose",
+        "kind": "defend",
+        "weight": 2,
+        "tell": "goes perfectly, beautifully still"
+      },
+      {
+        "name": "Shatter",
+        "kind": "heavy",
+        "power": 2.2,
+        "weight": 1,
+        "tell": "begins to crack; it is about to come apart and take you with it"
+      }
+    ],
+    "drops": [
+      [
+        "ff_rime",
+        0.55
+      ],
+      [
+        "essence_ice",
+        0.3
+      ],
+      [
+        "core_heart_ice",
+        0.04
+      ]
+    ]
+  },
+  "ff_lamp": {
+    "name": "Hung Lamp",
+    "hp": 200,
+    "atk": 46,
+    "def": 3,
+    "dodge": 25,
+    "xp": 130,
+    "gold": [
+      42,
+      68
+    ],
+    "tags": [
+      "hollow"
+    ],
+    "weak": [
+      "water",
+      "earth"
+    ],
+    "resist": [
+      "fire",
+      "light"
+    ],
+    "desc": "A tin lantern off one of the poles, tagged with a family's name in a child's hand. Something small and blue is burning in it, wanting a wick to belong to.",
+    "moves": [
+      {
+        "name": "Gutter",
+        "kind": "drain",
+        "power": 0.8,
+        "drain": 12,
+        "weight": 3,
+        "tell": "gutters, leaning toward your flame"
+      },
+      {
+        "name": "Dim",
+        "kind": "debuff",
+        "status": [
+          "blind",
+          2,
+          0
+        ],
+        "weight": 2,
+        "tell": "dwindles to a blue thread"
+      },
+      {
+        "name": "Swing",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 2,
+        "tell": "swings out on its chain"
+      }
+    ],
+    "drops": [
+      [
+        "ff_rime",
+        0.35
+      ],
+      [
+        "essence_fire",
+        0.35
+      ],
+      [
+        "ff_fair_token",
+        0.3
+      ],
+      [
+        "core_heart_fire",
+        0.04
+      ]
+    ]
+  },
+  "ff_below_sleeper": {
+    "name": "Sleeper Below",
+    "hp": 520,
+    "atk": 52,
+    "def": 14,
+    "dodge": 0,
+    "xp": 150,
+    "gold": [
+      144,
+      216
+    ],
+    "tags": [
+      "hollow",
+      "undead"
+    ],
+    "weak": [
+      "fire",
+      "earth"
+    ],
+    "resist": [
+      "ice",
+      "water"
+    ],
+    "desc": "One of the Fair's winter dead, laid out neatly in the undercroft with a folded coat for a pillow. It is not quite asleep. Nobody ever came to wake it.",
+    "moves": [
+      {
+        "name": "Dream Strike",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "stirs, mouth open on a name"
+      },
+      {
+        "name": "Cold Sleep",
+        "kind": "heavy",
+        "power": 2.1,
+        "weight": 2,
+        "tell": "sighs, and the air gets heavier"
+      },
+      {
+        "name": "Lullaby",
+        "kind": "drain",
+        "power": 0.7,
+        "drain": 12,
+        "weight": 1,
+        "tell": "hums two bars of something old"
+      }
+    ],
+    "drops": [
+      [
+        "ff_rime",
+        0.6
+      ],
+      [
+        "core_heart_ice",
+        0.08
+      ],
+      [
+        "core_heart_water",
+        0.06
+      ],
+      [
+        "core_heart_earth",
+        0.06
+      ]
+    ]
+  },
+  "ff_ringmaster": {
+    "name": "The Ringmaster of Rime",
+    "hp": 640,
+    "atk": 46,
+    "def": 14,
+    "dodge": 5,
+    "xp": 480,
+    "gold": [
+      130,
+      170
+    ],
+    "tags": [
+      "hollow",
+      "undead",
+      "elite"
+    ],
+    "weak": [
+      "fire",
+      "shadow"
+    ],
+    "resist": [
+      "ice",
+      "water"
+    ],
+    "desc": "A man in a ringmaster's coat, frost in his moustache, his top hat tipped at an angle that has not changed in fifty years. Across his waistcoat hangs a watch-chain, and on the chain a brass key stamped FAIRWARDEN.",
+    "moves": [
+      {
+        "name": "Whip Crack",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "flicks his whip"
+      },
+      {
+        "name": "Roll Up!",
+        "kind": "summon",
+        "summon": "ff_skater",
+        "only_if": "can_summon",
+        "weight": 1,
+        "tell": "tips his hat and the carousel answers"
+      },
+      {
+        "name": "Grand Finale",
+        "kind": "heavy",
+        "power": 2.3,
+        "weight": 2,
+        "tell": "takes a bow"
+      },
+      {
+        "name": "Spotlight",
+        "kind": "debuff",
+        "status": [
+          "exposed",
+          2,
+          0
+        ],
+        "weight": 1,
+        "tell": "swings a lantern onto you"
+      }
+    ],
+    "phases": [
+      {
+        "at": 0.5,
+        "msg": "The music box under the carousel starts to play, and the horses begin, slowly, to go around.",
+        "moves": [
+          {
+            "name": "Whip Crack",
+            "kind": "attack",
+            "power": 1.0,
+            "weight": 3,
+            "tell": "flicks his whip"
+          },
+          {
+            "name": "Roll Up!",
+            "kind": "summon",
+            "summon": "ff_skater",
+            "only_if": "can_summon",
+            "weight": 1,
+            "tell": "tips his hat and the carousel answers"
+          },
+          {
+            "name": "Grand Finale",
+            "kind": "heavy",
+            "power": 2.3,
+            "weight": 2,
+            "tell": "takes a bow"
+          },
+          {
+            "name": "Spotlight",
+            "kind": "debuff",
+            "status": [
+              "exposed",
+              2,
+              0
+            ],
+            "weight": 1,
+            "tell": "swings a lantern onto you"
+          },
+          {
+            "name": "Merry-Go-Round",
+            "kind": "attack",
+            "power": 0.5,
+            "hits": 4,
+            "weight": 3,
+            "tell": "sets the horses going around"
+          }
+        ]
+      }
+    ],
+    "drops": [
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "ff_rime",
+        1.0
+      ],
+      [
+        "ff_rime",
+        1.0
+      ],
+      [
+        "ff_rime",
+        1.0
+      ],
+      [
+        "essence_light",
+        1.0
+      ],
+      [
+        "core_heart_light",
+        1.0
+      ]
+    ]
+  },
+  "ff_lampmaster": {
+    "name": "Lamp-Master Hobb",
+    "hp": 1200,
+    "atk": 57,
+    "def": 14,
+    "dodge": 0,
+    "xp": 1500,
+    "gold": [
+      600,
+      750
+    ],
+    "tags": [
+      "hollow",
+      "boss"
+    ],
+    "weak": [
+      "fire",
+      "earth"
+    ],
+    "resist": [
+      "ice",
+      "water"
+    ],
+    "desc": "Hobb Ardent, Lamp-Master of the Fair at Wintering: a tall man in a coat of hung lamps, a long pole across his shoulders, holding the dead Great Lantern like a child. He swore to hold the Fair until the flame came home, and he has held it.",
+    "moves": [
+      {
+        "name": "Lamp-Pole Sweep",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "swings the long pole low"
+      },
+      {
+        "name": "Hoarfrost Breath",
+        "kind": "attack",
+        "power": 0.7,
+        "status": [
+          "weak",
+          2,
+          0
+        ],
+        "weight": 2,
+        "tell": "breathes out a white fog"
+      },
+      {
+        "name": "Lend Me Yours",
+        "kind": "drain",
+        "power": 1.0,
+        "drain": 14,
+        "weight": 2,
+        "tell": "holds out a hand for your flame"
+      },
+      {
+        "name": "Hang the Lamps",
+        "kind": "summon",
+        "summon": "ff_lamp",
+        "only_if": "can_summon",
+        "weight": 1,
+        "tell": "claps, and the poles above him light with faces"
+      },
+      {
+        "name": "Midwinter Toll",
+        "kind": "heavy",
+        "power": 2.3,
+        "weight": 2,
+        "tell": "lifts the Lantern; the frost on the walls begins to ring"
+      }
+    ],
+    "phases": [
+      {
+        "at": 0.66,
+        "msg": "Hobb lifts the dead Great Lantern. Six hundred empty lamps flicker on their poles, and every one of them has a face in it.",
+        "moves": [
+          {
+            "name": "Lamp-Pole Sweep",
+            "kind": "attack",
+            "power": 1.1,
+            "weight": 3,
+            "tell": "swings the long pole low"
+          },
+          {
+            "name": "Hoarfrost Breath",
+            "kind": "attack",
+            "power": 0.7,
+            "status": [
+              "weak",
+              2,
+              0
+            ],
+            "weight": 2,
+            "tell": "breathes out a white fog"
+          },
+          {
+            "name": "Lend Me Yours",
+            "kind": "drain",
+            "power": 1.0,
+            "drain": 16,
+            "weight": 2,
+            "tell": "holds out a hand for your flame"
+          },
+          {
+            "name": "Whiteout",
+            "kind": "debuff",
+            "status": [
+              "blind",
+              2,
+              0
+            ],
+            "weight": 1,
+            "tell": "makes the lamps flare white, all at once"
+          },
+          {
+            "name": "Midwinter Toll",
+            "kind": "heavy",
+            "power": 2.4,
+            "weight": 2,
+            "tell": "lifts the Lantern; the frost on the walls begins to ring"
+          },
+          {
+            "name": "Hang the Lamps",
+            "kind": "summon",
+            "summon": "ff_lamp",
+            "only_if": "can_summon",
+            "weight": 1,
+            "tell": "claps, and the poles above him light with faces"
+          }
+        ]
+      },
+      {
+        "at": 0.33,
+        "msg": "The Lamp-Master sees your lantern properly, for the first time. 'Did he send you? Is it spring?' ... 'Then hold the Fair. HOLD IT.'",
+        "moves": [
+          {
+            "name": "Hold the Fair",
+            "kind": "buff",
+            "status": [
+              "enraged",
+              2,
+              0
+            ],
+            "weight": 1,
+            "tell": "plants his pole and will not be moved"
+          },
+          {
+            "name": "Frozen Hour",
+            "kind": "heavy",
+            "power": 2.7,
+            "weight": 2,
+            "tell": "stands perfectly still, and the cold stands with him"
+          },
+          {
+            "name": "Lend Me Yours",
+            "kind": "drain",
+            "power": 1.0,
+            "drain": 18,
+            "weight": 2,
+            "tell": "holds out a hand for your flame"
+          },
+          {
+            "name": "Lamp-Pole Sweep",
+            "kind": "attack",
+            "power": 1.2,
+            "weight": 2,
+            "tell": "swings the long pole low"
+          }
+        ]
+      }
+    ],
+    "drops": [
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "ff_rime",
+        1.0
+      ],
+      [
+        "ff_rime",
+        1.0
+      ],
+      [
+        "ff_rime",
+        1.0
+      ],
+      [
+        "essence_light",
+        1.0
+      ],
+      [
+        "essence_light",
+        1.0
+      ],
+      [
+        "core_heart_ice",
+        1.0
+      ],
+      [
+        "core_heart_fire",
+        1.0
+      ],
+      [
+        "core_heart_light",
+        1.0
+      ]
+    ],
+    "roll": {
+      "story": false,
+      "pron": {
+        "subj": "he",
+        "obj": "him",
+        "poss": "his"
+      },
+      "place": "The Fair",
+      "flavour": [
+        "He stands very still, one hand on the cold post. The lamps hang quiet. He looks, for once, tired.",
+        "He moves like a man who has held a tray for fifty years and is thinking of putting it down.",
+        "He stands exactly as the Fair remembers him: the coat of lamps, the long pole, the patient smile.",
+        "Every dark lamp in the square has begun to glow, a faint and hungry blue, and the frost on your sleeve crackles.",
+        "The Great Lantern in his arms blazes white with borrowed cold. The whole Fair is holding its breath behind him."
+      ],
+      "bonus": [
+        {
+          "item": "ff_wintering_flame",
+          "from": 10,
+          "to": 60
+        },
+        {
+          "item": "hollow_core",
+          "from": 1,
+          "to": 100,
+          "count": 3
+        },
+        {
+          "item": "ff_rime",
+          "from": 1,
+          "to": 100,
+          "count": 3
+        },
+        {
+          "item": "essence_fire",
+          "from": 20,
+          "to": 100,
+          "count": 2
+        }
+      ]
+    }
+  }
+}

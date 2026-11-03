@@ -1,0 +1,49 @@
+{
+  "hos_pilgrims_staff": {
+    "name": "Pilgrim's Staff",
+    "kind": "weapon",
+    "value": 140,
+    "rarity": "rare",
+    "stats": {"atk": 8, "wil": 5},
+    "mult": {"light": 1.12},
+    "desc": "A walking staff worn smooth by a thousand hands, still faintly warm. Light-based attacks hit a little harder."
+  },
+  "hos_moth_mantle": {
+    "name": "Moth Mantle",
+    "kind": "armor",
+    "value": 130,
+    "rarity": "rare",
+    "stats": {"def": 6, "agi": 2, "dodge": 3},
+    "desc": "A grey cloak that other things find hard to see."
+  },
+  "hos_waylamp": {
+    "name": "Second Waylamp",
+    "kind": "trinket",
+    "value": 150,
+    "rarity": "rare",
+    "stats": {"wil": 3, "hp": 12, "oil_save": 1},
+    "desc": "The Hospice's second lamp, kept for the lay-brother who held the ladder. It lights the way home. Your lantern burns a little slower."
+  },
+  "hos_windfall": {
+    "name": "Windfall Pear",
+    "kind": "consumable",
+    "value": 14,
+    "rarity": "common",
+    "use": {"heal": 25, "dread": -10},
+    "desc": "A pear that tastes of nothing and settles the stomach. Restores 25 health and calms you (Dread -10)."
+  },
+  "hos_belfry_key": {
+    "name": "Belfry Key",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "A small iron key on a moth-shaped fob. It opens the belfry door at the Hospice gate."
+  },
+  "hos_receipt": {
+    "name": "Receipt: the Moth-Saint's Hospice",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "Received of the Hospice of the Moth-Saint, one waylamp, brass, wick trimmed, to guide the Keeper home. Held in trust. To be returned lit. Brother Corvin held the ladder. He says he does not mind. He minds. -A."
+  }
+}

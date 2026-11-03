@@ -1,0 +1,12 @@
+{
+ "bog_lights": {
+  "exits": {"s": "rl_causeway"},
+  "locks": {
+   "s": {
+    "element": ["fire", "light"],
+    "remember": "rl_fog_burned",
+    "msg": "South of the Bog Lights a wall of white fog stands on the water, thick enough to lean on. Fog burns off in light. Equip a Fire or Light spell book (type 'spells') and try again. Mirelle, in the Magician's Tower, sells Common books for gold."
+   }
+  }
+ }
+}

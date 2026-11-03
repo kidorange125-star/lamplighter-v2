@@ -1,0 +1,24 @@
+{
+  "ff_signal_stair": {
+    "exits": {
+      "u": "vg_ladder"
+    },
+    "locks": {
+      "u": {
+        "flag": "beacon_The Frostfair",
+        "msg": "The Signal Stair climbs into cloud, but its first step is a plate of ice that will not give. The Fair's Great Lantern lights this stair from below: relight the Great Lantern (the beacon in the Wintering Square) and the ice will go."
+      }
+    }
+  },
+  "tower": {
+    "exits": {
+      "w": "vg_loft"
+    },
+    "locks": {
+      "w": {
+        "building": "vg_almanac",
+        "msg": "A vacant plot beside the Magician's Tower, with a roof-ladder already leaning against it. Joss can build a loft here once a star-reader is willing to move in."
+      }
+    }
+  }
+}

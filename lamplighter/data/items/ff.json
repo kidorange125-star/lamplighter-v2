@@ -1,0 +1,113 @@
+{
+  "ff_rime": {
+    "name": "Fair Rime",
+    "kind": "material",
+    "value": 18,
+    "stack": true,
+    "rarity": "uncommon",
+    "desc": "White crust from the Frostfair, harder than salt. The Builder and the forge use it."
+  },
+  "ff_fair_token": {
+    "name": "Fair Token",
+    "kind": "junk",
+    "value": 60,
+    "stack": true,
+    "rarity": "common",
+    "desc": "A brass token stamped ADMIT ONE. Sells well to collectors."
+  },
+  "ff_cider": {
+    "name": "Hot Cider",
+    "kind": "consumable",
+    "value": 40,
+    "rarity": "common",
+    "use": {
+      "heal": 80,
+      "regen": 4,
+      "dread": -20
+    },
+    "desc": "Hot cider with a clove stuck in every cup. Restores 80 health, keeps healing you for a few turns in battle, and calms you (Dread -20)."
+  },
+  "ff_fairlight": {
+    "name": "Fairlight",
+    "kind": "consumable",
+    "value": 55,
+    "rarity": "common",
+    "use": {
+      "oil": 30,
+      "dread": -40,
+      "heal": 20
+    },
+    "desc": "A fair-candle in a paper lantern. It remembers every festival. Refills your lantern by 30, restores 20 health and calms you (Dread -40)."
+  },
+  "ff_wardens_key": {
+    "name": "Warden's Key",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "A brass key stamped FAIRWARDEN. It opens the Warden's Booth, north of Lantern Row."
+  },
+  "ff_cellar_key": {
+    "name": "Cellar Key",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "A key on a string that has been round a neck for fifty years. It opens the trapdoor in the bank of the Skating Pond."
+  },
+  "ff_receipt": {
+    "name": "Receipt: the Fair at Wintering",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "Received of the Fair at Wintering, the flame of the Great Lantern, in trust until the first thaw. The Lamp-Master swore to hold the Fair until it came home. Marit Ostrand wrote my name in the book of lenders herself. She has a steadier hand than mine. -A."
+  },
+  "ff_given_flame": {
+    "name": "Marit's Coal",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "A coal the size of a thumbnail in a glass no bigger. It is warm in a way the lantern is not. It was given."
+  },
+  "ff_wintering_flame": {
+    "name": "Wintering Flame",
+    "kind": "trinket",
+    "value": 1500,
+    "rarity": "ultra",
+    "stats": {
+      "wil": 8,
+      "hp": 24
+    },
+    "mult": {
+      "light": 1.18,
+      "dmg": 1.05
+    },
+    "desc": "The coal left in the Great Lantern's base. Cold fire has gone out of it; it is only warm."
+  },
+  "ff_greatcoat": {
+    "name": "Fairwarden's Greatcoat",
+    "kind": "armor",
+    "value": 900,
+    "rarity": "ultra",
+    "stats": {
+      "def": 14,
+      "hp": 16
+    },
+    "mult": {
+      "heal": 1.1
+    },
+    "desc": "The Fairwarden's greatcoat, lined with fifty winters' wool."
+  },
+  "ff_lamp_pole": {
+    "name": "Lamp-Lighter's Pole",
+    "kind": "weapon",
+    "value": 150,
+    "rarity": "rare",
+    "stats": {
+      "atk": 10,
+      "wil": 3
+    },
+    "mult": {
+      "light": 1.1
+    },
+    "desc": "A lamp-lighter's long pole, brass-hooked, worn smooth where a hundred hands have held it."
+  }
+}

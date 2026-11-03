@@ -1,0 +1,13 @@
+{
+  "moth_shrine": {
+    "exits": {
+      "e": "hos_path"
+    },
+    "locks": {
+      "e": {
+        "flag": "lit_moth_shrine",
+        "msg": "A narrow path runs east behind the saint's worn statue, but the dark there is thick as felt and your lantern will not push into it. Light the waypost at this shrine (type 'light') and the saint's road will show."
+      }
+    }
+  }
+}

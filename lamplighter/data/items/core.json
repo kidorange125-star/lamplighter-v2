@@ -1,0 +1,50 @@
+{
+  "core_heart_fire": {
+    "name": "Heart of Fire",
+    "kind": "material",
+    "value": 60,
+    "stack": true,
+    "rarity": "rare",
+    "desc": "A coal that has not cooled in fifty years, wrapped in its own warmth like a held breath. The Magician's Grand Binding needs one for a Fire book."
+  },
+  "core_heart_ice": {
+    "name": "Heart of Ice",
+    "kind": "material",
+    "value": 60,
+    "stack": true,
+    "rarity": "rare",
+    "desc": "A knot of clear frost that fogs your glove and never melts. The Magician's Grand Binding needs one for an Ice book."
+  },
+  "core_heart_water": {
+    "name": "Heart of Water",
+    "kind": "material",
+    "value": 60,
+    "stack": true,
+    "rarity": "rare",
+    "desc": "A drop too round to be a drop, heavy as a pebble, with a small tide moving in it. The Magician's Grand Binding needs one for a Water book."
+  },
+  "core_heart_light": {
+    "name": "Heart of Light",
+    "kind": "material",
+    "value": 60,
+    "stack": true,
+    "rarity": "rare",
+    "desc": "A spark held so long it has learned patience. It warms the hand it rests in. The Magician's Grand Binding needs one for a Light book."
+  },
+  "core_heart_shadow": {
+    "name": "Heart of Shadow",
+    "kind": "material",
+    "value": 60,
+    "stack": true,
+    "rarity": "rare",
+    "desc": "A scrap of night that stayed behind when the rest went home. It sits very quietly in the palm. The Magician's Grand Binding needs one for a Shadow book."
+  },
+  "core_heart_earth": {
+    "name": "Heart of Earth",
+    "kind": "material",
+    "value": 60,
+    "stack": true,
+    "rarity": "rare",
+    "desc": "A river stone with a pulse, slow as a sleeper's. It smells of rain on a cellar floor. The Magician's Grand Binding needs one for an Earth book."
+  }
+}

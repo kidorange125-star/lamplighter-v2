@@ -1,0 +1,49 @@
+{
+ "lw_lampwright_hammer": {
+  "name": "Lampwright's Peening Hammer",
+  "kind": "weapon",
+  "value": 145,
+  "stats": {"atk": 11, "str": 2},
+  "desc": "A lampwright's peening hammer, worn to the shape of a hand.",
+  "rarity": "rare"
+ },
+ "lw_apron": {
+  "name": "Lampwright's Apron",
+  "kind": "armor",
+  "value": 140,
+  "stats": {"def": 8, "hp": 8},
+  "desc": "A smith's leather apron, scorched and mended and scorched again.",
+  "rarity": "rare"
+ },
+ "lw_pit_lamp": {
+  "name": "Corm's Pit-Lamp",
+  "kind": "trinket",
+  "value": 150,
+  "stats": {"wil": 2, "oil_save": 2},
+  "mult": {"fire": 1.1},
+  "desc": "Corm's own pit-lamp, lent and never missed. Its flame was never lit; it just does not go out.",
+  "rarity": "rare"
+ },
+ "lw_lamp_blank": {
+  "name": "Lamp Blank",
+  "kind": "junk",
+  "value": 30,
+  "stack": true,
+  "desc": "An unfinished lamp, glass and brass, waiting for a wick.",
+  "rarity": "common"
+ },
+ "lw_receipt": {
+  "name": "Receipt: the Lampwrights' Deep",
+  "kind": "key",
+  "value": 0,
+  "desc": "Received of the Lampwrights, Corm's pit-lamp, and a copy (a copy, not the book) of his notes on the quench. He asked what I intend. I said: nothing anyone need pay for. He did not believe me. He lent it anyway. Held in trust. -A.",
+  "rarity": "common"
+ },
+ "lw_quench_notes": {
+  "name": "Corm's Notes on the Quench",
+  "kind": "key",
+  "value": 0,
+  "desc": "Two quenches I know: water for the heat, oil for the brittle. A third was in the book Aldric took, and he copied it back to me wrong, or I read it wrong. It said the third wants fire, and not any fire. I have tried every fire in the Deep. They all take the edge off. -Corm.",
+  "rarity": "common"
+ }
+}

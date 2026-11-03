@@ -1,0 +1,344 @@
+{
+ "anchors": [],
+ "diff_name": "Normal",
+ "difficulty": 1.0,
+ "flags": {
+  "dealer_bought": {
+   "19990": [
+    0,
+    2
+   ],
+   "20000": [
+    1
+   ]
+  },
+  "dealer_salt": 3,
+  "met_orrin": true,
+  "visited_regions": [
+   "Hollowmere"
+  ],
+  "wren_home": true
+ },
+ "forge": {
+  "heat": {
+   "gear:epic": 2
+  },
+  "jobs": [
+   {
+    "done": false,
+    "item": "g2",
+    "loaner": "g6",
+    "ready_at": 1728046800,
+    "slot": "weapon",
+    "steps": 80
+   }
+  ],
+  "slots": 1
+ },
+ "game_version": "2.0.0-dev.5",
+ "last_rest": "hall",
+ "moves": 87,
+ "player": {
+  "agi": 7,
+  "base_hp": 44,
+  "bonus_hp": 0,
+  "cls": "wayfarer",
+  "dread": 0,
+  "dread_effects": true,
+  "equipment": {
+   "armor": "g3",
+   "trinket": null,
+   "weapon": "g6"
+  },
+  "gear": {
+   "g2": {
+    "affixes": [
+     "of_the_wolf"
+    ],
+    "base": "saltsteel_saber",
+    "desc": "Forged from a drowned knight's blade. It never rusts, and it never stops dripping. Sockets 0/1.",
+    "id": "g2",
+    "instance": true,
+    "kind": "weapon",
+    "mult": {
+     "dmg": 1.2,
+     "phys": 1.1
+    },
+    "name": "Saltsteel Saber of the Wolf",
+    "rarity": "epic",
+    "relics": [],
+    "sockets": 1,
+    "stats": {
+     "agi": 3,
+     "atk": 14,
+     "str": 2
+    },
+    "value": 320
+   },
+   "g3": {
+    "affixes": [
+     "of_the_lamp",
+     "of_mending"
+    ],
+    "base": "hauberk",
+    "desc": "Riveted rings, oiled against the damp. It jingles. Hollows hate the sound. Sockets 0/2.",
+    "id": "g3",
+    "instance": true,
+    "kind": "armor",
+    "mult": {
+     "heal": 1.12
+    },
+    "name": "Chain Hauberk of the Lamp of Mending",
+    "rarity": "ultra",
+    "relics": [],
+    "sockets": 2,
+    "stats": {
+     "def": 14,
+     "oil_save": 2,
+     "regen": 2
+    },
+    "value": 733
+   },
+   "g4": {
+    "affixes": [],
+    "base": "moth_charm",
+    "desc": "A paper moth folded around a pinch of lamp-soot. Things find it hard to land a blow on you. Sockets 0/1.",
+    "id": "g4",
+    "instance": true,
+    "kind": "trinket",
+    "mult": {},
+    "name": "Moth Charm",
+    "rarity": "rare",
+    "relics": [],
+    "sockets": 1,
+    "stats": {
+     "agi": 3,
+     "dodge": 5
+    },
+    "value": 160
+   },
+   "g5": {
+    "affixes": [
+     "keen",
+     "of_will"
+    ],
+    "base": "ashwood_rod",
+    "desc": "A charred staff that stays warm. Fire comes easier when you hold it. Sockets 0/3.",
+    "id": "g5",
+    "instance": true,
+    "kind": "weapon",
+    "mult": {
+     "dmg": 1.73
+    },
+    "name": "Keen Ashwood Rod of Will",
+    "rarity": "legendary",
+    "relics": [],
+    "sockets": 3,
+    "stats": {
+     "atk": 6,
+     "crit": 7,
+     "wil": 16
+    },
+    "value": 1800
+   },
+   "g6": {
+    "affixes": [
+     "of_the_wolf"
+    ],
+    "base": "saltsteel_saber",
+    "desc": "A stand-in while the forge has your real weapon: 20% weaker. Forged from a drowned knight's blade. It never rusts, and it never stops dripping. Sockets 0/1.",
+    "id": "g6",
+    "instance": true,
+    "kind": "weapon",
+    "loaner": true,
+    "mult": {
+     "dmg": 0.96,
+     "phys": 1.1
+    },
+    "name": "Loaner Saltsteel Saber of the Wolf",
+    "rarity": "epic",
+    "relics": [],
+    "sockets": 1,
+    "stats": {
+     "agi": 3,
+     "atk": 14,
+     "str": 2
+    },
+    "value": 320
+   }
+  },
+  "gems": 9,
+  "gold": 245,
+  "hp": 49,
+  "inventory": {
+   "draught": 3,
+   "g2": 1,
+   "g3": 1,
+   "g4": 1,
+   "g5": 1,
+   "homecoming_charm": 1,
+   "oil": 1
+  },
+  "lantern": {
+   "lens": false,
+   "shroud": false,
+   "trim": false
+  },
+  "level": 4,
+  "name": "Fixture",
+  "oil": 100,
+  "points": 2,
+  "relic_charges": 2,
+  "relic_level": 1,
+  "shaken": false,
+  "spells": [],
+  "stash": {},
+  "str": 5,
+  "vit": 1,
+  "wil": 3,
+  "xp": 31
+ },
+ "quests": {
+  "lamps": 2,
+  "main": 1
+ },
+ "room": "tavern",
+ "room_items": {
+  "ash_choir": [],
+  "ballroom": [],
+  "bishop_altar": [],
+  "bog_lights": [
+   "moonpetal",
+   "page3",
+   "oil"
+  ],
+  "burnt_garden": [
+   "honeycake",
+   "firepot"
+  ],
+  "cellars": [
+   "hollow_core",
+   "hollow_core",
+   "cinder",
+   "cinder",
+   "cinder",
+   "strong_draught",
+   "strong_draught",
+   "relic_pulse"
+  ],
+  "chapel": [],
+  "chapel_nave": [
+   "page4"
+  ],
+  "chapel_steps": [],
+  "choir_gallery": [
+   "oil"
+  ],
+  "cinder_road": [],
+  "court_forge": [],
+  "court_gate": [],
+  "crypt_stair": [],
+  "deep_lake": [
+   "page6",
+   "strong_draught"
+  ],
+  "deepwood": [],
+  "docks": [],
+  "ember_smithy": [],
+  "gallery": [
+   "cinder",
+   "cinder"
+  ],
+  "gate": [],
+  "grand_hall": [],
+  "hall": [
+   "page1"
+  ],
+  "hearth_stall": [],
+  "hermit_hut": [],
+  "hollow_nest": [
+   "page5",
+   "strong_draught",
+   "firepot"
+  ],
+  "home": [],
+  "hunters_camp": [
+   "hunting_spear",
+   "oil",
+   "page2"
+  ],
+  "kitchens": [
+   "stew",
+   "stew"
+  ],
+  "lane": [],
+  "lightwell": [],
+  "lightwell_gate": [],
+  "market": [],
+  "marsh_edge": [],
+  "mine_hall": [],
+  "moth_shrine": [
+   "honeycake"
+  ],
+  "mother_grove": [],
+  "ore_vein": [],
+  "reedways": [
+   "moonpetal"
+  ],
+  "reeve_house": [
+   "pearl",
+   "silver_icon"
+  ],
+  "ruined_chapel": [],
+  "salvage_stall": [],
+  "smithy": [],
+  "square": [],
+  "stewards_hall": [],
+  "strongroom": [],
+  "sunken_village": [
+   "moonpetal"
+  ],
+  "tallow_camp": [],
+  "tavern": [],
+  "thicket": [
+   "wren_ribbon"
+  ],
+  "throne_room": [],
+  "tower": [],
+  "watchtower": [
+   "oil",
+   "strong_draught"
+  ],
+  "well_bottom": [],
+  "wizard_shop": [],
+  "wood_fork": [],
+  "wood_path": [],
+  "yard": []
+ },
+ "save_version": 1,
+ "settings": {
+  "speed": 0.012,
+  "typewriter": false
+ },
+ "stats": {
+  "battles": 9,
+  "deaths": 1,
+  "kills": 14
+ },
+ "town": {
+  "built": [],
+  "invited": [
+   "market",
+   "home"
+  ],
+  "queue": [],
+  "rent_banked": 0,
+  "rent_since": null,
+  "stash_level": 2
+ },
+ "visited": [
+  "hall",
+  "square",
+  "tavern"
+ ]
+}

@@ -1,0 +1,895 @@
+{
+  "vg_brother": {
+    "name": "Unsleeping Brother",
+    "hp": 310,
+    "atk": 54,
+    "def": 8,
+    "dodge": 5,
+    "xp": 185,
+    "gold": [
+      74,
+      108
+    ],
+    "tags": [
+      "undead"
+    ],
+    "weak": [
+      "shadow",
+      "earth"
+    ],
+    "resist": [
+      "light",
+      "fire"
+    ],
+    "desc": "A Brother of the Open Eye in a grey habit, lucid and exhausted, his lids propped open by habit alone. He knows exactly how many days it has been. He is very polite about it.",
+    "moves": [
+      {
+        "name": "Measure",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "takes your measure with the long staff"
+      },
+      {
+        "name": "Unblinking Gaze",
+        "kind": "debuff",
+        "status": [
+          "blind",
+          2,
+          0
+        ],
+        "weight": 2,
+        "tell": "does not blink"
+      },
+      {
+        "name": "Vigil Strike",
+        "kind": "heavy",
+        "power": 2.0,
+        "weight": 2,
+        "tell": "raises the long staff"
+      },
+      {
+        "name": "Count the Hours",
+        "kind": "defend",
+        "weight": 1,
+        "tell": "counts under his breath and stands very still"
+      }
+    ],
+    "drops": [
+      [
+        "vg_starglass",
+        0.45
+      ],
+      [
+        "essence_shadow",
+        0.3
+      ],
+      [
+        "vg_star_plate",
+        0.3
+      ],
+      [
+        "core_heart_shadow",
+        0.04
+      ]
+    ]
+  },
+  "vg_sentinel": {
+    "name": "Armillary Sentinel",
+    "hp": 520,
+    "atk": 54,
+    "def": 18,
+    "dodge": 0,
+    "xp": 205,
+    "gold": [
+      84,
+      126
+    ],
+    "tags": [
+      "construct"
+    ],
+    "weak": [
+      "earth",
+      "ice"
+    ],
+    "resist": [
+      "fire",
+      "shadow"
+    ],
+    "desc": "An armillary sphere on three brass legs, its rings turning in their gimbals, walking the halls to check that nobody has fallen asleep. A paper tag on its lowest ring reads NIGHT PORTER, in a hand that has since been crossed out.",
+    "moves": [
+      {
+        "name": "Ring Strike",
+        "kind": "attack",
+        "power": 0.6,
+        "hits": 2,
+        "weight": 3,
+        "tell": "swings two rings at once"
+      },
+      {
+        "name": "Align",
+        "kind": "charge",
+        "then": "Convergence",
+        "weight": 2,
+        "tell": "its rings begin to align. CONVERGENCE is coming"
+      },
+      {
+        "name": "Spin Up",
+        "kind": "defend",
+        "weight": 1,
+        "tell": "its rings spin up and blur"
+      }
+    ],
+    "extra_moves": {
+      "Convergence": {
+        "name": "Convergence",
+        "kind": "heavy",
+        "power": 3.0,
+        "tell": "is perfectly aligned. CONVERGENCE is coming"
+      }
+    },
+    "drops": [
+      [
+        "vg_starglass",
+        0.5
+      ],
+      [
+        "essence_earth",
+        0.3
+      ],
+      [
+        "core_heart_earth",
+        0.05
+      ]
+    ]
+  },
+  "vg_glare": {
+    "name": "Heliograph Glare",
+    "hp": 260,
+    "atk": 52,
+    "def": 4,
+    "dodge": 30,
+    "xp": 190,
+    "gold": [
+      79,
+      116
+    ],
+    "tags": [
+      "construct"
+    ],
+    "weak": [
+      "shadow",
+      "water"
+    ],
+    "resist": [
+      "light",
+      "fire"
+    ],
+    "desc": "A relay mirror on a brass stalk that has learned to turn itself, gathering the day into a hot white coin. It has signalled the same flash across the dark for fifty years, and nobody has answered.",
+    "moves": [
+      {
+        "name": "Flash",
+        "kind": "debuff",
+        "status": [
+          "blind",
+          2,
+          0
+        ],
+        "weight": 3,
+        "tell": "tilts, and the whole room flares"
+      },
+      {
+        "name": "Burning Beam",
+        "kind": "attack",
+        "power": 1.0,
+        "status": [
+          "burn",
+          3,
+          9
+        ],
+        "weight": 3,
+        "tell": "narrows its light to a line"
+      },
+      {
+        "name": "Focus",
+        "kind": "charge",
+        "then": "Sunbeam",
+        "weight": 1,
+        "tell": "gathers every mirror into one point. SUNBEAM is coming"
+      }
+    ],
+    "extra_moves": {
+      "Sunbeam": {
+        "name": "Sunbeam",
+        "kind": "heavy",
+        "power": 2.8,
+        "tell": "is one white point. SUNBEAM is coming"
+      }
+    },
+    "drops": [
+      [
+        "vg_starglass",
+        0.4
+      ],
+      [
+        "essence_light",
+        0.3
+      ],
+      [
+        "core_heart_light",
+        0.04
+      ]
+    ]
+  },
+  "vg_star": {
+    "name": "Fallen Star",
+    "hp": 330,
+    "atk": 55,
+    "def": 6,
+    "dodge": 12,
+    "xp": 195,
+    "gold": [
+      79,
+      122
+    ],
+    "tags": [
+      "star"
+    ],
+    "weak": [
+      "ice",
+      "water",
+      "shadow"
+    ],
+    "resist": [
+      "light",
+      "fire"
+    ],
+    "desc": "A star that came down through the open Dome and could not find the way back up: a white thing the size of a hound, trailing a little cold smoke. It gives off a cold that burns.",
+    "moves": [
+      {
+        "name": "Streak",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "draws a line of light across the room"
+      },
+      {
+        "name": "Nova",
+        "kind": "heavy",
+        "power": 2.0,
+        "status": [
+          "burn",
+          3,
+          8
+        ],
+        "weight": 2,
+        "tell": "swells and whitens"
+      },
+      {
+        "name": "Cold Fire",
+        "kind": "drain",
+        "power": 0.8,
+        "drain": 12,
+        "weight": 1,
+        "tell": "leans toward your flame, shivering"
+      }
+    ],
+    "drops": [
+      [
+        "vg_starglass",
+        0.35
+      ],
+      [
+        "essence_ice",
+        0.3
+      ],
+      [
+        "core_heart_fire",
+        0.04
+      ]
+    ]
+  },
+  "vg_blind_spot": {
+    "name": "Blind Spot",
+    "hp": 300,
+    "atk": 55,
+    "def": 0,
+    "dodge": 35,
+    "xp": 190,
+    "gold": [
+      74,
+      116
+    ],
+    "tags": [
+      "hollow"
+    ],
+    "weak": [
+      "fire",
+      "ice"
+    ],
+    "resist": [
+      "shadow",
+      "earth"
+    ],
+    "desc": "The patch a too-bright light leaves in the eye. In the Vigil the afterimages stayed, grew edges, and have started to hunger for the light that made them.",
+    "moves": [
+      {
+        "name": "Smother",
+        "kind": "attack",
+        "power": 1.0,
+        "status": [
+          "weak",
+          2,
+          0
+        ],
+        "weight": 3,
+        "tell": "closes over the light like a hand"
+      },
+      {
+        "name": "Swallow Light",
+        "kind": "drain",
+        "power": 0.9,
+        "drain": 14,
+        "weight": 2,
+        "tell": "leans in, and your flame dims"
+      },
+      {
+        "name": "Void",
+        "kind": "heavy",
+        "power": 2.2,
+        "weight": 1,
+        "tell": "the dark inside it opens"
+      }
+    ],
+    "drops": [
+      [
+        "vg_starglass",
+        0.3
+      ],
+      [
+        "essence_shadow",
+        0.3
+      ],
+      [
+        "core_heart_shadow",
+        0.04
+      ]
+    ]
+  },
+  "vg_cellar_dead": {
+    "name": "Wakeful Dead",
+    "hp": 560,
+    "atk": 64,
+    "def": 14,
+    "dodge": 0,
+    "xp": 215,
+    "gold": [
+      143,
+      221
+    ],
+    "tags": [
+      "undead"
+    ],
+    "weak": [
+      "shadow",
+      "earth"
+    ],
+    "resist": [
+      "light",
+      "fire"
+    ],
+    "desc": "A Brother who died on watch and would not lie down. The body kneels by a shuttered window with its eyes wide open. Whatever is left behind them has not slept either.",
+    "moves": [
+      {
+        "name": "Grave Measure",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "lifts a hand, palm out, as if to stop you"
+      },
+      {
+        "name": "Open Eyes",
+        "kind": "debuff",
+        "status": [
+          "blind",
+          2,
+          0
+        ],
+        "weight": 2,
+        "tell": "turns its whole face toward you"
+      },
+      {
+        "name": "Long Vigil",
+        "kind": "heavy",
+        "power": 2.2,
+        "weight": 1,
+        "tell": "stares until you feel it"
+      }
+    ],
+    "drops": [
+      [
+        "vg_starglass",
+        0.6
+      ],
+      [
+        "core_heart_shadow",
+        0.06
+      ],
+      [
+        "core_heart_light",
+        0.06
+      ],
+      [
+        "core_heart_fire",
+        0.06
+      ]
+    ]
+  },
+  "vg_orrery": {
+    "name": "The Great Orrery",
+    "hp": 980,
+    "atk": 57,
+    "def": 15,
+    "dodge": 0,
+    "xp": 650,
+    "gold": [
+      220,
+      270
+    ],
+    "tags": [
+      "construct",
+      "elite"
+    ],
+    "weak": [
+      "shadow",
+      "water"
+    ],
+    "resist": [
+      "light",
+      "fire"
+    ],
+    "attune": {
+      "every": 2,
+      "stances": [
+        {
+          "name": "Sun-line",
+          "weak": [
+            "shadow",
+            "water"
+          ],
+          "resist": [
+            "light",
+            "fire"
+          ],
+          "msg": "{hollow}The inner rings lock to the Sun-line.{/}"
+        },
+        {
+          "name": "Moon-line",
+          "weak": [
+            "fire",
+            "earth"
+          ],
+          "resist": [
+            "shadow",
+            "ice"
+          ],
+          "msg": "{hollow}The rings swing to the Moon-line.{/}"
+        },
+        {
+          "name": "Star-line",
+          "weak": [
+            "light",
+            "ice"
+          ],
+          "resist": [
+            "earth",
+            "water"
+          ],
+          "msg": "{hollow}The rings settle on the Star-line.{/}"
+        }
+      ]
+    },
+    "desc": "A model of the sky as large as a chapel, its rings turning in their own weather. It has been counting the days since the Signal was lent, and it is very proud of the number. A bronze iris-key hangs at its centre, where the Sun should be.",
+    "moves": [
+      {
+        "name": "Planet Strike",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 6,
+        "tell": "sends a planet round on its wire"
+      },
+      {
+        "name": "Wandering Star",
+        "kind": "summon",
+        "summon": "vg_star",
+        "only_if": "can_summon",
+        "weight": 1,
+        "tell": "a planet slips its wire"
+      },
+      {
+        "name": "Eclipse",
+        "kind": "debuff",
+        "status": [
+          "blind",
+          2,
+          0
+        ],
+        "weight": 2,
+        "tell": "swings one ring between you and the light"
+      },
+      {
+        "name": "Conjunction",
+        "kind": "charge",
+        "then": "Great Conjunction",
+        "weight": 4,
+        "tell": "its rings begin to align. GREAT CONJUNCTION is coming"
+      }
+    ],
+    "extra_moves": {
+      "Great Conjunction": {
+        "name": "Great Conjunction",
+        "kind": "heavy",
+        "power": 3.0,
+        "tell": "is aligned, every ring. GREAT CONJUNCTION is coming"
+      }
+    },
+    "phases": [
+      {
+        "at": 0.5,
+        "msg": "The inner rings spin up. The outer rings counter-spin. The whole sky is going round.",
+        "moves": [
+          {
+            "name": "Planet Strike",
+            "kind": "attack",
+            "power": 1.0,
+            "weight": 6,
+            "tell": "sends a planet round on its wire"
+          },
+          {
+            "name": "Wandering Star",
+            "kind": "summon",
+            "summon": "vg_star",
+            "only_if": "can_summon",
+            "weight": 1,
+            "tell": "a planet slips its wire"
+          },
+          {
+            "name": "Eclipse",
+            "kind": "debuff",
+            "status": [
+              "blind",
+              2,
+              0
+            ],
+            "weight": 2,
+            "tell": "swings one ring between you and the light"
+          },
+          {
+            "name": "Conjunction",
+            "kind": "charge",
+            "then": "Great Conjunction",
+            "weight": 4,
+            "tell": "its rings begin to align. GREAT CONJUNCTION is coming"
+          },
+          {
+            "name": "Precession",
+            "kind": "attack",
+            "power": 0.5,
+            "hits": 3,
+            "weight": 6,
+            "tell": "the rings whirl, each at its own speed"
+          }
+        ]
+      }
+    ],
+    "drops": [
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "vg_starglass",
+        1.0
+      ],
+      [
+        "vg_starglass",
+        1.0
+      ],
+      [
+        "vg_starglass",
+        1.0
+      ],
+      [
+        "essence_earth",
+        1.0
+      ],
+      [
+        "essence_ice",
+        1.0
+      ],
+      [
+        "core_heart_earth",
+        1.0
+      ],
+      [
+        "core_heart_water",
+        1.0
+      ]
+    ]
+  },
+  "vg_prior_eye": {
+    "name": "The Unsleeping Eye",
+    "hp": 1175,
+    "atk": 70,
+    "def": 18,
+    "dodge": 0,
+    "xp": 2300,
+    "gold": [
+      1100,
+      1400
+    ],
+    "tags": [
+      "construct",
+      "boss"
+    ],
+    "weak": [
+      "shadow",
+      "earth"
+    ],
+    "resist": [
+      "light",
+      "fire"
+    ],
+    "desc": "A lens thirty feet across in a drum of brass and glass, the Order's great instrument and the Prior who bound himself to it. Inside the glass, if you look, a face. It has not blinked since the Signal was lent.",
+    "moves": [
+      {
+        "name": "Gaze",
+        "kind": "attack",
+        "power": 1.0,
+        "weight": 3,
+        "tell": "fixes you with the whole lens"
+      },
+      {
+        "name": "Burning Focus",
+        "kind": "attack",
+        "power": 0.8,
+        "status": [
+          "burn",
+          3,
+          12
+        ],
+        "weight": 2,
+        "tell": "narrows the light to a point"
+      },
+      {
+        "name": "Sweep the Sky",
+        "kind": "attack",
+        "power": 0.5,
+        "hits": 4,
+        "weight": 2,
+        "tell": "begins to turn, slowly, all the way round"
+      },
+      {
+        "name": "Open the Dome",
+        "kind": "debuff",
+        "status": [
+          "exposed",
+          2,
+          0
+        ],
+        "weight": 1,
+        "tell": "the Dome shutters roll back"
+      },
+      {
+        "name": "Count the Stars",
+        "kind": "summon",
+        "summon": "vg_star",
+        "only_if": "can_summon",
+        "weight": 1,
+        "tell": "counts under its breath, and a star comes down"
+      },
+      {
+        "name": "Noon",
+        "kind": "heavy",
+        "power": 2.4,
+        "weight": 2,
+        "tell": "the lens whitens. NOON is coming"
+      }
+    ],
+    "phases": [
+      {
+        "at": 0.66,
+        "msg": "The shutters of the Dome roll back. Starlight pours in, and the Eye turns it into daylight.",
+        "moves": [
+          {
+            "name": "Gaze",
+            "kind": "attack",
+            "power": 1.1,
+            "weight": 3,
+            "tell": "fixes you with the whole lens"
+          },
+          {
+            "name": "Burning Focus",
+            "kind": "attack",
+            "power": 0.8,
+            "status": [
+              "burn",
+              3,
+              12
+            ],
+            "weight": 2,
+            "tell": "narrows the light to a point"
+          },
+          {
+            "name": "Sweep the Sky",
+            "kind": "attack",
+            "power": 0.55,
+            "hits": 4,
+            "weight": 2,
+            "tell": "begins to turn, slowly, all the way round"
+          },
+          {
+            "name": "Daylight",
+            "kind": "debuff",
+            "status": [
+              "blind",
+              2,
+              0
+            ],
+            "weight": 2,
+            "tell": "the whole Dome fills with white"
+          },
+          {
+            "name": "Noon at Midnight",
+            "kind": "heavy",
+            "power": 2.6,
+            "weight": 2,
+            "tell": "the lens whitens. NOON AT MIDNIGHT is coming"
+          },
+          {
+            "name": "Count the Stars",
+            "kind": "summon",
+            "summon": "vg_star",
+            "only_if": "can_summon",
+            "weight": 1,
+            "tell": "counts under its breath, and a star comes down"
+          }
+        ]
+      },
+      {
+        "at": 0.33,
+        "msg": "Inside the glass, a face: the Prior, eyelids stitched with starlight. 'How many nights was that? Has the signal come?'",
+        "moves": [
+          {
+            "name": "Prior's Vow",
+            "kind": "buff",
+            "status": [
+              "enraged",
+              2,
+              0
+            ],
+            "weight": 1,
+            "tell": "grips the mount and will not be moved"
+          },
+          {
+            "name": "Noon at Midnight",
+            "kind": "heavy",
+            "power": 2.8,
+            "weight": 2,
+            "tell": "the lens whitens. NOON AT MIDNIGHT is coming"
+          },
+          {
+            "name": "Unblinking",
+            "kind": "drain",
+            "power": 1.1,
+            "drain": 16,
+            "weight": 2,
+            "tell": "will not close"
+          },
+          {
+            "name": "Gaze",
+            "kind": "attack",
+            "power": 1.2,
+            "weight": 2,
+            "tell": "fixes you with the whole lens"
+          }
+        ]
+      }
+    ],
+    "drops": [
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "hollow_core",
+        1.0
+      ],
+      [
+        "vg_starglass",
+        1.0
+      ],
+      [
+        "vg_starglass",
+        1.0
+      ],
+      [
+        "vg_starglass",
+        1.0
+      ],
+      [
+        "essence_earth",
+        1.0
+      ],
+      [
+        "essence_earth",
+        1.0
+      ],
+      [
+        "essence_shadow",
+        1.0
+      ],
+      [
+        "essence_shadow",
+        1.0
+      ],
+      [
+        "core_heart_shadow",
+        1.0
+      ],
+      [
+        "core_heart_light",
+        1.0
+      ],
+      [
+        "core_heart_water",
+        1.0
+      ]
+    ],
+    "roll": {
+      "story": false,
+      "pron": {
+        "subj": "it",
+        "obj": "it",
+        "poss": "its"
+      },
+      "place": "The Vigil",
+      "flavour": [
+        "The Dome is half-shuttered, the Eye clouded. Behind the glass something is nodding, very slowly, forward.",
+        "The Eye turns sluggishly, and every few seconds it blinks without meaning to.",
+        "The Eye is open and bright and exactly as the Order left it: every lens aligned, every ring in place.",
+        "Starlight is drawn to it in a hum. The brass rings are moving faster than brass should.",
+        "The Eye is white. It is not a light you are looking at; it is a light looking at you."
+      ],
+      "bonus": [
+        {
+          "item": "vg_unsleeping_eye",
+          "from": 10,
+          "to": 60
+        },
+        {
+          "item": "hollow_core",
+          "from": 1,
+          "to": 100,
+          "count": 3
+        },
+        {
+          "item": "vg_starglass",
+          "from": 1,
+          "to": 100,
+          "count": 3
+        },
+        {
+          "item": "essence_shadow",
+          "from": 20,
+          "to": 100,
+          "count": 2
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "crypt_stair": {
+  "exits": {"s": "lw_door"},
+  "locks": {
+   "s": {
+    "relic": "lamp",
+    "remember": "lw_door_open",
+    "msg": "In the crypt wall there is a bronze door with no handle and a ring of empty lens-seats where a lock should be. A Lamp Relic socketed into something you wear would fill the lenses. (Tallow sells Lamp Relics; Brann will socket one into Rare gear or better.)"
+   }
+  }
+ }
+}

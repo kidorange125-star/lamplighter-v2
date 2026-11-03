@@ -1,0 +1,270 @@
+{
+ "wood_path": {
+  "name": "The Tollroad",
+  "region": "Weeping Wood",
+  "pos": [
+   1,
+   -2
+  ],
+  "dark": true,
+  "waypost": true,
+  "desc": "The old road north, rutted and overgrown. Willows lean over it from both sides, dripping though it isn't raining. A guild waypost stands at the roadside, its lamp cold.",
+  "exits": {
+   "s": "gate",
+   "n": "wood_fork"
+  },
+  "enc": {
+   "chance": 0.25,
+   "groups": [
+    [
+     [
+      "gloam_wolf"
+     ],
+     3
+    ],
+    [
+     [
+      "hollow_fawn",
+      "hollow_fawn"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "willows|trees": "They weep sap the colour of tea. The wood was named for them long before the dark.",
+   "waypost|lamp": "A guild waypost. Light it (type 'light') and it will burn on its own again, keeping Hollows away and letting you rest and refill here."
+  }
+ },
+ "wood_fork": {
+  "name": "The Hanged Fork",
+  "region": "Weeping Wood",
+  "pos": [
+   1,
+   -3
+  ],
+  "dark": true,
+  "desc": "The road splits under a huge dead oak. Someone has nailed signs to it: WEST, CAMP. EAST, SHRINE. NORTH, DON'T. Old ropes hang from the lower branches, thankfully empty.",
+  "exits": {
+   "s": "wood_path",
+   "w": "hunters_camp",
+   "e": "thicket",
+   "n": "deepwood"
+  },
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [
+     [
+      "gloam_wolf"
+     ],
+     2
+    ],
+    [
+     [
+      "gloam_wolf",
+      "gloam_wolf"
+     ],
+     2
+    ],
+    [
+     [
+      "moth_swarm"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "signs|oak": "NORTH, DON'T has been carved over an older sign. The older one says MOTHER."
+  }
+ },
+ "hunters_camp": {
+  "name": "Abandoned Hunters' Camp",
+  "region": "Weeping Wood",
+  "pos": [
+   0,
+   -3
+  ],
+  "dark": true,
+  "desc": "Three tents, slashed and sagging. A cold firepit full of grey ash. Drying racks with nothing on them. Whatever happened here happened fast.",
+  "exits": {
+   "e": "wood_fork"
+  },
+  "items": [
+   "hunting_spear",
+   "oil",
+   "page2"
+  ],
+  "fixed": {
+   "flag": "camp_wight",
+   "enemies": [
+    "rootwight"
+   ],
+   "intro": "One of the drying racks unfolds itself, stands up, and turns toward your light."
+  },
+  "features": {
+   "tents": "Bedrolls, a boot, a child's carved wooden bird. You put the bird back.",
+   "firepit|ash": "Cold for weeks. There are moth wings in the ash, hundreds of them."
+  }
+ },
+ "thicket": {
+  "name": "Briar Thicket",
+  "region": "Weeping Wood",
+  "pos": [
+   2,
+   -3
+  ],
+  "dark": true,
+  "waypost": true,
+  "desc": "Thorns as long as fingers, woven into tunnels. The path winds through them toward a clearing where a second guild waypost stands, leaning.",
+  "exits": {
+   "w": "wood_fork"
+  },
+  "items": [
+   "wren_ribbon"
+  ],
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [
+     [
+      "moth_swarm"
+     ],
+     2
+    ],
+    [
+     [
+      "moth_swarm",
+      "moth_swarm"
+     ],
+     1
+    ],
+    [
+     [
+      "gloam_wolf"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "thorns|briars": "Something small came through here, and recently. There are threads caught on the thorns.",
+   "waypost": "The second waypost. Its glass is cracked but the wick is good."
+  }
+ },
+ "deepwood": {
+  "name": "The Deepwood",
+  "region": "Weeping Wood",
+  "pos": [
+   1,
+   -4
+  ],
+  "dark": true,
+  "desc": "The trees close overhead. Even with your lantern the dark here feels thick, like water. To the west, a thread of real woodsmoke. To the east, a soft grey shimmer. To the north, the trees are white, and something enormous has broken a path through them.",
+  "exits": {
+   "s": "wood_fork",
+   "w": "hermit_hut",
+   "e": "moth_shrine",
+   "n": "mother_grove"
+  },
+  "enc": {
+   "chance": 0.35,
+   "groups": [
+    [
+     [
+      "rootwight"
+     ],
+     2
+    ],
+    [
+     [
+      "gloam_wolf",
+      "gloam_wolf"
+     ],
+     2
+    ],
+    [
+     [
+      "rootwight",
+      "gloam_wolf"
+     ],
+     1
+    ]
+   ]
+  },
+  "features": {
+   "path|white trees": "The trunks are scored with antler marks higher than your head."
+  }
+ },
+ "hermit_hut": {
+  "name": "Corvin's Hut",
+  "region": "Weeping Wood",
+  "pos": [
+   0,
+   -4
+  ],
+  "dark": false,
+  "rest": true,
+  "desc": "A crooked hut, half dug into a hillside, with a real fire burning in a real hearth. Bundles of herbs hang from the ceiling and a raven watches you from a perch. An old man in a coat of feathers squints at your lantern.",
+  "exits": {
+   "e": "deepwood"
+  },
+  "npcs": [
+   "corvin"
+  ],
+  "features": {
+   "raven": "It watches the lantern, not you.",
+   "herbs": "Hemlock, feverfew, moonwort. And things you don't recognise."
+  }
+ },
+ "moth_shrine": {
+  "name": "Shrine of the Moth",
+  "region": "Weeping Wood",
+  "pos": [
+   2,
+   -4
+  ],
+  "dark": true,
+  "waypost": true,
+  "desc": "A mossy stone shrine to some forgotten saint of travellers, carved with moth wings. The third guild waypost stands beside it, smothered in grey moths.",
+  "exits": {
+   "w": "deepwood"
+  },
+  "items": [
+   "honeycake"
+  ],
+  "fixed": {
+   "flag": "shrine_moths",
+   "enemies": [
+    "moth_swarm",
+    "moth_swarm"
+   ],
+   "intro": "The moths on the waypost rise all at once, a grey cloud, and come for your lantern."
+  },
+  "features": {
+   "shrine|saint": "The saint's face is worn away. Someone has left a honeycake as an offering. Old, but still good.",
+   "waypost": "The third waypost. Light it and the whole Tollroad will be guarded again."
+  }
+ },
+ "mother_grove": {
+  "name": "The White Grove",
+  "region": "Weeping Wood",
+  "pos": [
+   1,
+   -5
+  ],
+  "dark": true,
+  "desc": "A clearing of white birches around a pool as still as glass. Bones lie in heaps between the roots, picked clean. At the far side, a great cage of living roots has grown up from the earth.",
+  "exits": {
+   "s": "deepwood"
+  },
+  "event": "mother_grove",
+  "features": {
+   "pool": "It reflects your lantern perfectly, but not you.",
+   "cage|roots": "Woven roots, thick as your arm, grown into a dome."
+  },
+  "boss": "mother_dead",
+  "boss_name": "The Antlered Mother"
+ }
+}

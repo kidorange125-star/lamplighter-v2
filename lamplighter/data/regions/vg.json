@@ -1,0 +1,19 @@
+[
+  {
+    "id": "The Vigil",
+    "ring": 5,
+    "levels": "11-12",
+    "gear": "Legendary - Godlike",
+    "blurb": "A ridge-top observatory whose watchers have not closed their eyes in fifty years.",
+    "dealer": true,
+    "dealer_after": "beacon_The Frostfair"
+  },
+  {
+    "id": "The Waking Cellars",
+    "ring": 5,
+    "levels": "12",
+    "gear": "Godlike",
+    "blurb": "The Order's sleeping-cells, below the Court of Dials. Those who died awake are still on watch.",
+    "dealer": false
+  }
+]

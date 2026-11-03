@@ -1,0 +1,18 @@
+{
+  "ff_fair_stall": {
+    "name": "Fairwarden's Stall",
+    "room": "ff_stall",
+    "resident": "ff_marit",
+    "cost": {
+      "gold": 1200,
+      "items": {
+        "ff_rime": 8,
+        "cinder": 6
+      }
+    },
+    "minutes": 40,
+    "steps": 60,
+    "rent": 14,
+    "blurb": "Marit sells fair-lights and cider, and hands you a free candle every day."
+  }
+}

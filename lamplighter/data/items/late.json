@@ -1,0 +1,16 @@
+{
+ "late_receipt_court": {
+  "name": "Receipt: the Ember Court",
+  "kind": "key",
+  "value": 0,
+  "rarity": "common",
+  "desc": "Received of the Ember Court, the last coal of the last dance. The Queen would not be parted from the music, so I took the fire and left the music. I do not think that was a fair trade. Held in trust. -A."
+ },
+ "late_aldrics_letter": {
+  "name": "Aldric's Letter",
+  "kind": "key",
+  "value": 0,
+  "rarity": "common",
+  "desc": "To the one who comes after, whoever lights the lamps now. I thought a great many small lights, lent and not given, could feed the Well so that no Keeper need ever be swallowed. I was wrong. A lent flame is a debt, and a debt warms no one. The Well wants a flame given freely, or it wants nothing. I did not have the courage to give mine. So I took theirs, and wrote it down, so that someone could return it. Return it. Light each of them again where it belongs, with your own oil if you must. They will not feed the Well. They will feed the people, which I should have known was the same thing. And if the smiths ask how a blade is made that can outlast the dark, tell them what Corm knew: water takes the heat, oil takes the brittleness, and the third quench is a flame that someone chose to give you. I am sorry. I am so very sorry. -Aldric. (Tell Orrin the wick was always his to trim.)"
+ }
+}

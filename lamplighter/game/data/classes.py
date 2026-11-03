@@ -1,0 +1,64 @@
+"""The three paths an apprentice can take. Skills are resolved in combat.py."""
+
+CLASSES = {
+    "warden": {
+        "name": "Warden",
+        "color": "sky",
+        "blurb": "Shield and stubbornness. Hard to kill, hits like a falling door. "
+                 "Stuns enemies before their big attacks land.",
+        "base": {"hp": 52, "str": 6, "wil": 3, "agi": 3, "vit": 2},
+        "gear": ["oilskin"],
+        "grow": "str",
+        "skills": ["bash", "bulwark", "rally", "judgement"],
+    },
+    "ashblade": {
+        "name": "Ashblade",
+        "color": "flame",
+        "blurb": "A lamplighter who learned the fire can be thrown. Sets enemies burning, "
+                 "and makes the lantern's flare far stronger.",
+        "base": {"hp": 40, "str": 3, "wil": 7, "agi": 4, "vit": 1},
+        "gear": ["oilskin", "ember_locket"],
+        "grow": "wil",
+        "skills": ["ember_strike", "kindle", "cinder_wall", "immolate"],
+    },
+    "wayfarer": {
+        "name": "Wayfarer",
+        "color": "moss",
+        "blurb": "Quick feet, a quicker knife. Bleeds enemies, dodges blows, "
+                 "and finishes wounded things in one cut.",
+        "base": {"hp": 44, "str": 5, "wil": 3, "agi": 7, "vit": 1},
+        "gear": ["oilskin"],
+        "grow": "agi",
+        "skills": ["twin_cut", "shadowstep", "hamstring", "coup"],
+    },
+}
+
+SKILLS = {
+    # Warden
+    "bash": {"name": "Shield Bash", "cost": 3, "level": 1, "target": "enemy",
+             "desc": "A solid hit with a 45% chance to stun. Stunning cancels the enemy's next move."},
+    "bulwark": {"name": "Bulwark", "cost": 3, "level": 1, "target": "self",
+                "desc": "Brace for 2 turns: take 60% less damage and hit back at anyone who strikes you."},
+    "rally": {"name": "Rally", "cost": 5, "level": 3, "target": "self",
+              "desc": "Heal 30% of your health and shake off every harmful effect."},
+    "judgement": {"name": "Judgement", "cost": 6, "level": 5, "target": "enemy",
+                  "desc": "A crushing blow. Far stronger against stunned or weakened enemies."},
+    # Ashblade
+    "ember_strike": {"name": "Ember Strike", "cost": 3, "level": 1, "target": "enemy",
+                     "desc": "A burning blow driven by Will. Sets the target burning for 3 turns."},
+    "kindle": {"name": "Kindle", "cost": 2, "level": 1, "target": "self",
+               "desc": "Feed the fire: your next fire skill or flare deals +40%, and your lantern regains 12 oil."},
+    "cinder_wall": {"name": "Cinder Wall", "cost": 4, "level": 3, "target": "self",
+                    "desc": "A wall of embers that absorbs damage (Will x3) and burns whoever hits it."},
+    "immolate": {"name": "Immolate", "cost": 7, "level": 5, "target": "all",
+                 "desc": "Engulf every enemy. Consumes their burns to deal extra damage."},
+    # Wayfarer
+    "twin_cut": {"name": "Twin Cut", "cost": 3, "level": 1, "target": "enemy",
+                 "desc": "Two quick cuts, each with a 50% chance to cause bleeding."},
+    "shadowstep": {"name": "Shadowstep", "cost": 2, "level": 1, "target": "self",
+                   "desc": "Slip aside: dodge the next attack completely, and your next hit is a critical."},
+    "hamstring": {"name": "Hamstring", "cost": 4, "level": 3, "target": "enemy",
+                  "desc": "Cripple the target: heavy bleeding and Weakness (they deal 35% less damage)."},
+    "coup": {"name": "Coup de Grace", "cost": 6, "level": 5, "target": "enemy",
+             "desc": "A finishing strike. Devastating against enemies below 35% health."},
+}

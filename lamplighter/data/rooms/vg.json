@@ -1,0 +1,724 @@
+{
+  "vg_ladder": {
+    "name": "The Long Ladder",
+    "region": "The Vigil",
+    "pos": [
+      0,
+      0
+    ],
+    "dark": true,
+    "desc": "A thousand steps cut into the ridge, with a rope rail worn smooth by hands and the cloud falling away below. At the top the cloud ends. Above it is daylight with no night in it, a white sky so even that it hurts to hold.",
+    "exits": {
+      "d": "ff_signal_stair",
+      "e": "vg_porters_lodge"
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [
+          [
+            "vg_brother"
+          ],
+          3
+        ],
+        [
+          [
+            "vg_brother",
+            "vg_star"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_glare"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "steps|stairs": "Fifty years of tallies. The last mark is today's.",
+      "rail|rope": "Rope, replaced many times. The newest knot is tied as neatly as the first.",
+      "cloud": "Behind you the cloud closes over the Signal Stair. Ahead, the light has no source and no edge."
+    }
+  },
+  "vg_porters_lodge": {
+    "name": "The Porters' Lodge",
+    "region": "The Vigil",
+    "pos": [
+      1,
+      0
+    ],
+    "dark": true,
+    "rest": true,
+    "outpost": true,
+    "wake": "You wake with slippers on your feet that you did not put there. Tick is standing by the bed with its hands folded. 'Rested,' it says. 'Warm.' Your purse is lighter by %d gold.",
+    "desc": "A clockwork porters' lodge as neat as the inside of a watch: a row of warm slippers by the door, a desk with a brass bell, a small fire burning in the grate on nothing you can see, and folded blankets stacked to the rafters, enough for a hundred beds. A cot stands made, for anyone who would like to close their eyes for a while.",
+    "exits": {
+      "w": "vg_ladder",
+      "e": "vg_great_court",
+      "s": "vg_dormitory"
+    },
+    "npcs": [
+      "vg_tick"
+    ],
+    "features": {
+      "slippers": "Eight thousand slippers. Warm. The Brothers do not use them.",
+      "bell": "A brass bell on the desk. A card beside it says RING FOR SERVICE, and under that, in smaller letters, Please. Anyone.",
+      "cot|blankets|bed": "Folded in thirds, the corners squared. The cot is the only bed in the Vigil anyone has been invited to use.",
+      "keys|desk": "A ring of keys on a nail, each labelled in a tidy hand. None has been used since the first year of the Vigil."
+    }
+  },
+  "vg_great_court": {
+    "name": "The Court of Dials",
+    "region": "The Vigil",
+    "pos": [
+      2,
+      0
+    ],
+    "dark": true,
+    "desc": "Sundials, astrolabes and armillary spheres, the whole sky in brass, on plinths and walls and the flagged floor. All of them point at the same spot. Beneath the great sundial a trapdoor is set into the stones, bolted from above.",
+    "exits": {
+      "w": "vg_porters_lodge",
+      "n": "vg_library",
+      "e": "vg_orrery_hall",
+      "s": "vg_reckoning_room",
+      "d": "vg_cellar_stair"
+    },
+    "locks": {
+      "d": {
+        "flag": "beacon_The Vigil",
+        "msg": "A trapdoor under the Court's great sundial, bolted. The Order's sleeping-cells lie below, and the bolt only slides once the Signal is sent: light the brazier under the Eye."
+      }
+    },
+    "enc": {
+      "chance": 0.35,
+      "groups": [
+        [
+          [
+            "vg_sentinel"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_brother"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_star"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_brother",
+            "vg_sentinel"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "dials": "Every shadow falls to the same patch of floor. There is a worn place there, as if someone has been standing in it.",
+      "astrolabes|spheres": "Every one is set to the same date, and the date is not today's. It is the day the Signal was lent.",
+      "trapdoor|bolt|hatch": "A trapdoor under the great sundial, bolted from above. The bolt is oiled. It has been kept ready for fifty years, for the day it would be wanted."
+    }
+  },
+  "vg_library": {
+    "name": "The Chart Library",
+    "region": "The Vigil",
+    "pos": [
+      2,
+      -1
+    ],
+    "dark": true,
+    "desc": "Star-charts on every wall, annotated in a tall narrow hand, the ink gone brown. Ladders on brass rails, a reading-desk with a lamp that has been turned down and never off, and a smell of vellum and cold tea.",
+    "exits": {
+      "s": "vg_great_court",
+      "e": "vg_heliograph"
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [
+          [
+            "vg_brother"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_glare"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_brother",
+            "vg_brother"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_star",
+            "vg_glare"
+          ],
+          1
+        ]
+      ]
+    },
+    "items": [
+      "vg_receipt",
+      "vg_star_plate",
+      "vg_star_plate",
+      "strong_draught"
+    ],
+    "features": {
+      "charts": "In the margin of the Great Chart, in tiny script: Ysolde, N.B. the Eye must not be left unwatched. She underlined it twice.",
+      "desk|lamp": "The lamp is turned down low, with a pen laid beside it exactly where a hand would put it. A teacup. The tea is a stain.",
+      "pigeonholes|lenders": "A rack of pigeonholes labelled by year, fifty of them nearly empty. The newest holds a single slip of paper in a nervous hand: a receipt."
+    }
+  },
+  "vg_heliograph": {
+    "name": "The Heliograph Terrace",
+    "region": "The Vigil",
+    "pos": [
+      3,
+      -1
+    ],
+    "dark": true,
+    "waypost": true,
+    "waypost_text": "You open the relay lamp and touch your flame to its wick. The first mirror throws a flash across the dark, east, the first in fifty years. Nothing answers. Not yet.",
+    "desc": "A terrace of relay mirrors that once carried the dawn from ridge to ridge across the north. They stand in a row along the parapet, tilted east, each polished by hand to a clean white shine.",
+    "exits": {
+      "w": "vg_library",
+      "s": "vg_orrery_hall"
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [
+          [
+            "vg_glare"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_glare",
+            "vg_star"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "mirrors": "Facing east, every one. Lighting the waypost is the first flash in fifty years.",
+      "lamp|waypost|relay": "A relay lamp in a brass hood. Light it (type 'light') and this terrace is safe to rest at.",
+      "east|dawn|horizon": "Far off, past the cloud, the valley where Hollowmere lies. The Order watched this horizon for the dawn for three hundred years, and then for a different word."
+    }
+  },
+  "vg_orrery_hall": {
+    "name": "The Orrery Hall",
+    "region": "The Vigil",
+    "pos": [
+      3,
+      0
+    ],
+    "dark": true,
+    "fixed": {
+      "flag": "vg_orrery_dead",
+      "enemies": [
+        "vg_orrery"
+      ],
+      "intro": "The Orrery turns, and the whole sky turns with it. 'Visitors are not on the chart,' it hums."
+    },
+    "boss": "vg_orrery_dead",
+    "boss_name": "The Great Orrery",
+    "desc": "A brass model of the sky as big as a chapel, its planets still wandering on their wires, its rings turning in their own slow weather. At its centre, where the Sun ought to be, a hook is set for a key.",
+    "exits": {
+      "w": "vg_great_court",
+      "n": "vg_heliograph",
+      "s": "vg_mirror_gallery",
+      "e": "vg_lens_stair"
+    },
+    "locks": {
+      "e": {
+        "item": "vg_lens_key",
+        "msg": "The Lens Stair is shut behind a bronze iris that turns only for the Orrery's key. The Great Orrery wears it, and it is turning in this room. Defeat it."
+      }
+    },
+    "features": {
+      "orrery": "The Earth is a pearl on a wire. The Sun is a lamp that has been turned down.",
+      "rings": "Nine concentric rings, counter-rotating. A plaque on the lowest: Built so that novices might learn the sky is large and they are small. It does not say whether this is a comfort.",
+      "key|iris|hook": "The Orrery wears a bronze iris-key at its heart, in the Sun's place. A key like that is made to be taken by whoever stops the sky."
+    }
+  },
+  "vg_dormitory": {
+    "name": "The Dormitory",
+    "region": "The Vigil",
+    "pos": [
+      1,
+      1
+    ],
+    "dark": true,
+    "desc": "Two hundred beds in long rows under a ceiling painted with the stars as they look from the east. Every bed is made, every pillow plumped. Nobody has slept in any of them.",
+    "exits": {
+      "n": "vg_porters_lodge",
+      "e": "vg_reckoning_room",
+      "s": "vg_lens_cupboard"
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [
+          [
+            "vg_brother"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_blind_spot"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_brother",
+            "vg_blind_spot"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "beds": "Hospital corners. Each pillow has a dent from the one night, fifty years ago, when they lay down and could not close their eyes.",
+      "ceiling|stars": "A painted star for every Brother. A few have been touched with a thumb, as if to check they were still there."
+    }
+  },
+  "vg_reckoning_room": {
+    "name": "The Reckoning Room",
+    "region": "The Vigil",
+    "pos": [
+      2,
+      1
+    ],
+    "dark": true,
+    "desc": "Brass counters tallying days awake, row on row, each with its own small crank. A clerk's rail runs round the walls and a hundred brass pens lie on it where they were put down. The room ticks like a held breath.",
+    "exits": {
+      "n": "vg_great_court",
+      "w": "vg_dormitory",
+      "e": "vg_mirror_gallery",
+      "s": "vg_chapel"
+    },
+    "enc": {
+      "chance": 0.35,
+      "groups": [
+        [
+          [
+            "vg_blind_spot"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_sentinel"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_sentinel",
+            "vg_star"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_blind_spot",
+            "vg_brother"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "counters": "DAY 18,262 OF THE VIGIL. The number turns while you watch.",
+      "pens|rail": "Pens for the tally-keepers, laid out in the order of their service. The last is dry. Someone stopped here and kept counting in their head.",
+      "ledger|book": "A great ledger on a lectern, one line a day: AWAKE. AWAKE. AWAKE. The handwriting changes every few thousand lines."
+    }
+  },
+  "vg_mirror_gallery": {
+    "name": "The Mirror Gallery",
+    "region": "The Vigil",
+    "pos": [
+      3,
+      1
+    ],
+    "dark": true,
+    "field": {
+      "name": "Hall of Mirrors",
+      "light": 1.25,
+      "shadow": 0.8,
+      "msg": "The mirrors fold light back on itself and swallow shadow: flares and Light spells burn brighter, Shadow spells weaker."
+    },
+    "desc": "A long hall of mirrors that never reflects the same thing twice, in frames of tarnished brass, the light bouncing between them until it has no direction. At the south end a door of black, felt-lined oak is set in the wall, and no mirror faces it.",
+    "exits": {
+      "n": "vg_orrery_hall",
+      "w": "vg_reckoning_room",
+      "s": "vg_camera_obscura"
+    },
+    "locks": {
+      "s": {
+        "element": [
+          "shadow"
+        ],
+        "remember": "vg_obscura_open",
+        "msg": "The Camera Obscura has no lamp and no window and a door of black felt-lined oak. It lets in only someone who carries a night of their own: equip a Shadow spell book (type 'spells') and try again."
+      }
+    },
+    "enc": {
+      "chance": 0.4,
+      "groups": [
+        [
+          [
+            "vg_glare"
+          ],
+          3
+        ],
+        [
+          [
+            "vg_glare",
+            "vg_glare"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_glare",
+            "vg_sentinel"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_star"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "mirrors": "One shows the room. One shows the room fifty years ago, full. One shows you, asleep.",
+      "door|felt": "A door of black oak, lined in felt like a case for an instrument. It has no handle and no keyhole. A small brass plate reads: THE NIGHT ONLY."
+    }
+  },
+  "vg_camera_obscura": {
+    "name": "The Camera Obscura",
+    "region": "The Vigil",
+    "pos": [
+      3,
+      2
+    ],
+    "dark": true,
+    "no_dealer": true,
+    "desc": "A dark room. The only dark room in the Vigil: a black chamber with a pinhole in the roof, through which one thin bar of daylight falls on a round white table. Glass plates of the night sky are stacked to the ceiling on every side. It is cool, and quiet, and smells of old glass.",
+    "exits": {
+      "n": "vg_mirror_gallery"
+    },
+    "items": [
+      "vg_sixfold_chart",
+      "vg_astrolabe_rod",
+      "vg_nightcloak",
+      "hollow_core",
+      "hollow_core",
+      "vg_starglass",
+      "vg_starglass",
+      "vg_starglass",
+      "vg_starglass",
+      "relic_pulse",
+      "core_heart_shadow",
+      "core_heart_light"
+    ],
+    "features": {
+      "plates": "Glass plates of the night sky, stacked to the ceiling. Nobody has looked at them in fifty years.",
+      "pinhole|table": "The pinhole throws the sun's image on the table, upside down and the size of a coin. It is the only picture of the day the Order ever allowed itself.",
+      "shelves|crates": "Chests of lens-blanks, a rack of star-wheels, a coat hung on a peg. Whoever hung it looked forward to wearing it."
+    }
+  },
+  "vg_chapel": {
+    "name": "The Chapel of Closed Eyes",
+    "region": "The Vigil",
+    "pos": [
+      2,
+      2
+    ],
+    "dark": true,
+    "no_dealer": true,
+    "desc": "Where the Order closed the eyes of their dead: a low vaulted room, the windows shuttered, an altar of stone worn hollow at its centre and rows of narrow benches facing it. Candles burn in iron holders, steady and white. It is the stillest room in the Vigil, and the saddest.",
+    "exits": {
+      "n": "vg_reckoning_room",
+      "w": "vg_lens_cupboard"
+    },
+    "features": {
+      "altar": "Worn hollow where hands have pressed down eyelids for centuries.",
+      "benches": "Each has a footrest worn in the middle, a small shelf for a candle, and a smaller one for a pair of spectacles.",
+      "candles": "They have never needed trimming. They do not drip.",
+      "steps|habit": "Three steps up to the altar, swept clean. The Order folded the habit of any Brother it had given sleep on these steps, as it always did for its own."
+    }
+  },
+  "vg_lens_cupboard": {
+    "name": "The Lens-Cleaner's Cupboard",
+    "region": "The Vigil",
+    "pos": [
+      1,
+      2
+    ],
+    "dark": true,
+    "no_dealer": true,
+    "desc": "A cupboard with a cot, a dented pillow and the only dust in the Vigil. Cloths on the shelves, a bottle of lens-polish, a bucket, and one window the size of a hand through which the white light falls on a folded blanket.",
+    "exits": {
+      "n": "vg_dormitory",
+      "e": "vg_chapel"
+    },
+    "npcs": [
+      "vg_hale"
+    ],
+    "features": {
+      "dust": "Real dust. Soft, grey, undisturbed. It is the most restful thing you have seen in this building.",
+      "cot|pillow": "A cot made for a boy of nineteen. The dent in the pillow is the shape of a head that did not want to be found.",
+      "rags|cloths": "Lens-cleaning rags, piled deep. On the third night of the Vigil a boy lay down behind them and, for the only time in the Order's long wakefulness, shut his eyes.",
+      "door|latch": "The latch is on the outside. It was fastened with great gentleness, a long time ago, by someone who meant it as a kindness."
+    }
+  },
+  "vg_lens_stair": {
+    "name": "The Lens Stair",
+    "region": "The Vigil",
+    "pos": [
+      4,
+      0
+    ],
+    "dark": true,
+    "no_dealer": true,
+    "desc": "The last steps before the Eye. The light is so bright the stone has no shadows, and the bronze iris at the foot of the stair stands open behind you like a held-open door.",
+    "exits": {
+      "w": "vg_orrery_hall",
+      "e": "vg_eye"
+    },
+    "enc": {
+      "chance": 0.3,
+      "groups": [
+        [
+          [
+            "vg_sentinel"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_brother",
+            "vg_sentinel"
+          ],
+          1
+        ],
+        [
+          [
+            "vg_star"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "stair": "Dread peaks here. Count the steps and breathe.",
+      "iris": "The Orrery's key turned it, and it has not closed since. It is the only door in the Vigil that anyone has been glad to see open.",
+      "light": "White, level and unblinking. You can feel it on the back of your eyes, like a hand that wants you to keep them open."
+    }
+  },
+  "vg_eye": {
+    "name": "The Eye Chamber",
+    "region": "The Vigil",
+    "pos": [
+      5,
+      0
+    ],
+    "dark": true,
+    "boss": "vg_eye_dead",
+    "boss_name": "The Unsleeping Eye",
+    "beacon": true,
+    "beacon_oil": 35,
+    "wake": "You wake at the foot of the Eye, in a light that has finally learned to be gentle. Nobody carried you; the brazier simply kept the place beside it warm. Your purse is lighter by %d gold.",
+    "beacon_text": "You pour the oil into the Signal Brazier under the Eye, and touch your flame to it.",
+    "field": {
+      "name": "Noon",
+      "shadow": 0.75,
+      "light": 1.25,
+      "msg": "It is permanent noon under the Eye: shadow spells are thinner here, light thicker."
+    },
+    "desc": "A drum of brass and glass under an open Dome. In the middle, on a mount that has not moved in fifty years, a lens thirty feet across. At its foot, a brazier in a cradle of dark iron waits for oil and a flame.",
+    "exits": {
+      "w": "vg_lens_stair"
+    },
+    "features": {
+      "lens|eye": "The Eye. Inside it, if you look, a shape that might be a face.",
+      "brazier|beacon": "The Signal Brazier under the Eye. When it is done, light it (type 'light').",
+      "chain|mount": "A Prior's chain hangs from the mount: brass links, each stamped with a day. There are 18,262 of them.",
+      "dome|shutters": "Rolled open to the white sky. They have not closed since the first night."
+    }
+  },
+  "vg_loft": {
+    "name": "The Almanac Loft",
+    "region": "Hollowmere",
+    "pos": [
+      -2,
+      1
+    ],
+    "dark": false,
+    "desc": "A loft under the Magician's Tower's eaves, with a window facing east, a ladder, a desk of charts and a telescope on a tripod. The floorboards are new and smell of pine. Somebody has already pinned a calendar to the wall, with every night circled.",
+    "exits": {
+      "e": "tower"
+    },
+    "features": {
+      "window": "East-facing. The first thing it will ever see is the morning.",
+      "desk|charts": "Star-charts, a ruler, a pencil sharpened at both ends. Tomorrow's page is already begun.",
+      "telescope": "Brass, on a tripod, pointed at nothing in particular. 'Practice,' says a note. 'I am out of it.'"
+    }
+  },
+  "vg_cellar_stair": {
+    "name": "The Cellar Stair",
+    "region": "The Waking Cellars",
+    "pos": [
+      0,
+      0
+    ],
+    "dark": true,
+    "waypost": true,
+    "waypost_text": "You open the niche and touch your flame to a wick that was left trimmed for the day somebody would want it. The cellar gets, for the first time, a small gold ceiling.",
+    "desc": "Steps down into cool, honest dark, the first night the Vigil has had. The white light stops at the top of the stair as if at a doorsill. A waypost has been set in the wall at the foot, in a niche meant for a candle.",
+    "exits": {
+      "u": "vg_great_court",
+      "e": "vg_cellar_hall"
+    },
+    "enc": {
+      "chance": 0.4,
+      "groups": [
+        [
+          [
+            "vg_brother"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_blind_spot"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_sentinel"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "dark": "Dark. Real dark. It takes a moment to remember it is not an enemy.",
+      "post|waypost": "A brass waypost in a niche. Light it (type 'light') and the stair is safe to rest at.",
+      "steps": "The treads are worn in the middle, but only by the soft footsteps of people going down to lie down, and not by many."
+    }
+  },
+  "vg_cellar_hall": {
+    "name": "The Long Dormitory Below",
+    "region": "The Waking Cellars",
+    "pos": [
+      1,
+      0
+    ],
+    "dark": true,
+    "desc": "Rows of narrow cots, and on each a Brother lying with open eyes. Nobody has covered them. Some of the cots have been tidied round them, a blanket drawn straight, a pair of spectacles set on a stool.",
+    "exits": {
+      "w": "vg_cellar_stair",
+      "s": "vg_cellar_cells"
+    },
+    "enc": {
+      "chance": 0.45,
+      "groups": [
+        [
+          [
+            "vg_cellar_dead"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_brother",
+            "vg_blind_spot"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_sentinel"
+          ],
+          1
+        ]
+      ]
+    },
+    "items": [
+      "vg_star_plate",
+      "vg_star_plate",
+      "strong_draught"
+    ],
+    "features": {
+      "cots": "They are not breathing. They are not blinking either.",
+      "blankets": "Each cot is made up, and each Brother lies on top of the covers, as one does who has not been given leave to get in."
+    }
+  },
+  "vg_cellar_cells": {
+    "name": "The Cells",
+    "region": "The Waking Cellars",
+    "pos": [
+      1,
+      1
+    ],
+    "dark": true,
+    "desc": "Cells for those who asked to be left alone with the dark: each a stool, a blanket and a shuttered window. The doors were never locked. They stand open, all of them, and every cell is empty but for the stool.",
+    "exits": {
+      "n": "vg_cellar_hall"
+    },
+    "enc": {
+      "chance": 0.45,
+      "groups": [
+        [
+          [
+            "vg_cellar_dead"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_sentinel",
+            "vg_blind_spot"
+          ],
+          2
+        ],
+        [
+          [
+            "vg_brother"
+          ],
+          1
+        ]
+      ]
+    },
+    "features": {
+      "cells": "Doors open, every one. Nobody has been alone with the dark in fifty years.",
+      "shutters": "Closed from inside. The ones who asked for the dark were allowed it, once. Then they were told they had a duty to be awake."
+    }
+  }
+}

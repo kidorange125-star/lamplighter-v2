@@ -1,0 +1,147 @@
+{
+ "rl_causeway": {
+  "name": "The Causeway",
+  "region": "The Reedlight",
+  "pos": [0, 0],
+  "dark": true,
+  "desc": "A line of posts, each with a lamp-hook, leads across the black water to a tower: the keeper's last mile. The fog stands behind you like a wall, and ahead the reeds have been cut back, once, by someone who meant the path to last.",
+  "exits": {
+   "n": "bog_lights",
+   "e": "rl_sluice",
+   "s": "rl_cottage"
+  },
+  "enc": {
+   "chance": 0.35,
+   "groups": [
+    [["wisp"], 2],
+    [["rl_heronling"], 2],
+    [["wisp", "rl_heronling"], 1]
+   ]
+  },
+  "features": {
+   "posts|hooks|hook": "Every hook is polished by years of someone's hand. Every lamp is gone.",
+   "fog|wall": "White on the water, and quite still. From this side it looks like a sheet hung out to dry."
+  }
+ },
+ "rl_sluice": {
+  "name": "The Sluice Works",
+  "region": "The Reedlight",
+  "pos": [1, 0],
+  "dark": true,
+  "desc": "Gears and a rusted wheel: the tide-gate that made the ferry channel. Brine drips from the gantry and the whole works ticks softly, like a clock that has forgotten what it is counting.",
+  "exits": {
+   "w": "rl_causeway",
+   "e": "rl_tower_foot",
+   "s": "rl_oilhouse"
+  },
+  "enc": {
+   "chance": 0.3,
+   "groups": [
+    [["rl_lampman"], 2],
+    [["rl_lampman", "wisp"], 1]
+   ]
+  },
+  "features": {
+   "wheel|gears|gate": "It turns a quarter-turn when the tide moves, as it was built to.",
+   "gantry": "A plank walk over the gate. Chalked on a beam: LAMPS OUT AT SUNRISE. Nobody has rubbed it off, and nobody has had a sunrise to obey it."
+  }
+ },
+ "rl_tower_foot": {
+  "name": "The Tower Foot",
+  "region": "The Reedlight",
+  "pos": [2, 0],
+  "dark": true,
+  "desc": "Two hundred steps spiral up a wall of white-washed stone, each with a chalk tally. The door at the foot of the stair is shut, and the whitewash round it is the only clean thing in the marsh.",
+  "exits": {
+   "w": "rl_sluice",
+   "n": "rl_lantern_room"
+  },
+  "locks": {
+   "n": {
+    "item": "rl_tower_key",
+    "msg": "The tower door is locked. The keeper kept his key where he kept the oil, in the oil-house south of the sluice, and the oil-house has guests."
+   }
+  },
+  "enc": {
+   "chance": 0.25,
+   "groups": [
+    [["rl_heronling", "rl_lampman"], 1],
+    [["rl_heronling"], 2]
+   ]
+  },
+  "features": {
+   "tally|steps|stair": "Ansel counted his own steps. The last tally is dated the night he came down for the Keeper.",
+   "door": "Oak, banded with brass gone green. There is a small notch worn in the sill where a boot waited for the lock, every dusk, for years."
+  }
+ },
+ "rl_lantern_room": {
+  "name": "The Lamp Room",
+  "region": "The Reedlight",
+  "pos": [2, -1],
+  "dark": true,
+  "desc": "A room of glass, open to the sky where the panes have fallen. The great lens-cradle stands empty in the middle of the floor, with a nest of grey plumes under it, where the keeper used to stand to trim the flame. Far below, the black marsh goes on in every direction.",
+  "exits": {
+   "s": "rl_tower_foot"
+  },
+  "fixed": {
+   "flag": "rl_heron_dead",
+   "enemies": ["rl_heron"],
+   "intro": "The heron does not move. Only her eye turns, slowly, and the sliver of lens in it finds your lantern."
+  },
+  "boss": "rl_heron_dead",
+  "boss_name": "The Lens-Eyed Heron",
+  "features": {
+   "cradle": "Brass, bent at one corner where something heavy was lifted out in a hurry.",
+   "plumes|heap": "A heap of grey plumes under the cradle, nested into a bed. Under them, glints of glass.",
+   "pole": "The keeper's snuffing-pole, laid in among the plumes where the heron's bed took it in, brass tip toward the ceiling."
+  }
+ },
+ "rl_cottage": {
+  "name": "The Keeper's Cottage",
+  "region": "The Reedlight",
+  "pos": [0, 1],
+  "dark": true,
+  "desc": "A keeper's cottage, tidy, cold. A kettle on the stove, a cot made up with a blanket folded square, and a lantern bracket by the door worn bright by a hand that reached for it every dusk. It is the only room in the marsh that feels expected.",
+  "exits": {
+   "n": "rl_causeway",
+   "e": "rl_oilhouse"
+  },
+  "items": [
+   "rl_receipt",
+   "strong_draught",
+   "honeycake"
+  ],
+  "waypost": true,
+  "wake": "You wake on the keeper's cot with the kettle singing. Nobody is there. Your purse is lighter by %d gold. The second cup has been moved an inch toward you.",
+  "waypost_text": "{amber}On the porch a small waypost lantern hangs where the keeper's own once hung. You trim its wick and touch your flame to it. It catches, and for a moment you think you hear a kettle begin to sing.{/}",
+  "features": {
+   "kettle|cups|cup": "Two cups. One is clean. One has a ring of tea gone to stone.",
+   "cot|blanket": "Made up for someone who would be back by dawn. The blanket is folded in thirds, the way a man folds it who is used to having nobody to tell."
+  }
+ },
+ "rl_oilhouse": {
+  "name": "The Oil-House",
+  "region": "The Reedlight",
+  "pos": [1, 1],
+  "dark": true,
+  "desc": "Barrels of whale oil, still sweet, stacked to the rafters in the cool. Drip-trays, funnels and a tally board on the wall. Whatever else has gone wrong with the Reedlight, someone kept the books on the oil.",
+  "exits": {
+   "n": "rl_sluice",
+   "w": "rl_cottage"
+  },
+  "items": [
+   "oil",
+   "oil",
+   "firepot"
+  ],
+  "fixed": {
+   "flag": "rl_oilhouse_dead",
+   "enemies": ["rl_lampman", "rl_lampman"],
+   "intro": "The keeper's drowned assistants look up from the barrels, lamp-hooks in their hands. They are still on shift."
+  },
+  "features": {
+   "barrels|oil": "Stamped REEDLIGHT. Not one has leaked in fifty years.",
+   "board|tally": "The oil ledger, in two hands. The newer hand stops mid-line, on a Tuesday. The older hand has written underneath it, very neatly, 'Gone to fetch the Keeper.'"
+  }
+ }
+}

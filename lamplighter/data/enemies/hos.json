@@ -1,0 +1,91 @@
+{
+  "hos_pilgrim": {
+    "name": "Hollow Pilgrim",
+    "hp": 50,
+    "atk": 11,
+    "def": 4,
+    "dodge": 0,
+    "xp": 22,
+    "gold": [7, 18],
+    "tags": ["hollow"],
+    "weak": ["fire", "earth"],
+    "resist": ["water"],
+    "desc": "A traveller in a grey road-cloak, walking the cloister in slow circles with an unlit lamp held out before it. It has been arriving at the Hospice for fifty years.",
+    "moves": [
+      {"name": "Staff Rap", "kind": "attack", "power": 1.0, "weight": 3, "tell": "lifts a worn staff"},
+      {"name": "Plod On", "kind": "defend", "weight": 1, "tell": "draws its cloak tight and lowers its head"},
+      {"name": "Penance", "kind": "heavy", "power": 1.8, "weight": 1, "tell": "kneels, then lunges"}
+    ],
+    "drops": [["hollow_dust", 0.5], ["rootwood", 0.4], ["essence_light", 0.3]]
+  },
+  "hos_waymoth": {
+    "name": "Waylamp Moth",
+    "hp": 30,
+    "atk": 9,
+    "def": 0,
+    "dodge": 22,
+    "xp": 16,
+    "gold": [0, 7],
+    "tags": ["hollow", "beast", "swarm"],
+    "weak": ["fire", "ice"],
+    "resist": ["earth"],
+    "desc": "A grey moth as broad as a hand, its wings printed with a tiny brass lamp. It drifts to any flame it finds, looking for the one it was bound to.",
+    "moves": [
+      {"name": "Flutter", "kind": "attack", "power": 0.7, "hits": 2, "weight": 3, "tell": "whirls around your lantern"},
+      {"name": "Scale Dust", "kind": "debuff", "status": ["blind", 2, 0], "weight": 1, "tell": "beats its wings, shedding grey scales"}
+    ],
+    "drops": [["hollow_dust", 0.4], ["essence_light", 0.35]]
+  },
+  "hos_almoner": {
+    "name": "Brother Odran the Almoner",
+    "hp": 175,
+    "atk": 14,
+    "def": 7,
+    "dodge": 0,
+    "xp": 85,
+    "gold": [25, 35],
+    "tags": ["hollow", "undead", "elite"],
+    "weak": ["fire", "shadow"],
+    "resist": ["water"],
+    "desc": "The Hospice's almoner, thin and courteous, in an apron stained with fifty years of soup. He carries a wooden alms-bowl and is still laying places for guests.",
+    "moves": [
+      {"name": "Alms Bowl", "kind": "attack", "power": 1.0, "weight": 3, "tell": "offers the bowl, rim first"},
+      {"name": "Distribute", "kind": "summon", "summon": "hos_pilgrim", "only_if": "can_summon", "weight": 1, "tell": "ladles out another guest"},
+      {"name": "Tithe", "kind": "heavy", "power": 2.1, "weight": 2, "tell": "holds out the bowl"}
+    ],
+    "drops": [["strong_draught", 1.0], ["hollow_core", 1.0], ["essence_light", 1.0]]
+  },
+  "hos_vesper": {
+    "name": "The Vesper Moth",
+    "hp": 288,
+    "atk": 14,
+    "def": 6,
+    "dodge": 8,
+    "xp": 130,
+    "gold": [70, 90],
+    "tags": ["hollow", "beast", "boss"],
+    "weak": ["fire", "ice"],
+    "resist": ["earth", "shadow"],
+    "desc": "A moth the size of a sail, grey as a cold lamp, with a pale brass mark on each wing where a lamp was. She was the saint's own, and she has been looking for her light ever since.",
+    "moves": [
+      {"name": "Wingbeat", "kind": "attack", "power": 1.0, "weight": 3, "tell": "rises on her wings"},
+      {"name": "Scale Dust", "kind": "debuff", "status": ["blind", 2, 0], "weight": 2, "tell": "shakes the rafters with a wingbeat; grey scales fall"},
+      {"name": "Drink the Flame", "kind": "drain", "power": 0.8, "drain": 12, "weight": 2, "tell": "turns her face to your lantern"},
+      {"name": "Dusk", "kind": "heavy", "power": 2.2, "weight": 2, "tell": "folds her wings back"}
+    ],
+    "phases": [
+      {
+        "at": 0.5,
+        "msg": "She is looking, not at you, but at the empty hook above the gate she can see through the wall.",
+        "moves": [
+          {"name": "Wingbeat", "kind": "attack", "power": 1.1, "weight": 3, "tell": "rises on her wings"},
+          {"name": "Scale Dust", "kind": "debuff", "status": ["blind", 2, 0], "weight": 2, "tell": "shakes the rafters with a wingbeat; grey scales fall"},
+          {"name": "Drink the Flame", "kind": "drain", "power": 0.8, "drain": 14, "weight": 2, "tell": "turns her face to your lantern"},
+          {"name": "Dusk", "kind": "heavy", "power": 2.4, "weight": 2, "tell": "folds her wings back"},
+          {"name": "Beat of Longing", "kind": "attack", "power": 0.7, "status": ["weak", 2, 0], "weight": 1, "tell": "trembles, wings half open"}
+        ]
+      }
+    ],
+    "drops": [["hollow_core", 1.0], ["essence_light", 1.0], ["essence_light", 1.0], ["strong_draught", 1.0]]
+  }
+}

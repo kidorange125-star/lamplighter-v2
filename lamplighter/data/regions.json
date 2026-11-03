@@ -1,0 +1,37 @@
+[
+ {
+  "id": "Hollowmere",
+  "ring": 0,
+  "levels": "any",
+  "gear": "any",
+  "blurb": "The town on the hill. Always lit, always safe."
+ },
+ {
+  "id": "Weeping Wood",
+  "ring": 1,
+  "levels": "1-4",
+  "gear": "Common - Uncommon",
+  "blurb": "Willows, wolves with no shadows, and the Antlered Mother."
+ },
+ {
+  "id": "Saltmarsh",
+  "ring": 2,
+  "levels": "4-6",
+  "gear": "Uncommon - Rare",
+  "blurb": "A drowned village and a sunken chapel across the black water."
+ },
+ {
+  "id": "Underdeep",
+  "ring": 3,
+  "levels": "6-8",
+  "gear": "Rare",
+  "blurb": "The old tallow mines under the hill, and the Lightwell at the bottom."
+ },
+ {
+  "id": "Ember Court",
+  "ring": 4,
+  "levels": "8-10",
+  "gear": "Epic - Ultra",
+  "blurb": "A burned noble house beyond the north gate. Its court never stopped dancing."
+ }
+]

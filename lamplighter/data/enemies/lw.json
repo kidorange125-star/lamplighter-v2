@@ -1,0 +1,91 @@
+{
+ "lw_glass_ghoul": {
+  "name": "Glass Ghoul",
+  "hp": 78,
+  "atk": 17,
+  "def": 9,
+  "dodge": 0,
+  "xp": 46,
+  "gold": [22, 36],
+  "tags": ["hollow", "undead"],
+  "weak": ["ice", "earth"],
+  "resist": ["fire"],
+  "desc": "A glassblower who never went up for his supper. Fifty years at the furnace have fused him to his own work, and he is brittle all the way through. He still tries to polish things.",
+  "moves": [
+   {"name": "Shard Claw", "kind": "attack", "power": 1.0, "status": ["bleed", 3, 4], "weight": 3,
+    "tell": "drags a hand of broken glass"},
+   {"name": "Molten Spit", "kind": "attack", "power": 0.8, "status": ["burn", 3, 5], "weight": 2,
+    "tell": "gathers a glowing bead behind its teeth"},
+   {"name": "Brittle Roar", "kind": "debuff", "status": ["exposed", 2, 0], "weight": 1,
+    "tell": "throws back its head"}
+  ],
+  "drops": [["slag", 0.4], ["essence_ice", 0.3]]
+ },
+ "lw_lampling": {
+  "name": "Lampling",
+  "hp": 60,
+  "atk": 18,
+  "def": 5,
+  "dodge": 18,
+  "xp": 42,
+  "gold": [14, 29],
+  "tags": ["construct"],
+  "weak": ["water", "earth"],
+  "resist": ["fire", "light"],
+  "desc": "A lamp that was finished but never collected, and went looking for its owner on three brass legs. It is not unkind. It only wants to be lit.",
+  "moves": [
+   {"name": "Swing", "kind": "attack", "power": 1.0, "weight": 3,
+    "tell": "swings its brass arm"},
+   {"name": "Gutter", "kind": "drain", "power": 0.7, "drain": 8, "weight": 2,
+    "tell": "gutters, and your own flame leans toward it"},
+   {"name": "Flare Up", "kind": "heavy", "power": 1.8, "status": ["burn", 3, 5], "weight": 1,
+    "tell": "swells with light"}
+  ],
+  "drops": [["slag", 0.5], ["essence_fire", 0.3]]
+ },
+ "lw_foreman": {
+  "name": "The Last Foreman",
+  "hp": 420,
+  "atk": 21,
+  "def": 14,
+  "dodge": 0,
+  "xp": 260,
+  "gold": [160, 200],
+  "tags": ["construct", "boss"],
+  "weak": ["water", "ice"],
+  "resist": ["fire", "earth"],
+  "desc": "Corm Vaskel's last invention: a foreman of brass and riveted iron, built to mind the workshop when he could not. It has minded it for fifty years, and lately it has begun to speak in his voice.",
+  "moves": [
+   {"name": "Hammer Blow", "kind": "attack", "power": 1.0, "weight": 3,
+    "tell": "lifts the peening hammer"},
+   {"name": "Tighten Up", "kind": "defend", "weight": 1,
+    "tell": "tightens a rivet in its own shoulder"},
+   {"name": "Spark Shower", "kind": "attack", "power": 0.7, "status": ["burn", 3, 6], "weight": 2,
+    "tell": "strikes the bench and the sparks fly your way"},
+   {"name": "Gather Heat", "kind": "charge", "then": "Pour the Crucible", "weight": 2,
+    "tell": "is glowing white. POUR THE CRUCIBLE is coming"}
+  ],
+  "extra_moves": {
+   "Pour the Crucible": {"name": "Pour the Crucible", "kind": "heavy", "power": 3.0,
+                         "tell": "tips the white-hot crucible over the bench"}
+  },
+  "phases": [
+   {"at": 0.5,
+    "msg": "Corm's apron smoulders. The Foreman straightens, and speaks in a voice that is not his: 'Mind the edge, lad.'",
+    "moves": [
+     {"name": "Hammer Blow", "kind": "attack", "power": 1.0, "weight": 3,
+      "tell": "lifts the peening hammer"},
+     {"name": "Tighten Up", "kind": "defend", "weight": 1,
+      "tell": "tightens a rivet in its own shoulder"},
+     {"name": "Spark Shower", "kind": "attack", "power": 0.7, "status": ["burn", 3, 6], "weight": 2,
+      "tell": "strikes the bench and the sparks fly your way"},
+     {"name": "Gather Heat", "kind": "charge", "then": "Pour the Crucible", "weight": 2,
+      "tell": "is glowing white. POUR THE CRUCIBLE is coming"},
+     {"name": "Careful Now", "kind": "defend", "weight": 1,
+      "tell": "squints along the edge of the hammer, taking its time"}
+    ]}
+  ],
+  "drops": [["slag", 1.0], ["slag", 1.0], ["slag", 1.0], ["hollow_core", 1.0],
+            ["essence_earth", 1.0], ["essence_earth", 1.0]]
+ }
+}

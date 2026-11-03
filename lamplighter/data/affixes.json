@@ -1,0 +1,244 @@
+{
+ "affixes": [
+  {
+   "id": "keen",
+   "name": "Keen",
+   "pos": "prefix",
+   "slots": [
+    "weapon"
+   ],
+   "stats": {
+    "crit": 4
+   }
+  },
+  {
+   "id": "heavy",
+   "name": "Heavy",
+   "pos": "prefix",
+   "slots": [
+    "weapon"
+   ],
+   "stats": {
+    "atk": 3
+   }
+  },
+  {
+   "id": "embered",
+   "name": "Embered",
+   "pos": "prefix",
+   "slots": [
+    "weapon",
+    "trinket"
+   ],
+   "mult": {
+    "fire": 1.08
+   }
+  },
+  {
+   "id": "radiant",
+   "name": "Radiant",
+   "pos": "prefix",
+   "slots": [
+    "weapon",
+    "trinket"
+   ],
+   "mult": {
+    "light": 1.08
+   }
+  },
+  {
+   "id": "swift",
+   "name": "Swift",
+   "pos": "prefix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "stats": {
+    "agi": 2
+   }
+  },
+  {
+   "id": "stout",
+   "name": "Stout",
+   "pos": "prefix",
+   "slots": [
+    "armor"
+   ],
+   "stats": {
+    "hp": 8
+   }
+  },
+  {
+   "id": "warded",
+   "name": "Warded",
+   "pos": "prefix",
+   "slots": [
+    "armor"
+   ],
+   "stats": {
+    "def": 2
+   }
+  },
+  {
+   "id": "of_the_wolf",
+   "name": "of the Wolf",
+   "pos": "suffix",
+   "slots": [
+    "weapon",
+    "trinket"
+   ],
+   "stats": {
+    "str": 2
+   }
+  },
+  {
+   "id": "of_dusk",
+   "name": "of Dusk",
+   "pos": "suffix",
+   "slots": [
+    "armor",
+    "trinket"
+   ],
+   "stats": {
+    "dodge": 3
+   }
+  },
+  {
+   "id": "of_mending",
+   "name": "of Mending",
+   "pos": "suffix",
+   "slots": [
+    "armor",
+    "trinket"
+   ],
+   "stats": {
+    "regen": 1
+   },
+   "mult": {
+    "heal": 1.08
+   }
+  },
+  {
+   "id": "of_havoc",
+   "name": "of Havoc",
+   "pos": "suffix",
+   "slots": [
+    "weapon"
+   ],
+   "mult": {
+    "dmg": 1.05
+   }
+  },
+  {
+   "id": "of_the_lamp",
+   "name": "of the Lamp",
+   "pos": "suffix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "stats": {
+    "oil_save": 1
+   }
+  },
+  {
+   "id": "of_will",
+   "name": "of Will",
+   "pos": "suffix",
+   "slots": [
+    "weapon",
+    "trinket"
+   ],
+   "stats": {
+    "wil": 2
+   }
+  },
+  {
+   "id": "brittle",
+   "name": "Brittle",
+   "pos": "prefix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "curse": true,
+   "stats": {
+    "def": -3
+   }
+  },
+  {
+   "id": "gaunt",
+   "name": "Gaunt",
+   "pos": "prefix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "curse": true,
+   "stats": {
+    "hp": -14
+   }
+  },
+  {
+   "id": "reckless",
+   "name": "Reckless",
+   "pos": "prefix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "curse": true,
+   "stats": {
+    "dodge": -5
+   }
+  },
+  {
+   "id": "dimmed",
+   "name": "Dimmed",
+   "pos": "prefix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "curse": true,
+   "stats": {
+    "wil": -2
+   }
+  },
+  {
+   "id": "of_hunger",
+   "name": "of Hunger",
+   "pos": "suffix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "curse": true,
+   "stats": {
+    "oil_save": -1
+   }
+  },
+  {
+   "id": "of_ruin",
+   "name": "of Ruin",
+   "pos": "suffix",
+   "slots": [
+    "weapon",
+    "armor",
+    "trinket"
+   ],
+   "curse": true,
+   "stats": {
+    "crit": -4
+   }
+  }
+ ]
+}

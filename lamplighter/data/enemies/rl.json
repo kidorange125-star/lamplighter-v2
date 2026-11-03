@@ -1,0 +1,79 @@
+{
+ "rl_lampman": {
+  "name": "Drowned Lampman",
+  "hp": 85,
+  "atk": 17,
+  "def": 6,
+  "dodge": 0,
+  "xp": 34,
+  "gold": [14, 25],
+  "tags": ["hollow", "undead"],
+  "weak": ["earth", "shadow"],
+  "resist": ["water", "ice"],
+  "desc": "One of the keeper's lamp-tenders, drowned at his post and still in his oilskin apron. He carries a hook for lifting lamps that are no longer there, and he wants yours.",
+  "moves": [
+   {"name": "Hook", "kind": "attack", "power": 1.0, "weight": 3, "tell": "swings his lamp-hook"},
+   {"name": "Snuff", "kind": "drain", "power": 0.7, "drain": 8, "weight": 2, "tell": "reaches for your lantern"},
+   {"name": "Soaked Embrace", "kind": "heavy", "power": 1.8, "weight": 1, "tell": "opens his arms"}
+  ],
+  "drops": [["hollow_dust", 0.4], ["saltstone", 0.4], ["essence_water", 0.3]]
+ },
+ "rl_heronling": {
+  "name": "Heronling",
+  "hp": 70,
+  "atk": 18,
+  "def": 3,
+  "dodge": 15,
+  "xp": 30,
+  "gold": [5, 14],
+  "tags": ["beast"],
+  "weak": ["earth", "shadow"],
+  "resist": ["water"],
+  "desc": "A young heron out of the tower's nest, all knees and neck, with a cold glitter in its eyes from the glass it was fed. It stabs at your lantern as if it were a fish.",
+  "moves": [
+   {"name": "Jab", "kind": "attack", "power": 1.0, "weight": 3, "tell": "cocks its head"},
+   {"name": "Gulp", "kind": "attack", "power": 0.6, "status": ["bleed", 3, 3], "weight": 1, "tell": "snaps at you"},
+   {"name": "Screech", "kind": "debuff", "status": ["blind", 1, 0], "weight": 1, "tell": "throws back its head"}
+  ],
+  "drops": [["saltstone", 0.3], ["essence_water", 0.3]]
+ },
+ "rl_heron": {
+  "name": "The Lens-Eyed Heron",
+  "hp": 340,
+  "atk": 23,
+  "def": 6,
+  "dodge": 10,
+  "xp": 190,
+  "gold": [110, 140],
+  "tags": ["hollow", "beast", "boss"],
+  "weak": ["earth", "shadow"],
+  "resist": ["water", "ice"],
+  "desc": "A heron as tall as a man, grey on grey, standing as still as a keeper at a window. Where a pupil should be, a sliver of the great lens burns with a light that is not your lantern's, and she is looking for a ship.",
+  "moves": [
+   {"name": "Spear Beak", "kind": "attack", "power": 1.0, "weight": 3, "tell": "lowers her head, perfectly still"},
+   {"name": "Wing Slap", "kind": "attack", "power": 0.7, "weight": 2, "tell": "mantles her wings"},
+   {"name": "Gulp", "kind": "heavy", "power": 2.2, "weight": 2, "tell": "draws back her head and opens her throat"},
+   {"name": "Lens Flare", "kind": "debuff", "status": ["blind", 2, 0], "weight": 1, "tell": "turns her eye to the lantern"}
+  ],
+  "phases": [
+   {
+    "at": 0.5,
+    "msg": "The lens in her eye catches your lantern and holds it, like a lighthouse seeing its first ship in fifty years.",
+    "moves": [
+     {"name": "Spear Beak", "kind": "attack", "power": 1.0, "weight": 3, "tell": "lowers her head, perfectly still"},
+     {"name": "Wing Slap", "kind": "attack", "power": 0.7, "weight": 2, "tell": "mantles her wings"},
+     {"name": "Gulp", "kind": "heavy", "power": 2.2, "weight": 2, "tell": "draws back her head and opens her throat"},
+     {"name": "Lens Flare", "kind": "debuff", "status": ["blind", 2, 0], "weight": 1, "tell": "turns her eye to the lantern"},
+     {"name": "Beacon Stare", "kind": "drain", "power": 1.0, "drain": 14, "weight": 2, "tell": "fixes the lens in her eye on your lantern"}
+    ]
+   }
+  ],
+  "drops": [
+   ["essence_water", 1.0],
+   ["essence_water", 1.0],
+   ["essence_shadow", 1.0],
+   ["hollow_core", 1.0],
+   ["saltstone", 1.0]
+  ]
+ }
+}

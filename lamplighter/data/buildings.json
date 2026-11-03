@@ -1,0 +1,66 @@
+{
+ "hearth_stall": {
+  "name": "Hearth Stall",
+  "room": "hearth_stall",
+  "resident": "corvin",
+  "cost": {
+   "gold": 60,
+   "items": {
+    "rootwood": 5
+   }
+  },
+  "minutes": 12,
+  "steps": 20,
+  "rent": 5,
+  "blurb": "Corvin sells potions and herbs, and cooks hot meals that calm the nerves."
+ },
+ "salvage_stall": {
+  "name": "Salvage Stall",
+  "room": "salvage_stall",
+  "resident": "odo",
+  "cost": {
+   "gold": 90,
+   "items": {
+    "saltstone": 5,
+    "rootwood": 3
+   }
+  },
+  "minutes": 15,
+  "steps": 25,
+  "rent": 6,
+  "blurb": "Odo buys monster parts and sells building materials."
+ },
+ "strongroom": {
+  "name": "Strongroom",
+  "room": "strongroom",
+  "resident": "dagna",
+  "cost": {
+   "gold": 120,
+   "items": {
+    "slag": 5,
+    "saltstone": 3
+   }
+  },
+  "minutes": 20,
+  "steps": 30,
+  "rent": 8,
+  "blurb": "Dagna enlarges your stash and strengthens the Homecoming Charm."
+ },
+ "ember_smithy": {
+  "name": "Ember Smithy",
+  "room": "ember_smithy",
+  "resident": "tamsin",
+  "cost": {
+   "gold": 400,
+   "items": {
+    "slag": 6,
+    "cinder": 6
+   }
+  },
+  "minutes": 30,
+  "steps": 50,
+  "rent": 12,
+  "forge_slot": true,
+  "blurb": "Tamsin works the second forge: one more job can run at once at the forge."
+ }
+}

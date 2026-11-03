@@ -1,0 +1,109 @@
+{
+  "vg_starglass": {
+    "name": "Vigil Glass",
+    "kind": "material",
+    "value": 25,
+    "stack": true,
+    "rarity": "uncommon",
+    "desc": "Ground lens-blanks, clear as a held breath. The Builder and the forge use it."
+  },
+  "vg_nightcap": {
+    "name": "Nightcap",
+    "kind": "consumable",
+    "value": 60,
+    "rarity": "common",
+    "use": {
+      "dread": -60
+    },
+    "desc": "A knitted cap. Smells of lavender and, faintly, of permission. Calms you (Dread -60)."
+  },
+  "vg_clear_draught": {
+    "name": "Clear Draught",
+    "kind": "consumable",
+    "value": 50,
+    "rarity": "common",
+    "use": {
+      "heal": 60,
+      "cleanse": true
+    },
+    "desc": "Cold water drawn through a lens. Clears the head and the eyes. Restores 60 health and cures what ails you."
+  },
+  "vg_star_plate": {
+    "name": "Star Plate",
+    "kind": "junk",
+    "value": 90,
+    "stack": true,
+    "rarity": "common",
+    "desc": "A glass plate of a star that has since moved. Sells well to collectors."
+  },
+  "vg_lens_key": {
+    "name": "Iris-Key",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "A bronze iris-key, still warm from the Orrery's wire. It turns the iris at the east end of the Orrery Hall."
+  },
+  "vg_receipt": {
+    "name": "Receipt: the Vigil",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "Received of the Vigil, the Signal. The Order will watch the east until I send word that it is done, and then they may close their eyes. I have never asked anyone for a longer promise. Held in trust. -A."
+  },
+  "vg_given_flame": {
+    "name": "Hale's Candle-End",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "A candle-flame in a thimble of glass, offered, not lent. It is very small and entirely steady."
+  },
+  "vg_sixfold_chart": {
+    "name": "Sixfold Chart",
+    "kind": "key",
+    "value": 0,
+    "rarity": "common",
+    "desc": "A star-chart with six wheels in six colours. Hale says it is a recipe."
+  },
+  "vg_unsleeping_eye": {
+    "name": "Unsleeping Eye",
+    "kind": "trinket",
+    "value": 3000,
+    "rarity": "legendary",
+    "stats": {
+      "wil": 9,
+      "hp": 28,
+      "crit": 6
+    },
+    "mult": {
+      "spell": 1.2,
+      "dmg": 1.06
+    },
+    "desc": "A flake of the Eye's lens, set in a black ring. It never closes."
+  },
+  "vg_astrolabe_rod": {
+    "name": "Astrolabe Rod",
+    "kind": "weapon",
+    "value": 160,
+    "rarity": "rare",
+    "stats": {
+      "atk": 9,
+      "wil": 6
+    },
+    "mult": {
+      "spell": 1.1
+    },
+    "desc": "A brass rod with a star-wheel at the tip. For the Dealer's pool and the forge."
+  },
+  "vg_nightcloak": {
+    "name": "Night Cloak",
+    "kind": "armor",
+    "value": 150,
+    "rarity": "rare",
+    "stats": {
+      "def": 8,
+      "dodge": 4,
+      "wil": 1
+    },
+    "desc": "A cloak that drinks light. For the Dealer's pool and the forge."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "vg_almanac": {
+    "name": "Almanac Loft",
+    "room": "vg_loft",
+    "resident": "vg_hale",
+    "cost": {
+      "gold": 1600,
+      "items": {
+        "vg_starglass": 8,
+        "slag": 10
+      }
+    },
+    "minutes": 45,
+    "steps": 70,
+    "rent": 18,
+    "blurb": "Hale reads the sky for you: where each Dealer sits today and tomorrow."
+  }
+}

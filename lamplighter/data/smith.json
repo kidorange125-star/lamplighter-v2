@@ -1,0 +1,23 @@
+{
+ "quench": {
+  "needs_flag": "godlike_recipe",
+  "needs_building": "ember_smithy",
+  "gold": 9000,
+  "items": {
+   "hollow_core": 6,
+   "ff_rime": 8,
+   "vg_starglass": 8,
+   "slag": 20
+  },
+  "days": 7,
+  "steps": 5000,
+  "outcomes": [
+   {"mult": 2.0, "weight": 45},
+   {"mult": 2.5, "weight": 35},
+   {"mult": 3.0, "weight": 20}
+  ],
+  "pity_step": 0.1,
+  "pity_cap": 0.6,
+  "hurry": {"gems_per_day": 12, "max_days": 2}
+ }
+}

@@ -1,0 +1,677 @@
+{
+ "hook": {
+  "name": "Lamplighter's Hook",
+  "kind": "weapon",
+  "value": 5,
+  "stats": {
+   "atk": 3
+  },
+  "desc": "A long brass pole with a hook for lifting lamp-caps. Every apprentice learns to swing one.",
+  "rarity": "common"
+ },
+ "hatchet": {
+  "name": "Iron Hatchet",
+  "kind": "weapon",
+  "value": 40,
+  "stats": {
+   "atk": 6
+  },
+  "desc": "Brann's honest work. Heavy in the head, light in the haft.",
+  "rarity": "uncommon"
+ },
+ "ashwood_rod": {
+  "name": "Ashwood Rod",
+  "kind": "weapon",
+  "value": 45,
+  "stats": {
+   "atk": 2,
+   "wil": 4
+  },
+  "desc": "A charred staff that stays warm. Fire comes easier when you hold it.",
+  "rarity": "uncommon"
+ },
+ "gutting_knife": {
+  "name": "Gutting Knife",
+  "kind": "weapon",
+  "value": 45,
+  "stats": {
+   "atk": 4,
+   "agi": 3
+  },
+  "desc": "A fisher's knife, thin and wicked. Made for quick work.",
+  "rarity": "uncommon"
+ },
+ "hunting_spear": {
+  "name": "Hunter's Spear",
+  "kind": "weapon",
+  "value": 60,
+  "stats": {
+   "atk": 8
+  },
+  "desc": "Found in the abandoned camp. The bloodstains are old. Mostly.",
+  "rarity": "uncommon"
+ },
+ "saltsteel_saber": {
+  "name": "Saltsteel Saber",
+  "kind": "weapon",
+  "value": 120,
+  "stats": {
+   "atk": 10,
+   "agi": 2
+  },
+  "desc": "Forged from a drowned knight's blade. It never rusts, and it never stops dripping.",
+  "mult": {
+   "phys": 1.1
+  },
+  "rarity": "rare"
+ },
+ "censer_flail": {
+  "name": "Bishop's Censer",
+  "kind": "weapon",
+  "value": 140,
+  "stats": {
+   "atk": 7,
+   "wil": 7
+  },
+  "desc": "The Drowned Bishop's censer. Swing it and it breathes out sparks instead of incense.",
+  "mult": {
+   "fire": 1.15,
+   "light": 1.15
+  },
+  "rarity": "rare"
+ },
+ "starsteel_blade": {
+  "name": "Starsteel Blade",
+  "kind": "weapon",
+  "value": 300,
+  "stats": {
+   "atk": 15,
+   "wil": 4,
+   "agi": 2
+  },
+  "desc": "Brann's masterpiece, forged from ore that fell from the sky before the sky went dark. It hums near Hollows.",
+  "mult": {
+   "phys": 1.2
+  },
+  "rarity": "epic"
+ },
+ "oilskin": {
+  "name": "Oilskin Coat",
+  "kind": "armor",
+  "value": 8,
+  "stats": {
+   "def": 2
+  },
+  "desc": "Standard guild issue. Smells of whale oil and old rain.",
+  "rarity": "common"
+ },
+ "jerkin": {
+  "name": "Boiled-Leather Jerkin",
+  "kind": "armor",
+  "value": 35,
+  "stats": {
+   "def": 4,
+   "agi": 1
+  },
+  "desc": "Stiff, light, and better than nothing by a good margin.",
+  "rarity": "uncommon"
+ },
+ "hauberk": {
+  "name": "Chain Hauberk",
+  "kind": "armor",
+  "value": 110,
+  "stats": {
+   "def": 7
+  },
+  "desc": "Riveted rings, oiled against the damp. It jingles. Hollows hate the sound.",
+  "rarity": "rare"
+ },
+ "wardenplate": {
+  "name": "Wardenplate",
+  "kind": "armor",
+  "value": 240,
+  "stats": {
+   "def": 11,
+   "agi": -2,
+   "hp": 10
+  },
+  "desc": "Plate from the old Watch, refitted by Brann. Slow, heavy, and very hard to kill.",
+  "rarity": "rare"
+ },
+ "drowned_mail": {
+  "name": "Drowned Mail",
+  "kind": "armor",
+  "value": 150,
+  "stats": {
+   "def": 8,
+   "wil": 2
+  },
+  "desc": "Scale armour pulled from the Salt Knights. Barnacles in the joints, but it holds.",
+  "rarity": "rare"
+ },
+ "moth_charm": {
+  "name": "Moth Charm",
+  "kind": "trinket",
+  "value": 80,
+  "stats": {
+   "agi": 3,
+   "dodge": 4
+  },
+  "desc": "A paper moth folded around a pinch of lamp-soot. Things find it hard to land a blow on you.",
+  "rarity": "uncommon"
+ },
+ "ember_locket": {
+  "name": "Ember Locket",
+  "kind": "trinket",
+  "value": 90,
+  "stats": {
+   "wil": 4
+  },
+  "desc": "A locket with a coal inside that has never gone out.",
+  "mult": {
+   "fire": 1.1
+  },
+  "rarity": "uncommon"
+ },
+ "saints_tooth": {
+  "name": "Saint's Tooth",
+  "kind": "trinket",
+  "value": 120,
+  "stats": {
+   "hp": 12,
+   "regen": 2
+  },
+  "desc": "A relic of the chapel. While you carry it, wounds close a little each turn of battle.",
+  "mult": {
+   "heal": 1.15
+  },
+  "rarity": "rare"
+ },
+ "wolf_fang": {
+  "name": "Gloam-Wolf Fang",
+  "kind": "trinket",
+  "value": 30,
+  "stats": {
+   "str": 2,
+   "crit": 3
+  },
+  "desc": "Strung on sinew. Wearing it makes your grip feel surer.",
+  "rarity": "common"
+ },
+ "orrins_ring": {
+  "name": "Orrin's Signet",
+  "kind": "trinket",
+  "value": 1,
+  "stats": {
+   "wil": 3,
+   "str": 2,
+   "oil_save": 1
+  },
+  "desc": "The Guildmaster's ring, a little flame cut into a black stone. Your lantern burns slower while you wear it.",
+  "mult": {
+   "dmg": 1.05
+  },
+  "rarity": "rare"
+ },
+ "draught": {
+  "name": "Healing Draught",
+  "kind": "consumable",
+  "value": 12,
+  "use": {
+   "heal": 30
+  },
+  "desc": "Red, bitter, and it works. Restores 30 health.",
+  "rarity": "common"
+ },
+ "strong_draught": {
+  "name": "Strong Draught",
+  "kind": "consumable",
+  "value": 35,
+  "use": {
+   "heal": 75
+  },
+  "desc": "Thick as treacle. Restores 75 health.",
+  "rarity": "uncommon"
+ },
+ "stew": {
+  "name": "Bowl of Maeve's Stew",
+  "kind": "consumable",
+  "value": 5,
+  "use": {
+   "heal": 15,
+   "dread": -10
+  },
+  "desc": "Eel, barley, and something Maeve won't name. Restores 15 health and calms you (Dread -10).",
+  "rarity": "common"
+ },
+ "oil": {
+  "name": "Flask of Lamp Oil",
+  "kind": "consumable",
+  "value": 10,
+  "use": {
+   "oil": 40
+  },
+  "desc": "Refills your lantern by 40.",
+  "rarity": "common"
+ },
+ "tallow": {
+  "name": "Hollow Tallow",
+  "kind": "consumable",
+  "value": 6,
+  "use": {
+   "oil": 15
+  },
+  "desc": "Grey fat rendered from a Hollow. It burns, if you don't mind the smell. Refills 15 oil.",
+  "rarity": "common"
+ },
+ "tonic": {
+  "name": "Focus Tonic",
+  "kind": "consumable",
+  "value": 25,
+  "use": {
+   "focus": 6
+  },
+  "desc": "Cold, minty, makes your teeth ache. Grants 6 Focus in battle.",
+  "rarity": "common"
+ },
+ "salts": {
+  "name": "Smelling Salts",
+  "kind": "consumable",
+  "value": 15,
+  "use": {
+   "cleanse": true,
+   "heal": 5
+  },
+  "desc": "Clears the head. Removes poison, bleeding, burns, blindness and weakness.",
+  "rarity": "common"
+ },
+ "firepot": {
+  "name": "Firepot",
+  "kind": "consumable",
+  "value": 30,
+  "use": {
+   "firepot": 18
+  },
+  "desc": "A clay pot of lamp-oil and rag. Throw it in battle to burn every enemy.",
+  "rarity": "common"
+ },
+ "honeycake": {
+  "name": "Honeycake",
+  "kind": "consumable",
+  "value": 18,
+  "use": {
+   "heal": 20,
+   "regen": 4,
+   "dread": -15
+  },
+  "desc": "Sweet and sticky. Restores 20 health, keeps healing you for a few turns in battle, and calms you (Dread -15).",
+  "rarity": "common"
+ },
+ "smokebomb": {
+  "name": "Smoke Pellet",
+  "kind": "consumable",
+  "value": 20,
+  "use": {
+   "smoke": true
+  },
+  "desc": "Guaranteed escape from any fight that isn't a boss.",
+  "rarity": "common"
+ },
+ "ember_wood": {
+  "name": "Ember Shard (Antler)",
+  "kind": "key",
+  "value": 0,
+  "desc": "A splinter of the old sun, pulled from the Antlered Mother's crown. It is warm and it beats like a heart.",
+  "rarity": "common"
+ },
+ "ember_tide": {
+  "name": "Ember Shard (Tide)",
+  "kind": "key",
+  "value": 0,
+  "desc": "A splinter of the old sun, hissing faintly as if it is still being drowned.",
+  "rarity": "common"
+ },
+ "ember_ash": {
+  "name": "Ember Shard (Ash)",
+  "kind": "key",
+  "value": 0,
+  "desc": "A splinter of the old sun. If you hold it to your ear you hear singing.",
+  "rarity": "common"
+ },
+ "tide_key": {
+  "name": "Tide Key",
+  "kind": "key",
+  "value": 0,
+  "desc": "A green bronze key shaped like a wave. The Reeve wore it around his neck.",
+  "rarity": "common"
+ },
+ "moonpetal": {
+  "name": "Moonpetal",
+  "kind": "key",
+  "value": 0,
+  "stack": true,
+  "desc": "A pale marsh flower that glows faintly without any light to reflect. Sister Ilse wants these.",
+  "rarity": "common"
+ },
+ "starsteel_ore": {
+  "name": "Starsteel Ore",
+  "kind": "key",
+  "value": 0,
+  "desc": "A lump of black metal flecked with points of light, like a piece of the night sky from before.",
+  "rarity": "common"
+ },
+ "wren_ribbon": {
+  "name": "Wren's Ribbon",
+  "kind": "key",
+  "value": 0,
+  "desc": "A yellow hair ribbon, snagged on a thorn. Maeve's daughter wore one like it.",
+  "rarity": "common"
+ },
+ "brass_shroud": {
+  "name": "Brass Shroud",
+  "kind": "key",
+  "value": 0,
+  "desc": "A lantern upgrade fitted by Brann. (Already installed.)",
+  "rarity": "common"
+ },
+ "lens": {
+  "name": "Polished Lens",
+  "kind": "key",
+  "value": 0,
+  "desc": "A lantern upgrade. (Already installed.)",
+  "rarity": "common"
+ },
+ "hollow_dust": {
+  "name": "Hollow Dust",
+  "kind": "junk",
+  "value": 4,
+  "stack": true,
+  "desc": "What is left when a Hollow comes apart. Tallow the merchant buys it, for reasons.",
+  "rarity": "common"
+ },
+ "wolf_pelt": {
+  "name": "Gloam Pelt",
+  "kind": "junk",
+  "value": 8,
+  "stack": true,
+  "desc": "Grey fur that is cold to the touch. Sells well.",
+  "rarity": "common"
+ },
+ "pearl": {
+  "name": "Black Pearl",
+  "kind": "junk",
+  "value": 25,
+  "stack": true,
+  "desc": "Pulled from something in the marsh. Valuable to the right buyer.",
+  "rarity": "uncommon"
+ },
+ "silver_icon": {
+  "name": "Silver Icon",
+  "kind": "junk",
+  "value": 40,
+  "desc": "A small saint in tarnished silver from the drowned chapel.",
+  "rarity": "uncommon"
+ },
+ "page1": {
+  "name": "Journal Page (I)",
+  "kind": "page",
+  "value": 0,
+  "desc": "A page in Orrin's hand.",
+  "rarity": "common"
+ },
+ "page2": {
+  "name": "Journal Page (II)",
+  "kind": "page",
+  "value": 0,
+  "desc": "A page in Orrin's hand.",
+  "rarity": "common"
+ },
+ "page3": {
+  "name": "Journal Page (III)",
+  "kind": "page",
+  "value": 0,
+  "desc": "A page in Orrin's hand.",
+  "rarity": "common"
+ },
+ "page4": {
+  "name": "Journal Page (IV)",
+  "kind": "page",
+  "value": 0,
+  "desc": "A page in Orrin's hand.",
+  "rarity": "common"
+ },
+ "page5": {
+  "name": "Journal Page (V)",
+  "kind": "page",
+  "value": 0,
+  "desc": "A page in Orrin's hand.",
+  "rarity": "common"
+ },
+ "page6": {
+  "name": "Journal Page (VI)",
+  "kind": "page",
+  "value": 0,
+  "desc": "A page in Orrin's hand.",
+  "rarity": "common"
+ },
+ "homecoming_charm": {
+  "name": "Homecoming Charm",
+  "kind": "key",
+  "value": 0,
+  "desc": "A small brass moth on a chain, warm as a hearthstone. Hold it and think of home ('recall'), or of the last warm place you slept ('return'). It needs a rest to recharge.",
+  "rarity": "common"
+ },
+ "rootwood": {
+  "name": "Rootwood",
+  "kind": "material",
+  "value": 3,
+  "stack": true,
+  "desc": "Pale, dry timber from the Weeping Wood. The Builder needs it.",
+  "rarity": "common"
+ },
+ "saltstone": {
+  "name": "Saltstone",
+  "kind": "material",
+  "value": 4,
+  "stack": true,
+  "desc": "Salt-hardened blocks from the Saltmarsh. The Builder needs them.",
+  "rarity": "common"
+ },
+ "slag": {
+  "name": "Tallow Slag",
+  "kind": "material",
+  "value": 5,
+  "stack": true,
+  "desc": "Heavy grey clinker from the old mines. The Builder and the Strongroom use it.",
+  "rarity": "common"
+ },
+ "relic_ember": {
+  "name": "Ember Relic",
+  "kind": "relic",
+  "value": 50,
+  "rarity": "common",
+  "relic": "ember",
+  "desc": "Fire burns hotter. Socket it into gear at Brann's forge. Better relics are forged from Hollow Cores."
+ },
+ "relic_lamp": {
+  "name": "Lamp Relic",
+  "kind": "relic",
+  "value": 50,
+  "rarity": "common",
+  "relic": "lamp",
+  "desc": "Flares sear harder. Socket it into gear at Brann's forge. Better relics are forged from Hollow Cores."
+ },
+ "relic_edge": {
+  "name": "Edge Relic",
+  "kind": "relic",
+  "value": 50,
+  "rarity": "common",
+  "relic": "edge",
+  "desc": "Blows land heavier. Socket it into gear at Brann's forge. Better relics are forged from Hollow Cores."
+ },
+ "relic_heart": {
+  "name": "Heart Relic",
+  "kind": "relic",
+  "value": 50,
+  "rarity": "common",
+  "relic": "heart",
+  "desc": "Healing goes further. Socket it into gear at Brann's forge. Better relics are forged from Hollow Cores."
+ },
+ "relic_pulse": {
+  "name": "Pulse Relic",
+  "kind": "relic",
+  "value": 50,
+  "rarity": "common",
+  "relic": "pulse",
+  "desc": "Everything you do hits harder. Socket it into gear at Brann's forge. Better relics are forged from Hollow Cores."
+ },
+ "hollow_core": {
+  "name": "Hollow Core",
+  "kind": "material",
+  "value": 20,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "A cold knot of dark left behind when a boss falls. The forge needs it for anything better than Rare."
+ },
+ "book_fire": {
+  "name": "Tome of Firebolt",
+  "kind": "book",
+  "value": 80,
+  "rarity": "common",
+  "spell": "fire",
+  "element": "fire",
+  "desc": "A spell book. Equip it at the Magician's tower or with the 'spells' command."
+ },
+ "essence_fire": {
+  "name": "Fire Essence",
+  "kind": "material",
+  "value": 15,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "A bottled spark of fire. The Magician binds three into a spell book."
+ },
+ "book_ice": {
+  "name": "Tome of Frost Lance",
+  "kind": "book",
+  "value": 80,
+  "rarity": "common",
+  "spell": "ice",
+  "element": "ice",
+  "desc": "A spell book. Equip it at the Magician's tower or with the 'spells' command."
+ },
+ "essence_ice": {
+  "name": "Ice Essence",
+  "kind": "material",
+  "value": 15,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "A bottled spark of ice. The Magician binds three into a spell book."
+ },
+ "book_water": {
+  "name": "Tome of Tide Surge",
+  "kind": "book",
+  "value": 80,
+  "rarity": "common",
+  "spell": "water",
+  "element": "water",
+  "desc": "A spell book. Equip it at the Magician's tower or with the 'spells' command."
+ },
+ "essence_water": {
+  "name": "Water Essence",
+  "kind": "material",
+  "value": 15,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "A bottled spark of water. The Magician binds three into a spell book."
+ },
+ "book_light": {
+  "name": "Tome of Radiance",
+  "kind": "book",
+  "value": 80,
+  "rarity": "common",
+  "spell": "light",
+  "element": "light",
+  "desc": "A spell book. Equip it at the Magician's tower or with the 'spells' command."
+ },
+ "essence_light": {
+  "name": "Light Essence",
+  "kind": "material",
+  "value": 15,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "A bottled spark of light. The Magician binds three into a spell book."
+ },
+ "book_shadow": {
+  "name": "Tome of Soul Drain",
+  "kind": "book",
+  "value": 80,
+  "rarity": "common",
+  "spell": "shadow",
+  "element": "shadow",
+  "desc": "A spell book. Equip it at the Magician's tower or with the 'spells' command."
+ },
+ "essence_shadow": {
+  "name": "Shadow Essence",
+  "kind": "material",
+  "value": 15,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "A bottled spark of shadow. The Magician binds three into a spell book."
+ },
+ "book_earth": {
+  "name": "Tome of Stone Ward",
+  "kind": "book",
+  "value": 80,
+  "rarity": "common",
+  "spell": "earth",
+  "element": "earth",
+  "desc": "A spell book. Equip it at the Magician's tower or with the 'spells' command."
+ },
+ "essence_earth": {
+  "name": "Earth Essence",
+  "kind": "material",
+  "value": 15,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "A bottled spark of earth. The Magician binds three into a spell book."
+ },
+ "book_apex": {
+  "name": "Tome of Cataclysm",
+  "kind": "book",
+  "value": 2000,
+  "rarity": "godlike",
+  "spell": "apex",
+  "element": "all",
+  "desc": "Every element at once."
+ },
+ "court_key": {
+  "name": "Crown Key",
+  "kind": "key",
+  "value": 0,
+  "rarity": "common",
+  "desc": "A heavy iron key marked THE CROWN. It opens the throne room of the Ember Court."
+ },
+ "cinder": {
+  "name": "Cinder Glass",
+  "kind": "material",
+  "value": 10,
+  "stack": true,
+  "rarity": "uncommon",
+  "desc": "Black glass fused by the Court's fire. The Builder and the forge use it."
+ },
+ "queens_ember": {
+  "name": "The Queen's Ember",
+  "kind": "trinket",
+  "value": 900,
+  "rarity": "epic",
+  "stats": {
+   "wil": 6,
+   "hp": 18
+  },
+  "mult": {
+   "fire": 1.15,
+   "dmg": 1.04
+  },
+  "desc": "A coal from the heart of the Cinder Queen, still warm. It makes every flame and every spell you cast burn a little brighter."
+ }
+}

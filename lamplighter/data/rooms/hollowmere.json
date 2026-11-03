@@ -1,0 +1,381 @@
+{
+ "hall": {
+  "name": "Lamplighters' Hall",
+  "region": "Hollowmere",
+  "pos": [
+   0,
+   0
+  ],
+  "dark": false,
+  "rest": true,
+  "desc": "The guild hall smells of oil and old wool. Rows of empty bunks line the walls; you are the only apprentice who stayed. The Great Lantern hangs dead from the rafters. In the corner bed, under a heap of blankets, Guildmaster Orrin breathes slow and shallow. A desk sits by the door, and the guild's records lie on it.",
+  "exits": {
+   "e": "square",
+   "w": "home",
+   "n": "wizard_shop"
+  },
+  "npcs": [
+   "orrin"
+  ],
+  "items": [
+   "page1"
+  ],
+  "features": {
+   "great lantern|lantern|rafters": "A brass lantern as big as a barrel. It was lit from the Lightwell itself. Forty days ago it went out, and the sun went with it.",
+   "bunks|beds": "Twelve bunks. Eleven are stripped bare. The others left when the dark came.",
+   "desk|records": "Ledgers of lamps lit and oil spent, going back three hundred years. Orrin's journal should be here, but most of it is missing. Only a single page remains."
+  },
+  "locks": {
+   "n": {
+    "flag": "completed",
+    "msg": "The door north of the hall is bolted. A brass plate reads: SHOP OPENS WHEN THE LONG NIGHT ENDS."
+   }
+  }
+ },
+ "square": {
+  "name": "Hollowmere Square",
+  "region": "Hollowmere",
+  "pos": [
+   1,
+   0
+  ],
+  "dark": false,
+  "desc": "The town square, ringed with iron lampposts that you light by hand every evening, though evening never ends now. Their small yellow circles are the only thing holding the dark back. In the centre stands the Old Well under an iron grate. A bounty board leans against it.",
+  "exits": {
+   "w": "hall",
+   "e": "tavern",
+   "n": "gate",
+   "s": "lane",
+   "d": "well_bottom"
+  },
+  "locks": {
+   "d": {
+    "shards": 3,
+    "msg": "The Old Well's iron grate is sealed. Three empty sockets, each shaped like a flame, are set into the lock."
+   }
+  },
+  "features": {
+   "well|old well|grate": "Cold air rises from the well. Far, far below, something glows faintly, like a coal about to go out. The grate has three flame-shaped sockets.",
+   "lampposts|lamps": "You lit every one of these yourself. They burn a little dimmer every day.",
+   "board|bounty board|bounty": "BOUNTY: The town council will pay for every Hollow put down. Report to the board. (Type 'bounty' here to claim rewards.)"
+  }
+ },
+ "tavern": {
+  "name": "The Drowned Moth",
+  "region": "Hollowmere",
+  "pos": [
+   2,
+   0
+  ],
+  "dark": false,
+  "desc": "Low beams, a fire kept too high, and nearly every candle in town burning on the tables. The few folk left in Hollowmere drink here because it is the brightest room on the hill. Old Maeve works the bar with red eyes.",
+  "exits": {
+   "w": "square",
+   "e": "market",
+   "n": "ember_smithy"
+  },
+  "npcs": [
+   "maeve"
+  ],
+  "features": {
+   "fire|hearth": "Maeve keeps it roaring. Nobody complains about the heat.",
+   "patrons|folk|drinkers": "A fisherman, two carters, and the old schoolteacher. None of them talk much."
+  },
+  "locks": {
+   "n": {
+    "building": "ember_smithy",
+    "msg": "A vacant plot behind the Drowned Moth, with a chimney-stack already half laid. Joss can build a forge here once a smith is willing to move in."
+   }
+  }
+ },
+ "gate": {
+  "name": "North Gate",
+  "region": "Hollowmere",
+  "pos": [
+   1,
+   -1
+  ],
+  "dark": false,
+  "desc": "The town's north gate, barred with a beam and lit by two big braziers. Beyond it the Tollroad runs into the Weeping Wood, where nothing has been lit for forty days. The gatekeeper, a broad woman named Hesk, lifts the bar when she sees your lantern.",
+  "exits": {
+   "s": "square",
+   "n": "wood_path",
+   "e": "cinder_road"
+  },
+  "npcs": [
+   "hesk"
+  ],
+  "features": {
+   "braziers": "Hesk feeds them broken furniture now. The wood ran out a week ago."
+  },
+  "locks": {
+   "e": {
+    "flag": "completed",
+    "msg": "A road of black glass runs east from the gate, ending at a bar of cold iron across the way. Etched into it: THE COURT STIRS ONLY WHEN THE LONG NIGHT ENDS."
+   }
+  }
+ },
+ "lane": {
+  "name": "Candle Lane",
+  "region": "Hollowmere",
+  "pos": [
+   1,
+   1
+  ],
+  "dark": false,
+  "desc": "A narrow street of shuttered shops. Candles burn in every window, set there by people who are too afraid to come outside. West is the Chapel of the Ember; east, the ring of a hammer from Brann's forge. The lane slopes south toward the docks.",
+  "exits": {
+   "n": "square",
+   "w": "chapel",
+   "e": "smithy",
+   "s": "docks"
+  },
+  "features": {
+   "candles|windows": "Hundreds of them. The town is spending its last tallow on hope."
+  }
+ },
+ "chapel": {
+  "name": "Chapel of the Ember",
+  "region": "Hollowmere",
+  "pos": [
+   0,
+   1
+  ],
+  "dark": false,
+  "desc": "A small round chapel built around a stone brazier, where a flame from the Lightwell burns. It is no bigger than a candle now. Sister Ilse kneels beside it, feeding it a drop of oil at a time.",
+  "exits": {
+   "e": "lane",
+   "w": "tower"
+  },
+  "npcs": [
+   "ilse"
+  ],
+  "features": {
+   "brazier|flame|ember": "The holy flame gutters and recovers, gutters and recovers. Ilse has not slept in days."
+  }
+ },
+ "smithy": {
+  "name": "Brann's Forge",
+  "region": "Hollowmere",
+  "pos": [
+   2,
+   1
+  ],
+  "dark": false,
+  "desc": "A forge glowing red, and the heat is good after the cold streets. Weapons hang on every wall. Brann, a huge bald man with burn-scarred forearms, is hammering at something that doesn't need hammering.",
+  "exits": {
+   "w": "lane"
+  },
+  "npcs": [
+   "brann"
+  ],
+  "features": {
+   "forge": "Brann burns coal he dug himself. 'Fire's fire,' he says.",
+   "weapons|walls": "Hatchets, rods, knives, a few good blades. Brann shows them if you ask to trade."
+  }
+ },
+ "docks": {
+  "name": "The Black Docks",
+  "region": "Hollowmere",
+  "pos": [
+   1,
+   2
+  ],
+  "dark": false,
+  "desc": "Wet planks over black water. Most of the boats have been dragged up and turned over. Only Oskar the ferryman still works, though nobody wants to cross. East, across the water, lies the Saltmarsh, and beyond it the spire of a drowned chapel.",
+  "exits": {
+   "n": "lane",
+   "e": "marsh_edge"
+  },
+  "npcs": [
+   "oskar"
+  ],
+  "features": {
+   "water|lake": "Black and still. Sometimes something rises, looks at the light, and sinks again.",
+   "spire|chapel": "The Chapel of the Tide. It sank into the marsh a century ago, they say, and its bishop with it."
+  }
+ },
+ "home": {
+  "name": "Your Home",
+  "region": "Hollowmere",
+  "pos": [
+   -1,
+   0
+  ],
+  "dark": false,
+  "desc": "A narrow room above the guild's old storehouse, given to you when you became its last apprentice. A real bed, a window over the lamplit square, and a stout oak chest bound in brass: your stash. A slate by the door keeps the count of days since the sun left.",
+  "exits": {
+   "e": "hall"
+  },
+  "rest": true,
+  "features": {
+   "chest|stash": "Your stash. Type 'stash' to put things in or take them out. Nothing in it can be stolen and nothing spoils.",
+   "bed": "It is made. You made it, the morning after the sun did not rise.",
+   "window|square": "The lampposts burn small and yellow. Every one of them is yours.",
+   "slate": "Forty strokes in chalk, and nobody has wiped any off."
+  }
+ },
+ "market": {
+  "name": "Market Row",
+  "region": "Hollowmere",
+  "pos": [
+   3,
+   0
+  ],
+  "dark": false,
+  "desc": "East of the Drowned Moth the lane widens into a row of empty stalls under a long awning. Most are bare boards and rusted hooks. People will come back, Maeve says, once there is something to come back for. A plot waits at the end of the row and another behind it, and the Builder's Yard lies to the north.",
+  "exits": {
+   "w": "tavern",
+   "n": "yard",
+   "e": "hearth_stall",
+   "s": "salvage_stall"
+  },
+  "locks": {
+   "e": {
+    "building": "hearth_stall",
+    "msg": "A vacant plot at the end of the row, with a hearth-stone set in the ground. Joss the builder can raise a stall here once someone is willing to move in."
+   },
+   "s": {
+    "building": "salvage_stall",
+    "msg": "A vacant plot behind the row, with a drain and a half-wall. Joss the builder can raise a stall here once someone is willing to move in."
+   }
+  },
+  "features": {
+   "stalls|awning": "Sixty years of lamp-oil soot on the canvas. Beneath it, the town used to sell things.",
+   "plots|plot": "Vacant plots. Find survivors in the dark and ask them to move to Hollowmere; Joss builds, and they pay you rent."
+  }
+ },
+ "yard": {
+  "name": "Builder's Yard",
+  "region": "Hollowmere",
+  "pos": [
+   3,
+   -1
+  ],
+  "dark": false,
+  "desc": "A yard of stacked timber, coiled rope and half-cut stone under a canvas roof. A ledger hangs from a nail, and a brass bell on the post is engraved PAY ON COMPLETION. East, past the lumber, a plot is staked out in string.",
+  "exits": {
+   "s": "market",
+   "e": "strongroom"
+  },
+  "npcs": [
+   "joss"
+  ],
+  "locks": {
+   "e": {
+    "building": "strongroom",
+    "msg": "A plot staked out in string, with a deep foundation trench already dug. Joss can build here when someone is ready to move in."
+   }
+  },
+  "features": {
+   "ledger": "Every plank accounted for. Rent from the stalls is counted out here and at your home. Type 'collect' when you are at either.",
+   "timber|lumber": "Good dry wood. Joss says the supply is the easy part. It's the nails he worries about."
+  }
+ },
+ "hearth_stall": {
+  "name": "Hearth Stall",
+  "region": "Hollowmere",
+  "pos": [
+   4,
+   0
+  ],
+  "dark": false,
+  "desc": "A low stone stall with a broad iron hob, herbs drying on strings under the awning, and the smell of onions and woodsmoke. It is the warmest corner of the market.",
+  "exits": {
+   "w": "market"
+  },
+  "features": {
+   "hob": "Something is always simmering. It is always exactly what you needed."
+  }
+ },
+ "salvage_stall": {
+  "name": "Salvage Stall",
+  "region": "Hollowmere",
+  "pos": [
+   3,
+   1
+  ],
+  "dark": false,
+  "desc": "A stall hung with nets, hooks and gutted lanterns. Crates of sorted bone, hide and scrap stand in rows, and a brass scale sits on the counter, very slightly tilted in the buyer's favour.",
+  "exits": {
+   "n": "market"
+  },
+  "features": {
+   "scale": "Odo swears it is honest. He is, mostly, about what he weighs."
+  }
+ },
+ "strongroom": {
+  "name": "The Strongroom",
+  "region": "Hollowmere",
+  "pos": [
+   4,
+   -1
+  ],
+  "dark": false,
+  "desc": "A squat room with walls a yard thick, an iron door, and shelves of locked boxes. It smells of cold stone and lamp oil. Nothing in here has ever been stolen, which is the whole point.",
+  "exits": {
+   "w": "yard"
+  },
+  "features": {
+   "boxes": "Every box has a name chalked on it. Several are yours."
+  }
+ },
+ "wizard_shop": {
+  "name": "The Wizard's Shop",
+  "region": "Hollowmere",
+  "pos": [
+   0,
+   -1
+  ],
+  "dark": false,
+  "desc": "A narrow shop that was not here before the long night ended, or perhaps it was and you simply could not see it. Shelves of unlabelled bottles, a clock that runs backwards, and a brass hourglass in which the sand falls upward.",
+  "exits": {
+   "s": "hall"
+  },
+  "npcs": [
+   "wizard"
+  ],
+  "features": {
+   "hourglass": "The sand climbs. The wizard says it is only counting the other way.",
+   "clock": "It is, at the moment, yesterday."
+  }
+ },
+ "tower": {
+  "name": "The Magician's Tower",
+  "region": "Hollowmere",
+  "pos": [
+   -1,
+   1
+  ],
+  "dark": false,
+  "desc": "A round room that is much bigger inside than the narrow tower outside has any right to be. Shelves of tomes run up into the dark, a brass orrery turns slowly in the middle of the floor, and on every flat surface sits a little jar with something faintly glowing in it. A reading desk is piled with half-bound books.",
+  "exits": {
+   "e": "chapel"
+  },
+  "npcs": [
+   "mirelle"
+  ],
+  "features": {
+   "orrery": "Six small moons, one for each element, circling a lamp. The lamp is not electric. You are not sure it is a lamp.",
+   "jars|essences": "Essences. Every Hollow leaves a little of what it was made of.",
+   "tomes|shelves": "Spell books. Mirelle says any fool can read one; the trick is bringing them together."
+  }
+ },
+ "ember_smithy": {
+  "name": "The Ember Smithy",
+  "region": "Hollowmere",
+  "pos": [
+   2,
+   -1
+  ],
+  "dark": false,
+  "desc": "A second forge, built for the Court's own fire. The bellows are leather as black as coal, and the anvil has a crest of a hand holding a flame cut into its face.",
+  "exits": {
+   "s": "tavern"
+  },
+  "npcs": [],
+  "features": {
+   "crest": "The Court's. Tamsin says it is the only thing she kept."
+  }
+ }
+}
