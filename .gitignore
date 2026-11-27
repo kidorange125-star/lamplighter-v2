@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 *.tmp
 .vscode/
+.update_old/
+.update_new/
+.update_swap*

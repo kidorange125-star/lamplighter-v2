@@ -126,7 +126,7 @@ A 0 to 100 meter that rises in the dark and falls in light. Fear sharpens you bu
 | Weapon upgrades with a week-long timer, loaner | M3, **top tier done in M6** | The Long Quench (2.7) arrived with the first area that needs it |
 | Boss power rolls | **M4 (done)** | Needs the gear curve |
 | Darkness Dealers | Prototype in M4, **done in M5** | Sells rolled gear with relics |
-| `update` command | **M5 (built, needs the repo name)** | Fully tested offline |
+| `update` command | **Done** (updates come from `kidorange125-star/lamplighter-v2`) | Tested offline and against the real repo |
 | New rings, area extensions | **M6 (done)**; more later | Three extensions, two ring-5 areas, two annexes (section 5f) |
 | Online: friends, trading, co-op, shared plots | Track O, after M5 | Needs a server |
 | Top-tier spells, 2-3x smith upgrades | **M6 (done)** | The apex unlock, Hearts, the Grand Binding and the Long Quench (section 5f) |
@@ -222,7 +222,7 @@ The first new area, built end to end as the quality gate before more rings. It s
 
 **Darkness Dealers** (`lamplighter/dealer.py`, tunables in `data/dealer.json`). One Dealer per ring (none in Hollowmere). Each day he sits in one dark, ordinary room of his ring (never a boss, rest, fixed-fight, waypost, outpost or beacon room, and never one behind a locked door), stays all day and is elsewhere tomorrow; light his room and he moves on, and a ring's beacon removes that ring's Dealer for good (he warns you). Nobody sees him with a dry lantern. The cloth has four wares: two fair pieces of gear (each with a relic socketed when its rarity has a socket), a **bargain** (a tier up to the ring's cap, a visible curse, two relics, 30% off the gear only) and a loose relic. A socketed relic costs what it costs loose. **Gems never buy Godlike.** Rings cap bargains at Epic, Ultra, Ultra, Legendary (and, from M6, Legendary for ring 5), so Legendary gear is only sold in rings 4 and 5 (the Court at 20%, ring 5 at 50%). Everything is fixed by a seed, so the preview is exactly what you get; ware ids carry the day, so a menu open past midnight cannot sell tomorrow's stock. Turning the cloth costs gems (3, 6, 12; three a day, shared by all Dealers). State is `game.dealers` (salt, bought, restocks).
 
-**`update`** (`lamplighter/update.py`). Reads `version.json` from a GitHub repo, shows the changelog, backs up saves, downloads over https from github hosts only, verifies the archive (no traversal, links, encrypted members; size and ratio caps), stages it, and swaps code only (`lamplighter/`, `tools/`, `tests/`, `docs/`, `main.py`, `version.json`, `README.md`). A dry run loads every save against the new version first. The swap writes a marker, so a power cut mid-swap is repaired by `main.py` on next start. A failed attempt never costs a backup. Repo and branch come from env, `config.json`, then `version.json`; a new version cannot silently redirect later updates. **Needs the repo name before it can be used for real.**
+**`update`** (`lamplighter/update.py`). Reads `version.json` from a GitHub repo, shows the changelog, backs up saves, downloads over https from github hosts only, verifies the archive (no traversal, links, encrypted members; size and ratio caps), stages it, and swaps code only (`lamplighter/`, `tools/`, `tests/`, `docs/`, `main.py`, `version.json`, `README.md`). A dry run loads every save against the new version first. The swap writes a marker, so a power cut mid-swap is repaired by `main.py` on next start. A failed attempt never costs a backup. Repo and branch come from env, `config.json`, then `version.json`; a new version cannot silently redirect later updates. Updates come from the public GitHub repo `kidorange125-star/lamplighter-v2`; it must stay public, because the updater sends no login.
 
 **Save migrations.** SAVE_VERSION 2 (`dealers` moved out of flags). A damaged `dealers` block is repaired. The test suite now runs against a throwaway `LAMPLIGHTER_HOME`, so tests can never touch a real save.
 
@@ -302,7 +302,7 @@ Plain Godlike falls clearly behind by the Vigil (67% with books, 32% without); s
 2. **Single character or party** (Wren as a full companion).
 3. **More classes?**
 4. *(Closed in M6: the Debt. Before he went down the Well, Aldric borrowed a flame from six places on the promise "Held in trust. To be returned lit." Lighting the Court's beacon is a signal fire and the others answer it. See 5f.)*
-5. **GitHub repo** for `update`: the command is built and tested offline; set the repo with `update repo owner/name`, `LAMPLIGHTER_REPO`, or `repo` in version.json.
+5. **GitHub repo** for `update`: settled. `kidorange125-star/lamplighter-v2` (public), set as `repo` in version.json. A release is a push to `main` there with a higher `version` in version.json.
 6. **Hunger Survival mode:** later.
 
 ## 7. Risks
